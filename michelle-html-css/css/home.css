@@ -1,0 +1,190 @@
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+
+#logo {
+    font-family: "Shadows Into Light Two", curisve;
+    color: green;
+    font-size: 30px;
+}
+
+.topnav a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 17px;
+    padding: 0.5rem 1rem;
+}
+ 
+  .topnav a:hover {
+    color: blue;
+    border-radius: 10px;
+  }
+  
+ 
+  .topnav a.home {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.topnav a[href="#sign-in"] {
+    color: white;
+    background-color: black;
+    border: 1px solid #333;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.topnav a[href="#sign-in"]:hover {
+    background-color: #333;
+}
+
+  
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 16px;
+    margin:0;
+    padding:0;
+}
+
+/* header!
+- work on padding between navigation bar. 
+- color theme
+- when in home page,no hover over home. */
+
+
+
+main {
+    text-align: center;
+    margin-top: 120px; 
+}
+
+h1 {
+    
+    margin-bottom: 30px; 
+}
+
+#search-bar {
+    width: 65%; 
+    padding: 15px; 
+    font-size: 18px;
+    background-color: #cefad0;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* header!
+- decide on color and font
+- search bar icon at the end of the box */
+
+
+.categories_top,
+.categories_bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 8px; 
+}
+
+
+.categories_top li,
+.categories_bottom li {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.categories_top li:hover,
+.categories_bottom li:hover {
+    color: green;
+}
+
+
+/* header!
+- icon next to style -> appear frame! */
+
+
+h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-left: 120px; 
+    margin-top: 90px; 
+    margin-bottom: 20px;
+}
+
+.first-line,
+.second-line {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1;
+    margin-bottom: 50px; 
+    gap: 25px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    
+}
+
+.card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover; 
+}
+
+.card-content {
+    margin-left: 10px;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.card-button {
+    color: white;
+    text-decoration: none;
+    background: #3498db;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 0px;
+} 
+
+
+/* 
+- margin top and bottom of card button
+ */
+
