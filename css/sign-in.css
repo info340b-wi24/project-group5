@@ -1,0 +1,42 @@
+*{
+    font-family: "Nunito Sans" Arial, sans-serif;;
+}
+.button1-container{
+    padding-bottom: 1rem;
+    padding-top:15rem;
+    text-align: center;
+}
+.button2-container{
+    padding-bottom: 4rem;
+    text-align: center;
+}
+button{
+    padding:1rem;
+    font-size: larger;
+    border-radius: 10px;
+    background-color: lightgray;
+    border-style: none;
+}
+button a{
+    text-decoration: none;
+    color: #333333;
+}
+nav, ul{
+    margin:5px;
+    padding:5px;
+    text-align:right;
+}
+nav li{
+    display:inline;
+    margin: 2rem;
+}
+nav li.button{
+    border-radius: 50%;
+}
+nav a{
+    color: #333333;
+    text-decoration: none;
+}
+nav a:hover{
+    color:lightblue;
+}

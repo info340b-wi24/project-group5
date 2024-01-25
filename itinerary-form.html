@@ -4,24 +4,56 @@
     <meta charset="utf-8">
     <meta name="author" content="">
     <meta name="description" content="">
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/form.css" type="text/css" rel="stylesheet" />
     <title></title>
 </head>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">My Itinerary</a></li>
+        <li><a href="index.html">SIGN IN</a></li>
+    </ul>
+</nav>
 <body>
-    
-<div class="card">
-    <section class="wrapper-main">
-        <form action="example.html" methods="get">
-            <label for="Itinerary Title">Itinerary Title:</label><br>
-            <input type="text" id="title" name="title"><br>
-            <label for="Dates">Dates:</label><br>
-            <input type="text" id="dates" name="dates"><br>
-            <label for="Activity">Activity:</label><br>
-            <input type="text" id="activity" name="activity"><br>
-            <label for="Description">Description:</label><br>
-            <input type="text" id="description" name="description"><br>
-        </form>
+    <section class="timeline-wrapper">
+        <div class="middle-line"></div>
+
+        <div class="box box-top">
+            <div class="date">
+                <p>4</p>
+            </div>
+        </div>
+
+        <div class="box box-bottom">
+            <div class="date">
+                <p>3</p>
+            </div>
+        </div>
+        <div class="box box-bottom">
+            <div class="date">
+                <p>2</p>
+            </div>
+        </div>
+        <div class="box box-bottom">
+            <div class="date">
+                <p>1</p>
+            </div>
+        </div>
     </section>
-</div>
-</body>
+    <div class="form-container">
+        <form action="action_page.php">
+  
+        <label for="intinerary-title">Itinerary Title</label>
+        <input type="text" id="itinerary-title" name="itinerary-title" placeholder="Enter your intinerary title...">
+  
+        <label for="dates">Dates</label>
+        <input type="text" id="dates" name="dates" placeholder="Enter your itinerary dates...">
+  
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder="Describe your itinerary..." style="height:200px"></textarea>
+  
+        <input type="submit" value="Build Itinerary">
+        </form>
+    </body>
+  </div>
 </html>
