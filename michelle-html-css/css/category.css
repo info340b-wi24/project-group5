@@ -142,5 +142,23 @@ body {
 
 .category-section{
     display: flex;
+    /* margin-left: 30px;
+    margin-top: 100px; */
+    /* margin-left: auto; */
+    flex-direction: column;
 }
 
+/* .cat-container{
+    display: flex;
+    margin-top: 40px;
+
+} */
+
+.categories-container {
+    display: flex;
+    margin-left: 30px;
+}
+
+form {
+    margin-top: 0;
+}
