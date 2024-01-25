@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Pushkar Rimmalapudi">
+    <meta name="description" content="Activities Review Page">
+    <title>Seattle Hangout Guide - Activities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/activities.css">
+</head>
+<body>
+    <header> 
+        <div id="logo">
+            Sleepless in Seattle
+        </div>
+
+        <div class="topnav">
+            <a href="#home">Home</a>
+            <a href="#my-itinerary">My Itinerary</a>
+            <a href="#sign-in">Sign In</a>
+        </div>
+    </header>
+
+    <section class="categories">
+        <ul class="categories_top">
+            <li> Style </li>
+            <li id="outdoors">Outdoor Activities</li>
+            <li>Indoor Escapes</li>
+            <li>Foodie Delights</li>
+            <li>Best Scenic Spots</li>
+            <li>Entertainment</li>
+        </ul>
+
+        <ul class="categories_bottom">
+            <li>Family-Friendly Activities</li>
+            <li>Historic/Cultural</li>
+            <li>Festivals</li>
+            <li>Local Markets</li>
+            <li>Unique Experiences</li>
+        </ul>
+    </section>
+
+    <main>
+        <!-- Activity Details -->
+        <article class="activity-detail">
+            <div class="activity-content">
+                <div class="image-container">
+                <h2 class="pic-title">Cedar River Trail</h2>
+                <img src="img\cedarTrail.jpeg" alt="Activity Image" class="activity-image">
+                </div>
+                <div class="activity-info">
+                    <p class="desc-align">
+                        <ul>
+                            <li>description</li>
+                            <li>location</li>
+                            <li>cost</li>
+                            <li>other info</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="google-review-summary">
+                <!-- Google review summary could be a static image placeholder for now -->
+                <img src="img\google-reviews.png" alt="Google Review Summary">
+            </div>
+            <!-- Reviews Section -->
+            <section class="reviews">
+                <h3>REVIEWS</h3>
+                <div class="review-cards">
+                    <!-- Static review card placeholders -->
+                    <div class="review-card"></div>
+                    <div class="review-card"></div>
+                    <div class="review-card"></div>
+                </div>
+                <!-- Review form -->
+                <form class="write-review">
+                    <h3>Write your Review</h3>
+                    <textarea placeholder="How was your experience..."></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

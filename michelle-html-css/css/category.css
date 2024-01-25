@@ -92,11 +92,10 @@ body {
     margin-right: 150px;
     list-style: none;
     padding: 1;
-    margin-bottom: 50px; 
+    margin-bottom: 250px;
     gap: 80px;
+    margin-top: -200px;
 }
-
-
 
 .card {
     width: 300px;
@@ -136,11 +135,38 @@ body {
     margin-bottom: 0px;
 } 
 
-.outdoor-section {
-    display: flex;
+.outdoor-act {
+    margin-left: 275px;
 }
 
-.category-section{
-    display: flex;
+/* Style for the Category Section */
+.category-section {
+    padding: 20px;
+    background-color: #f8f8f8; /* Light gray background for the section */
+    margin: 20px 0; /* Add some margin around the section */
+    border-radius: 10px; /* Optional: Rounded corners */
 }
 
+/* Style for the form inside the category section */
+.category-section form {
+    display: flex;
+    flex-direction: column; /* Align form items vertically */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    padding: 10px;
+}
+
+/* Style for each checkbox item */
+.category-section form p {
+    margin: 10px 0; /* Add some space between each checkbox */
+}
+
+/* Style for the checkboxes */
+.category-section input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+/* Style for the labels */
+.category-section label {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #333; /* Darker text for better readability */
+}

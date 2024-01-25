@@ -1,0 +1,178 @@
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+
+#logo {
+    font-family: "Shadows Into Light Two", curisve;
+    color: green;
+    font-size: 30px;
+}
+
+.topnav a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 17px;
+    padding: 0.5rem 1rem;
+}
+ 
+  .topnav a:hover {
+    color: blue;
+    border-radius: 10px;
+  }
+  
+ 
+  .topnav a.home {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.topnav a[href="#sign-in"] {
+    color: white;
+    background-color: black;
+    border: 1px solid #333;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.topnav a[href="#sign-in"]:hover {
+    background-color: #333;
+}
+
+  
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 16px;
+    margin:0;
+    padding:0;
+}
+
+
+.categories_top,
+.categories_bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 8px; 
+    gap: 20px;
+}
+
+
+.categories_top li,
+.categories_bottom li {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#outdoors {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+/* 
+- margin top and bottom of card button
+ */
+
+/* activities page css */
+.activity-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.activity-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
+    max-width: 1200px; 
+}
+
+.image-container {
+    position: relative;
+    display: inline-block; /* or you can set it to block depending on layout */
+}
+
+.pic-title {
+    position: absolute;
+    top: 10px; /* adjust these values as needed */
+    left: 10px; /* adjust these values as needed */
+    color: white; /* choose a color that contrasts well with your image */
+    background-color: rgba(0, 0, 0, 0.5); /* optional: adds a semi-transparent background */
+    padding: 5px; /* optional: for better visibility */
+    border-radius: 5px; /* optional: for styled corners */
+}
+
+.desc-align {
+   margin-left: 600px;
+}
+
+.activity-image {
+    max-width: 500px; /* Adjust width as needed */
+    display: block; /* removes bottom margin/padding */
+}
+
+.activity-info {
+    text-align: left;
+}
+
+.google-review-summary img {
+    width: 70%; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+
+.reviews {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.review-card {
+    width: 30%; 
+    height: 150px; 
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.write-review textarea {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.write-review button {
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
