@@ -1,0 +1,241 @@
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+
+#logo {
+    font-family: "Shadows Into Light Two", curisve;
+    color: green;
+    font-size: 30px;
+}
+
+.topnav a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 17px;
+    padding: 0.5rem 1rem;
+}
+ 
+  .topnav a:hover {
+    color: blue;
+    border-radius: 10px;
+  }
+  
+ 
+  .topnav a.home {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.topnav a[href="#sign-in"] {
+    color: white;
+    background-color: black;
+    border: 1px solid #333;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.topnav a[href="#sign-in"]:hover {
+    background-color: #333;
+}
+
+  
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+.categories_top,
+.categories_bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 8px; 
+    gap: 20px;
+}
+
+
+.categories_top li,
+.categories_bottom li {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#outdoors {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+/* 
+- margin top and bottom of card button
+ */
+
+/* activities page css */
+.activity-detail {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.activity-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.image-container {
+    position: relative;
+}
+
+.pic-title {
+    position: absolute;
+    margin-left: -300px;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.activity-image {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-left: -300px;
+    padding-bottom: 20px;
+}
+
+.activity-info {
+    max-width: 500px; /* Adjust if needed */
+    /* Remove any large left margin if present */
+    margin-left: -300px;
+    margin-top: 100px;
+}
+
+.google-review-summary img {
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.reviews {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.review-title {
+    margin-top: 100px;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.review-card {
+    width: 280px;
+    height: 350px;
+    background-color: #747070;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.write-review {
+    width: 50%;
+}
+
+.write-review textarea {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space between textarea and button */
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+.write-review button {
+    width: 25%; /* Adjust button width as needed */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center the button */
+}
+
+
+/* Media query for tablets and small desktops (e.g., min-width: 768px) */
+@media (min-width: 768px) {
+    .topnav a {
+        font-size: 18px; /* Slightly larger font size for larger devices */
+    }
+
+    .activity-detail {
+        flex-direction: row; /* Change layout for larger screens */
+        justify-content: space-between;
+    }
+
+    .activity-content {
+        flex-wrap: wrap;
+    }
+
+   
+
+    .review-cards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .review-card {
+        width: 30%; /* Adjust width for larger screens */
+        margin: 10px; /* Adjust margin for spacing */
+    }
+
+    .write-review {
+        width: 60%; /* Wider form on larger screens */
+    }
+}
+
+/* Media query for large desktops (e.g., min-width: 1024px) */
+@media (min-width: 1024px) {
+    .topnav {
+        justify-content: flex-end; /* Adjust navigation for large screens */
+    }
+
+    .activity-detail {
+        padding: 30px; /* More padding for a spacious layout */
+    }
+
+    .review-card {
+        width: 25%; /* Adjust for larger screen */
+    }
+
+    .write-review {
+        width: 50%; /* Optimal width for readability */
+    }
+}
