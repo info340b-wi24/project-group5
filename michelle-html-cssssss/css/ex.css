@@ -1,0 +1,204 @@
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.938rem;
+    margin-top: 0.313rem;
+    margin-bottom: 3.125rem;
+}
+
+
+#logo {
+    font-family: "Shadows Into Light Two", curisve;
+    color: green;
+    font-size: 1.875rem;
+}
+
+.topnav a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 1.063rem;
+    padding: 0.5rem 1rem;
+}
+ 
+  .topnav a:hover {
+    color: blue;
+    border-radius: 0.625rem;
+  }
+  
+ 
+  .topnav a.home {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.topnav a[href="#sign-in"] {
+    color: white;
+    background-color: black;
+    border: 0.063rem solid #333;
+    padding: 0.5rem 0.938rem;
+    border-radius: 20px;
+}
+
+.topnav a[href="#sign-in"]:hover {
+    background-color: #333;
+}
+
+  
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 1rem;
+    margin:0;
+    padding:0;
+}
+
+.categories {
+    margin-top: 4.375rem;
+}
+
+.categories_top,
+.categories_bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0.5rem; 
+    gap: 1.25rem;
+}
+
+
+.categories_top li,
+.categories_bottom li {
+    margin: 0 0.625rem;
+    cursor: pointer;
+    padding: 0.625rem;
+    font-size: 1.125rem;
+}
+
+#outdoors {
+    background-color: green;
+    color: white;
+    border-radius: .625rem;
+}
+
+.first-line,
+.second-line {
+    display: flex;
+    justify-content: right;
+    margin-left: 5.625rem;
+    margin-top: 2.5rem;
+    list-style: none;
+    padding: 1;
+    margin-bottom: 3.125rem; 
+    gap: 5rem;
+}
+
+.categories-container {
+    display: flex;
+    margin-left: 0.625rem;
+    margin-top: 5rem;
+}
+
+#outdoor-cat {
+    margin-bottom: 1.2rem;
+}
+
+#outdoor-act {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+
+.category-section {
+    display: flex;
+    margin-left: 1.875rem;
+    /* margin-left: 30px;
+    margin-top: 100px; */
+    /* margin-left: auto; */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    
+}
+
+.category-section form p {
+    margin: 15px 0;
+}
+
+
+form {
+    margin-top: 0;
+}
+
+
+.card {
+    max-width: 300px;
+    flex: 1;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.card img {
+    width: 18.75rem;
+    height: auto;
+    object-fit: cover; 
+}
+
+.card-content {
+    margin-left: 0.625rem;
+}
+
+.card-content h2 {
+    font-size: 1.25rem;
+    margin-top: 0.313rem;
+    margin-bottom: 1.25rem;
+    margin-left: 0px;
+}
+
+.card-button {
+    color: white;
+    text-decoration: none;
+    background: #3498db;
+    padding: 0.5rem 0.938rem;
+    border-radius: 0.313rem;
+    display: inline-block;
+    margin-top: 1.563rem;
+    margin-bottom: 0;
+} 
+
+/* .cat-container{
+    display: flex;
+    margin-top: 40px;
+
+} */
+
+
+.icon-container {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 35px;
+    height: 35px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+ion-icon {
+    color:#333;
+    font-size: 25px;
+}
+

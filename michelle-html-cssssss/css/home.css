@@ -10,7 +10,6 @@ header {
     align-items: center;
     padding: 15px;
     margin-top: 5px;
-    margin-bottom: 50px;
 }
 
 
@@ -28,7 +27,7 @@ header {
 }
  
   .topnav a:hover {
-    color: blue;
+    color: green;
     border-radius: 10px;
   }
   
@@ -58,6 +57,39 @@ body {
     padding:0;
 }
 
+/* header!
+- work on padding between navigation bar. 
+- color theme
+- when in home page,no hover over home. */
+
+
+
+main {
+    text-align: center;
+    margin-top: 120px; 
+}
+
+h1 {
+    
+    margin-bottom: 30px; 
+}
+
+#search-bar {
+    width: 65%; 
+    padding: 15px; 
+    font-size: 18px;
+    background-color: #cefad0;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* header!
+- decide on color and font
+- search bar icon at the end of the box */
+
 
 .categories_top,
 .categories_bottom {
@@ -67,7 +99,6 @@ body {
     list-style: none;
     padding: 0;
     margin-bottom: 8px; 
-    gap: 20px;
 }
 
 
@@ -76,37 +107,56 @@ body {
     margin: 0 10px;
     cursor: pointer;
     padding: 10px;
-    font-size: 18px;
 }
 
-#outdoors {
-    background-color: green;
-    color: white;
-    border-radius: 10px;
+.categories_top li:hover,
+.categories_bottom li:hover {
+    color: green;
 }
 
-.first-line,
-.second-line {
+
+/* header!
+- icon next to style -> appear frame! */
+
+
+h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-left: 120px; 
+    
+   
+}
+
+
+.trend-container {
     display: flex;
-    justify-content: right;
-    margin-right: 150px;
-    list-style: none;
-    padding: 1;
-    margin-bottom: 50px; 
-    gap: 80px;
+    margin-left: 0.625rem;
 }
 
+.card-container {
+    display: flex;
+    margin-left: 100px;
+    /* margin-left: 30px;
+    margin-top: 100px; */
+    /* margin-left: auto; */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px
+    
+}
 
 
 .card {
     width: 300px;
-    height: 350px;
+    
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
     overflow: hidden;
+    position: relative;
     
 }
+
 
 .card img {
     width: 300px;
@@ -133,32 +183,32 @@ body {
     border-radius: 5px;
     display: inline-block;
     margin-top: 25px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 } 
 
-.outdoor-section {
-    display: flex;
+.icon-container {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 35px;
+    height: 35px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
 }
 
-.category-section{
-    display: flex;
-    /* margin-left: 30px;
-    margin-top: 100px; */
-    /* margin-left: auto; */
-    flex-direction: column;
+
+ion-icon {
+    color:#333;
+    font-size: 25px;
 }
 
-/* .cat-container{
-    display: flex;
-    margin-top: 40px;
 
-} */
-
-.categories-container {
-    display: flex;
-    margin-left: 30px;
-}
-
-form {
-    margin-top: 0;
-}
+ footer {
+    padding-top: 1rem;
+    font-size: 80%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
