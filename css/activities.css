@@ -155,6 +155,16 @@ img{
  
 
 /* Media query for tablets and small desktops (e.g., min-width: 768px) */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .topnav {
+        align-self: center;
+    }
+}
 @media (min-width: 768px) {
     .topnav a {
         font-size: 18px; /* Slightly larger font size for larger devices */
