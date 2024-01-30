@@ -55,14 +55,14 @@ main {
     border-radius: 20px;
 }
 
-.card-container {
+.add-act-card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.activity {
+.add-activity {
     text-align: center;
     width: 500px;
     height: 400px;
@@ -73,7 +73,7 @@ main {
     overflow: hidden;
 }
 
-.card img {
+.add-act-card img {
     width: 500px;
     height: 250px;
     object-fit: cover; 
@@ -99,7 +99,7 @@ main {
     margin-left: 10px;
 }
 
-.add-activity {
+.add-activity-btn {
     text-align: center
 }
 
@@ -115,7 +115,6 @@ main {
         align-self: center;
     }
 }
-
 @media (min-width: 768px) {
     .topnav a {
         font-size: 18px; 
@@ -130,16 +129,16 @@ main {
         border-radius: 15px;
     }
 
-    .activity {
+    .add-activity {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .card-container {
+    .add-act-card-container {
         flex-wrap: wrap;
     }
 
-    .card {
+    .add-act-card {
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -150,11 +149,11 @@ main {
         justify-content: flex-end; 
     }
 
-    .card-container {
+    .add-act-card-container {
         width: 100%; 
     }
 
-    .card {
+    .add-act-card {
         width: 100%;
     }
 }

@@ -118,7 +118,7 @@ main {
     border-radius: 50%;
 }
 
-#search-bar {
+#act-search-bar {
     display: flex;
     overflow: hidden;
     vertical-align: center;
@@ -135,7 +135,7 @@ main {
     margin-bottom: 20px;
 }
 
-#search-bar input[type=text]{
+#act-search-bar input[type=text]{
     float: right;
     padding: 10px;
     border: none;
@@ -144,11 +144,11 @@ main {
     font-size: 30px;
 }
 
-img{
+.saved-act-card img{
     object-fit: cover; 
 }
 
-.container {
+.act-container {
     margin-left: 80px;
     margin-right: 80px;
 }
@@ -165,6 +165,7 @@ img{
         align-self: center;
     }
 }
+
 @media (min-width: 768px) {
     .topnav a {
         font-size: 18px; /* Slightly larger font size for larger devices */
@@ -175,7 +176,7 @@ img{
         justify-content: space-between;
     }
 
-    .container {
+    .act-container {
         width: 900px;
         padding-right: 100px;
     }
@@ -187,7 +188,7 @@ img{
         justify-content: flex-end; /* Adjust navigation for large screens */
     }
 
-    .container {
+    .act-container {
         align-items: center;
         padding: 25px; /* More spacious layout for larger screen */
     }

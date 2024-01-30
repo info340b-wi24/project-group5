@@ -56,14 +56,14 @@ main {
     border-radius: 20px;
 }
 
-.card-container {
+.itin-card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.activity {
+.itin-activity {
     text-align: center;
     width: 300px;
     height: 350px;
@@ -74,18 +74,22 @@ main {
     overflow: hidden;
 }
 
-.cards img {
+.itin-cards img {
     width: 300px;
     height: 200px;
     object-fit: cover; 
 }
 
-.btn {
+.itin-cards .btn {
     font-size: 12px;
 }
 
-h2 {
+.itin-activity h2 {
     font-size: 25px;
+}
+
+.itin-activity p {
+    font-size: 20px;
 }
 
 /* Media query for tablets and small desktops (e.g., min-width: 768px) */
@@ -110,12 +114,12 @@ h2 {
         justify-content: flex-end; /* Adjust navigation for large screens */
     }
     
-    .activity {
+    .itin-activity {
         padding-bottom: 30px;
         height: 375px; /* Height increase to accommodate larger font size */
     }
 
-    h2 {
+    .itin-activity h2 {
         font-size: 30px; /* Larger font size to improve readability */
     }
 }

@@ -184,7 +184,6 @@ footer {
 }
 
 
-
 /* ------Categories Page------ */
 /* Categories Section */
 .c-categories {
@@ -316,6 +315,192 @@ ion-icon {
 }
 
 
+/* -----Saved Activities Page----- */
+.text-item {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+.text-item h1 {
+    text-align: center;
+    margin: .5rem;
+    align-items: center;
+}
+
+.or {
+    text-align: center;
+    background-color: lightgray;
+    padding-top: 15rem;
+}
+
+.saved-activities h1 {
+    text-align: left;
+    vertical-align: bottom;
+    padding-top: 10rem;
+    margin-left: 100px;
+}
+
+.saved-activities {
+    background-color: lightgray;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.saved-activities div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top: 50px;
+    justify-content: space-evenly;
+  }
+
+.saved-activities div div{
+    flex:0 0 250px;
+    background-color:rgba(76, 175, 80, 0.3);
+    margin: .5rem;
+    border-radius: 10px;
+}
+
+.saved-activities div div img{
+   width: 200px;
+   height: 200px;
+   padding: 1rem;
+}
+
+.saved-activities div div p{
+    padding: 0.5rem 1rem;
+}  
+
+.saved-activities button{
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+#act-search-bar {
+    display: flex;
+    overflow: hidden;
+    vertical-align: center;
+    flex-grow: .5;
+    position: relative;
+    top: 50px;
+    height: 70px;
+    width: 65%; 
+    padding: 15px; 
+    font-size: 18px;
+    background-color: #cefad0;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#act-search-bar input[type=text]{
+    float: right;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 16px;
+    font-size: 30px;
+}
+
+.saved-act-card img{
+    object-fit: cover; 
+}
+
+.act-container {
+    background-color: lightgray;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* ------Final Itinerary Page------ */
+.itin-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.itin-activity {
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+    background-color: rgba(76, 175, 80, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.itin-cards img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.itin-cards .btn {
+    font-size: 12px;
+}
+
+.itin-activity h2 {
+    font-size: 20px;
+}
+
+.itin-activity p {
+    font-size: 15px;
+}
+
+/* ------Add Activity Page------ */
+.add-act-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.add-activity {
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: rgba(76, 175, 80, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.add-act-card img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.time-start {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.time-end {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.btn {
+    margin-left: 10px;
+}
+
+.add-activity-btn {
+    text-align: center
+}
+
+
 /* Media Queries */
 
 /* ------Home Page------ */
@@ -431,3 +616,130 @@ ion-icon {
 
     }
 }
+
+/* ------Saved Activities Page------ */
+@media (min-width: 768px) {
+    .topnav a {
+        font-size: 18px; /* Slightly larger font size for larger devices */
+    }
+
+    .saved-activities {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .act-container {
+        width: 900px;
+        padding-right: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .topnav {
+        justify-content: flex-end; /* Adjust navigation for large screens */
+    }
+
+    .act-container {
+        align-items: center;
+        padding: 25px; /* More spacious layout for larger screen */
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .topnav {
+        align-self: center;
+    }
+}
+
+/* ------Final Itineraries Page------ */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .topnav {
+        align-self: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .topnav a {
+        font-size: 18px; /* Slightly larger font size for larger devices */
+    }
+}
+
+@media (min-width: 1024px) {
+    .topnav {
+        justify-content: flex-end; /* Adjust navigation for large screens */
+    }
+    
+    .itin-activity {
+        padding-bottom: 30px;
+        height: 375px; /* Height increase to accommodate larger font size */
+    }
+
+    .itin-activity h2 {
+        font-size: 30px; /* Larger font size to improve readability */
+    }
+}
+
+/* ------Add Activities Page------ */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .topnav {
+        align-self: center;
+    }
+}
+@media (min-width: 768px) {
+    .topnav a {
+        font-size: 18px; 
+        flex-wrap: wrap;
+    }
+
+    .topnav a[href="#sign-in"] {
+        color: white;
+        background-color: black;
+        border: 1px solid #333;
+        padding: 6px 11px;
+        border-radius: 15px;
+    }
+
+    .add-activity {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .add-act-card-container {
+        flex-wrap: wrap;
+    }
+
+    .add-act-card {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    .topnav {
+        justify-content: flex-end; 
+    }
+
+    .add-act-card-container {
+        width: 100%; 
+    }
+
+    .add-act-card {
+        width: 100%;
+    }
+}
+
+
+/* ------ ------ */
