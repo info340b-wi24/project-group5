@@ -29,7 +29,6 @@ main {
     font-size: 30px;
 }
 
-
 .topnav a {
     text-decoration: none; 
     color: #333;
@@ -37,16 +36,16 @@ main {
     padding: 0.5rem 1rem;
 }
  
-  .topnav a:hover {
+.topnav a:hover {
     color: blue;
     border-radius: 10px;
-  }
+}
   
  
-  .topnav a.home {
+.topnav a.home {
     text-decoration: none;
     font-weight: bold;
-  }
+}
 
 .topnav a[href="#sign-in"] {
     color: white;
@@ -73,47 +72,53 @@ main {
 .or {
     text-align: center;
     background-color: lightgray;
-    padding-top: 10rem;
+    padding-top: 15rem;
 }
 
-.flex-item h1 {
+.saved-activities h1 {
     text-align: left;
     vertical-align: bottom;
     padding-top: 10rem;
+    margin-left: 100px;
 }
 
-.flex-item {
+.saved-activities {
     background-color: lightgray;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-.flex-item div{
+
+.saved-activities div{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
     margin-top: 50px;
     justify-content: space-evenly;
   }
-  .flex-item div div{
+
+.saved-activities div div{
     flex:0 0 250px;
     background-color:rgba(76, 175, 80, 0.3);
     margin: .5rem;
     border-radius: 10px;
-  }
-  .flex-item div div img{
+}
+
+.saved-activities div div img{
    width: 200px;
    height: 200px;
    padding: 1rem;
-  }
-  .flex-item div div p{
+}
+
+.saved-activities div div p{
     padding: 0.5rem 1rem;
-  }  
-  .flex-item button{
+}  
+
+.saved-activities button{
     background-color: lightgray;
     border-radius: 50%;
-  }
+}
 
-  #search-bar {
+#search-bar {
     display: flex;
     overflow: hidden;
     vertical-align: center;
@@ -128,26 +133,52 @@ main {
     border: none;
     border-radius: 20px;
     margin-bottom: 20px;
-  }
+}
 
-  #search-bar input[type=text]{
+#search-bar input[type=text]{
     float: right;
     padding: 10px;
     border: none;
     margin-top: 10px;
     margin-right: 16px;
     font-size: 30px;
-  }
+}
 
 img{
     object-fit: cover; 
- }
+}
 
- .container {
+.container {
     margin-left: 80px;
     margin-right: 80px;
- }
+}
+ 
 
- .flex-item h1 {
-    margin-left: 100px;
- }
+/* Media query for tablets and small desktops (e.g., min-width: 768px) */
+@media (min-width: 768px) {
+    .topnav a {
+        font-size: 18px; /* Slightly larger font size for larger devices */
+    }
+
+    .saved-activities {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container {
+        width: 900px;
+        padding-right: 100px;
+    }
+}
+
+/* Media query for large desktops (e.g., min-width: 1024px) */
+@media (min-width: 1024px) {
+    .topnav {
+        justify-content: flex-end; /* Adjust navigation for large screens */
+    }
+
+    .container {
+        align-items: center;
+        padding: 25px; /* More spacious layout for larger screen */
+    }
+}

@@ -30,7 +30,6 @@ main {
     font-size: 30px;
 }
 
-
 .topnav a {
     text-decoration: none; 
     color: #333;
@@ -38,16 +37,16 @@ main {
     padding: 0.5rem 1rem;
 }
  
-  .topnav a:hover {
+.topnav a:hover {
     color: blue;
     border-radius: 10px;
-  }
+}
   
  
-  .topnav a.home {
+.topnav a.home {
     text-decoration: none;
     font-weight: bold;
-  }
+}
 
 .topnav a[href="#sign-in"] {
     color: white;
@@ -89,4 +88,24 @@ h2 {
     font-size: 25px;
 }
 
+/* Media query for tablets and small desktops (e.g., min-width: 768px) */
+@media (min-width: 768px) {
+    .topnav a {
+        font-size: 18px; /* Slightly larger font size for larger devices */
+    }
+}
 
+@media (min-width: 1024px) {
+    .topnav {
+        justify-content: flex-end; /* Adjust navigation for large screens */
+    }
+    
+    .activity {
+        padding-bottom: 30px;
+        height: 375px; /* Height increase to accommodate larger font size */
+    }
+
+    h2 {
+        font-size: 30px; /* Larger font size to improve readability */
+    }
+}
