@@ -1,5 +1,5 @@
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -8,35 +8,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.938rem;
+    padding: 1.5rem; /* Increased padding */
     margin-top: 0.313rem;
     margin-bottom: 3.125rem;
 }
 
-
 #logo {
-    font-family: "Shadows Into Light Two", curisve;
+    font-family: "Shadows Into Light Two", cursive;
     color: green;
-    font-size: 1.875rem;
+    font-size: 2.5rem; /* Larger font size for desktop */
 }
 
 .topnav a {
     text-decoration: none; 
     color: #333;
-    font-size: 1.063rem;
+    font-size: 1.25rem; /* Larger font size for desktop */
     padding: 0.5rem 1rem;
 }
- 
-  .topnav a:hover {
+
+.topnav a:hover {
     color: blue;
     border-radius: 0.625rem;
-  }
-  
- 
-  .topnav a.home {
+}
+
+.topnav a.home {
     text-decoration: none;
     font-weight: bold;
-  }
+}
 
 .topnav a[href="#sign-in"] {
     color: white;
@@ -50,7 +48,6 @@ header {
     background-color: #333;
 }
 
-  
 body {
     font-family: "Nunito Sans", Arial, sans-serif;
     font-size: 1rem;
@@ -73,13 +70,12 @@ body {
     gap: 1.25rem;
 }
 
-
 .categories_top li,
 .categories_bottom li {
     margin: 0 0.625rem;
     cursor: pointer;
     padding: 0.625rem;
-    font-size: 1.125rem;
+    font-size: 1.25rem; 
 }
 
 #outdoors {
@@ -88,40 +84,33 @@ body {
     border-radius: .625rem;
 }
 
-
 .categories-container {
     display: flex;
+    flex-direction: row; /* Row layout for desktop */
+    justify-content: space-around; /* Distribute space around elements */
     margin-left: 0.625rem;
     margin-top: 5rem;
+}
+
+#outdoor-act {
+    margin-left: 120px;
 }
 
 #outdoor-cat {
     margin-bottom: 1.2rem;
 }
 
-#outdoor-act {
-    display: flex;
-    margin-left: 100px;
-    margin-top: 10px;
-}
-
-
 .category-section {
     display: flex;
     margin-left: 1.875rem;
-    /* margin-left: 30px;
-    margin-top: 100px; */
-    /* margin-left: auto; */
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
-    
 }
 
 .category-section form p {
     margin: 15px 0;
 }
-
 
 form {
     margin-top: 0;
@@ -129,24 +118,20 @@ form {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Row layout for larger screens */
     align-items: flex-start;
-    margin-left: auto;
     max-width: 500px;
 }
 
-
-
 .card {
     max-width: 300px;
-    
     flex: 1;
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
     overflow: hidden;
     position: relative;
-
+    margin: 0.5rem; /* Add margin to cards */
 }
 
 .card img {
@@ -160,10 +145,9 @@ form {
 }
 
 .card-content h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem; /* Larger font size for headings */
     margin-top: 0.313rem;
     margin-bottom: 1.25rem;
-    margin-left: 0px;
 }
 
 .card-button {
@@ -176,13 +160,6 @@ form {
     margin-top: 1.563rem;
     margin-bottom: 10px;
 } 
-
-/* .cat-container{
-    display: flex;
-    margin-top: 40px;
-
-} */
-
 
 .icon-container {
     position: absolute;
@@ -201,14 +178,54 @@ ion-icon {
     font-size: 25px;
 }
 
-@media (max-width: 1100px) {
+/* Media Queries for Smaller Screens */
 
-.category-section p {
-    font-size: 10px;
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+    #logo {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    .topnav a {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .categories_top li, .categories_bottom li {
+        font-size: 1.25rem; /* Smaller font size */
+    }
+
+    .card {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+
+    .categories-container {
+        flex-direction: column; /* Column layout for smaller screens */
+    }
+
+    .container {
+        flex-direction: column; /* Column layout for smaller screens */
+    }
 }
 
-.category-section h2 {
-    font-size: 20px;
-}
+/* Mobile Phones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack elements for mobile */
+    }
 
+    .topnav {
+        align-self: center;
+    }
+
+    .categories_top, .categories_bottom {
+        flex-direction: column; /* Stack categories for mobile */
+    }
+
+    .card {
+        margin: 0.25rem; /* Smaller margin for cards */
+    }
+
+    .card-content h2 {
+        font-size: 1.25rem; /* Smaller font size for headings */
+    }
 }
