@@ -499,8 +499,137 @@ ion-icon {
 .add-activity-btn {
     text-align: center
 }
+/*Itinerary Page*/
+.itinerary-container{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom:1rem;
+    }
 
+  .my-itinerary{
+     align-content: center;
+    }
 
+  .my-itinerary h1{
+    padding-left: 2rem;
+    font-size: 25px;
+    text-align: left;
+    }
+
+  .button1-container{
+    text-align: center;
+    padding:2rem;
+    }
+
+  .button1-container button{
+    color: white;
+    background:green;
+    padding: 8px 15px;
+    border-radius: 30px;
+    display: inline-block;
+    border-color: none;
+    }
+
+  .button1-container button a{
+    text-decoration: none;
+    font-size: larger;
+    color:black;
+    margin: 1rem;
+    }
+    .sample-saved-activities{
+        align-content: center;
+        flex-basis: 240px;
+        padding-top: 5rem;
+        }
+    
+      .sample-saved-activities div{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-left: 1em;
+        margin-right: 1em;
+        }
+    
+      .sample-saved-activities .card {
+        width: 300px;
+        height: 300px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+        overflow: hidden;
+        } 
+    
+      .sample-saved-activities img{
+        width: 300px;
+        height: 220px;
+        object-fit: cover; 
+        }
+      .sample-saved-activities h1{
+        padding-left: 2rem;
+        font-size: 25px;
+        text-align: left;
+        }
+    
+      .sample-saved-actvities p{
+        padding: 0.5rem 1rem;
+        }
+
+/* Sign In Page */
+.sign-in-button1-container{
+    padding-bottom: 1rem;
+    padding-top:15rem;
+    text-align: center;
+}
+.sign-in-button2-container{
+    padding-bottom: 4rem;
+    text-align: center;
+}
+.sign-in-button1-container button,
+.sign-in-button2-container button{
+    padding:1rem;
+    font-size: larger;
+    border-radius: 10px;
+    background-color: lightgray;
+    border-style: none;
+}
+.sign-in-button1-container button a,
+.sign-in-button2-container button a{
+    text-decoration: none;
+    color: #333333;
+}
+
+/* Itinerary Form (both 1&2) */
+.form-body{
+    padding-left:8rem;
+    padding-right:8rem;
+}
+
+.form-container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 3rem;
+    margin-bottom: 0rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-top:5rem;
+    padding-left:8rem;
+    padding-right:8rem;
+    text-align:left;
+  }
+
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 20px; 
+  }
+  
 /* Media Queries */
 
 /* ------Home Page------ */

@@ -1,9 +1,57 @@
+*{
+  font-family: "Nunito Sans", Arial, sans-serif;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
 
-body{
-    padding-top:5rem;
+#logo {
+  font-family: "Shadows Into Light Two", curisve;
+  color: green;
+  font-size: 30px;
+}
+
+.topnav a {
+  text-decoration: none; 
+  color: #333;
+  font-size: 17px;
+  padding: 0.5rem 1rem;
+}
+
+.topnav a:hover {
+  color: blue;
+  border-radius: 10px;
+}
+
+
+.topnav a.home {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topnav a[href="#sign-in"] {
+  color: white;
+  background-color: black;
+  border: 1px solid #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+
+.topnav a[href="#sign-in"]:hover {
+  background-color: #333;
+}
+
+.form-body{
     padding-left:8rem;
     padding-right:8rem;
 }
+
 .form-container {
     border-radius: 10px;
     background-color: #f2f2f2;
@@ -14,6 +62,8 @@ body{
     padding-left:8rem;
     padding-right:8rem;
   }
+
+  
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
