@@ -1,0 +1,433 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem; 
+    margin-top: 0.313rem;
+    margin-bottom: 3.125rem;
+}
+
+#logo {
+    font-family: "Shadows Into Light Two", cursive;
+    color: green;
+    font-size: 2.5rem;
+}
+
+.topnav a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.topnav a:hover {
+    color: blue;
+    border-radius: 0.625rem;
+}
+
+.topnav a.home {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topnav a[href="#sign-in"] {
+    color: white;
+    background-color: black;
+    border: 0.063rem solid #333;
+    padding: 0.5rem 0.938rem;
+    border-radius: 20px;
+}
+
+.topnav a[href="#sign-in"]:hover {
+    background-color: #333;
+}
+
+/* -----Home Page----- */
+/* Main Section */
+main {
+    text-align: center;
+    margin-top: 100px; 
+}
+
+h1 {
+    margin-bottom: 100px;
+}
+
+#search-bar {
+    width: 65%; 
+    padding: 15px; 
+    font-size: 18px;
+    background-color: #cefad0;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* Categories Section */
+.categories_top, .categories_bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 8px; 
+}
+
+.categories_top li, .categories_bottom li {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.25rem; /* Adjusted font size */
+}
+
+.categories_top li:hover, .categories_bottom li:hover {
+    color: green;
+}
+
+/* Trending Spots Section */
+.trend-container {
+    margin-left: 0.625rem;
+}
+
+.trending-spots {
+    margin-top: 100px;
+    margin-left: 165px;
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.card {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover; 
+}
+
+.card-content {
+    margin-left: 10px;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    color: white;
+    text-decoration: none;
+    background: #3498db;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+} 
+
+/* Icon Container */
+.icon-container {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 35px;
+    height: 35px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+ion-icon {
+    color: #333;
+    font-size: 25px;
+}
+
+/* Footer */
+footer {
+    padding-top: 1rem;
+    font-size: 80%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* ------Categories Page------ */
+/* Categories Section */
+.c-categories {
+    margin-top: 4.375rem;
+}
+
+.c-categories_top,
+.c-categories_bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0.5rem; 
+    gap: 1.25rem;
+}
+
+.c-categories_top li,
+.c-categories_bottom li {
+    margin: 0 0.625rem;
+    cursor: pointer;
+    padding: 0.625rem;
+    font-size: 1.25rem; 
+}
+
+#outdoors {
+    background-color: green;
+    color: white;
+    border-radius: .625rem;
+}
+
+/* Categories List with Checkboxes */
+.categories-container {
+    display: flex;
+    flex-direction: row; /* Row layout for desktop */
+    justify-content: space-around; /* Distribute space around elements */
+    margin-left: 0.625rem;
+    margin-top: 5rem;
+}
+
+#outdoor-cat {
+    margin-bottom: 1.2rem;
+}
+
+.category-section {
+    display: flex;
+    margin-left: 1.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.category-section form p {
+    margin: 15px 0;
+}
+
+form {
+    margin-top: 0;
+}
+
+/* All Outdoor Activities Section */
+
+#outdoor-act {
+    margin-left: 120px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Row layout for larger screens */
+    align-items: flex-start;
+    max-width: 500px;
+}
+
+.oa-card {
+    max-width: 300px;
+    flex: 1;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+    margin: 0.5rem; /* Add margin to cards */
+}
+
+.oa-card img {
+    width: 18.75rem;
+    height: auto;
+    object-fit: cover; 
+}
+
+.oa-card-content {
+    margin-left: 0.625rem;
+}
+
+.oa-card-content h2 {
+    font-size: 1.5rem; /* Larger font size for headings */
+    margin-top: 0.313rem;
+    margin-bottom: 1.25rem;
+}
+
+.card-button {
+    color: white;
+    text-decoration: none;
+    background: #3498db;
+    padding: 0.5rem 0.938rem;
+    border-radius: 0.313rem;
+    display: inline-block;
+    margin-top: 1.563rem;
+    margin-bottom: 10px;
+} 
+
+.icon-container {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 35px;
+    height: 35px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+ion-icon {
+    color:#333;
+    font-size: 25px;
+}
+
+
+/* Media Queries */
+
+/* ------Home Page------ */
+
+@media (max-width: 1024px) {
+    #logo {
+        font-size: 2rem;
+    }
+
+    .topnav a {
+        font-size: 1rem;
+    }
+
+    .categories_top li, .categories_bottom li {
+        font-size: 1.25rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .trend-container, .card-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .topnav {
+        margin-top: 30px;
+        align-self: center;
+    }
+
+    .categories_top, .categories_bottom {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 0.25rem;
+    }
+
+    .card-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .trending-spots {
+        margin-left: 145px;
+    }
+}
+
+/* ------Category Page------ */
+@media (max-width: 1024px) {
+    #logo {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    .topnav a {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .c-categories_top li, .c-categories_bottom li {
+        font-size: 1.25rem; /* Smaller font size */
+    }
+
+    .oa-card {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+
+    .categories-container {
+        flex-direction: column; /* Column layout for smaller screens */
+    }
+
+    .oa-container {
+        flex-direction: column; /* Column layout for smaller screens */
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack elements for mobile */
+    }
+
+    .topnav {
+        align-self: center;
+    }
+
+    .c-categories_top, .c-categories_bottom {
+        flex-direction: column; /* Stack categories for mobile */
+    }
+
+    .oa-card {
+        margin: 0.25rem; /* Smaller margin for cards */
+        
+    }
+
+    .oa-card-content h2 {
+        font-size: 1.25rem; /* Smaller font size for headings */
+    }
+
+    #outdoor-act {
+        margin-left: 120px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .categories-container {
+        margin-top: 30px;
+        flex-direction: column;
+
+    }
+}
