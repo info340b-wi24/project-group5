@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -14,14 +15,17 @@ header {
 }
 
 
+
+
 #logo {
     font-family: "Shadows Into Light Two", curisve;
     color: green;
     font-size: 30px;
 }
 
+
 .topnav a {
-    text-decoration: none; 
+    text-decoration: none;
     color: #333;
     font-size: 17px;
     padding: 0.5rem 1rem;
@@ -31,12 +35,13 @@ header {
     color: blue;
     border-radius: 10px;
   }
-  
+ 
  
   .topnav a.home {
     text-decoration: none;
     font-weight: bold;
   }
+
 
 .topnav a[href="#sign-in"] {
     color: white;
@@ -46,15 +51,19 @@ header {
     border-radius: 20px;
 }
 
+
 .topnav a[href="#sign-in"]:hover {
     background-color: #333;
 }
 
-  
+
+ 
 body {
     font-family: "Nunito Sans", Arial, sans-serif;
     font-size: 16px;
 }
+
+
 
 
 .categories_top,
@@ -64,9 +73,11 @@ body {
     text-align: center;
     list-style: none;
     padding: 0;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
     gap: 20px;
 }
+
+
 
 
 .categories_top li,
@@ -77,6 +88,7 @@ body {
     font-size: 18px;
 }
 
+
 #outdoors {
     background-color: green;
     color: white;
@@ -85,11 +97,15 @@ body {
 
 
 
-/* 
+
+
+
+/*
 - margin top and bottom of card button
  */
 
-/* activities page css */
+
+/* activities-review page css */
 .activity-detail {
     max-width: 1200px;
     margin: 50px auto;
@@ -97,15 +113,18 @@ body {
     border-radius: 10px;
 }
 
+
 .activity-content {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 
+
 .image-container {
     position: relative;
 }
+
 
 .pic-title {
     position: absolute;
@@ -118,12 +137,14 @@ body {
     border-radius: 5px;
 }
 
+
 .activity-image {
     max-width: 500px;
     border-radius: 10px;
     margin-left: -300px;
     padding-bottom: 20px;
 }
+
 
 .activity-info {
     max-width: 500px; /* Adjust if needed */
@@ -132,11 +153,13 @@ body {
     margin-top: 100px;
 }
 
+
 .google-review-summary img {
     width: 70%;
     margin-top: 50px;
     margin-left: 70px;
 }
+
 
 .reviews {
     width: 80%;
@@ -144,9 +167,11 @@ body {
     margin-left: 70px;
 }
 
+
 .review-title {
     margin-top: 100px;
 }
+
 
 .review-cards {
     display: flex;
@@ -154,6 +179,7 @@ body {
     margin-top: 10px;
     margin-bottom: 100px;
 }
+
 
 .review-card {
     width: 280px;
@@ -163,9 +189,11 @@ body {
     margin-right: 50px;
 }
 
+
 .write-review {
     width: 50%;
 }
+
 
 .write-review textarea {
     width: 100%;
@@ -173,8 +201,9 @@ body {
     margin-bottom: 20px; /* Add space between textarea and button */
     padding: 10px;
     margin-top: 10px;
-    
+   
 }
+
 
 .write-review button {
     width: 25%; /* Adjust button width as needed */
@@ -189,53 +218,84 @@ body {
 }
 
 
-/* Media query for tablets and small desktops (e.g., min-width: 768px) */
-@media (min-width: 768px) {
-    .topnav a {
-        font-size: 18px; /* Slightly larger font size for larger devices */
+/* Media Queries for Smaller Screens */
+
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+    #logo {
+        font-size: 2rem; /* Smaller font size */
     }
 
-    .activity-detail {
-        flex-direction: row; /* Change layout for larger screens */
-        justify-content: space-between;
+
+    .topnav a {
+        font-size: 1rem; /* Smaller font size */
     }
+
+
+    .categories_top li, .categories_bottom li {
+        font-size: 1.25rem; /* Smaller font size */
+    }
+
 
     .activity-content {
-        flex-wrap: wrap;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
     }
 
-   
 
-    .review-cards {
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .image-container, .activity-info {
+        width: 100%; /* Full width for smaller screens */
+        margin-left: 0; /* Reset margin */
     }
 
-    .review-card {
-        width: 30%; /* Adjust width for larger screens */
-        margin: 10px; /* Adjust margin for spacing */
+
+    .activity-image {
+        max-width: 100%; /* Full width images */
+        margin-left: 0; /* Reset margin */
     }
 
-    .write-review {
-        width: 60%; /* Wider form on larger screens */
+
+    .google-review-summary img, .reviews, .write-review {
+        width: 100%; /* Full width for smaller screens */
+        margin-left: 0; /* Reset margin */
     }
 }
 
-/* Media query for large desktops (e.g., min-width: 1024px) */
-@media (min-width: 1024px) {
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack elements for mobile */
+    }
+
+
     .topnav {
-        justify-content: flex-end; /* Adjust navigation for large screens */
+        align-self: center;
     }
 
-    .activity-detail {
-        padding: 30px; /* More padding for a spacious layout */
+
+    .categories_top, .categories_bottom {
+        flex-direction: column; /* Stack categories for mobile */
     }
 
-    .review-card {
-        width: 25%; /* Adjust for larger screen */
+
+   
+    .topnav a[href="#sign-in"] {
+        display: block; /* Full width for sign-in button */
+        text-align: center;
+        margin-top: 10px; /* Space above button */
     }
 
-    .write-review {
-        width: 50%; /* Optimal width for readability */
+
+    .activity-detail, .review-card {
+        width: 100%; /* Full width for smaller screens */
     }
+
+
+    .write-review button {
+        width: 50%; /* Larger button for easier touch */
+    }
+
+
 }

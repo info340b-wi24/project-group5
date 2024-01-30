@@ -244,6 +244,120 @@ form {
     margin-top: 0;
 }
 
+/* activities-review page css */
+.activity-detail {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.activity-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.image-container {
+    position: relative;
+}
+
+
+.pic-title {
+    position: absolute;
+    margin-left: -300px;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.activity-image {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-left: -300px;
+    padding-bottom: 20px;
+}
+
+
+.activity-info {
+    max-width: 500px; /* Adjust if needed */
+    /* Remove any large left margin if present */
+    margin-left: -300px;
+    margin-top: 100px;
+}
+
+
+.google-review-summary img {
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+
+.reviews {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+
+.review-title {
+    margin-top: 100px;
+}
+
+
+.review-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+
+.review-card {
+    width: 280px;
+    height: 350px;
+    background-color: #747070;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+
+.write-review {
+    width: 50%;
+}
+
+
+.write-review textarea {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space between textarea and button */
+    padding: 10px;
+    margin-top: 10px;
+   
+}
+
+
+.write-review button {
+    width: 25%; /* Adjust button width as needed */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center the button */
+}
+
+
+
 /* All Outdoor Activities Section */
 
 #outdoor-act {
@@ -870,5 +984,83 @@ ion-icon {
     }
 }
 
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+    #logo {
+        font-size: 2rem;
+    }
+
+
+    .topnav a {
+        font-size: 1rem; 
+    }
+
+
+    .categories_top li, .categories_bottom li {
+        font-size: 1.25rem; 
+    }
+
+
+    .activity-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+
+    .image-container, .activity-info {
+        width: 100%; 
+        margin-left: 0; 
+    }
+
+
+    .activity-image {
+        max-width: 100%; 
+        margin-left: 0; 
+    }
+
+
+    .google-review-summary img, .reviews, .write-review {
+        width: 100%; 
+        margin-left: 0; 
+    }
+}
+
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; 
+    }
+
+
+    .topnav {
+        align-self: center;
+    }
+
+
+    .categories_top, .categories_bottom {
+        flex-direction: column; 
+    }
+
+
+   
+    .topnav a[href="#sign-in"] {
+        display: block; 
+        text-align: center;
+        margin-top: 10px; 
+    }
+
+
+    .activity-detail, .review-card {
+        width: 100%; 
+    }
+
+
+    .write-review button {
+        width: 50%; 
+    }
+
+
+}
 
 /* ------ ------ */
