@@ -60,13 +60,9 @@ header {
 
 /* -----Home Page----- */
 /* Main Section */
-main {
+.question {
     text-align: center;
     margin-top: 100px; 
-}
-
-h1 {
-    margin-bottom: 100px;
 }
 
 #search-bar {
@@ -530,7 +526,167 @@ ion-icon {
 }
 
 /* ------Final Itinerary Page------ */
+
+.final-form-body{
+    padding-left:8rem;
+    padding-right:8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.final-form-container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.3rem;
+    text-align: left;
+  }
+
+
+/* box */
+.final-info {
+    margin-bottom: 0;
+    text-align: center;
+}
+
 .itin-card-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    width: 75%
+}
+
+
+
+.text-content h2 {
+    font-size: 30px;
+    margin-left: 24px;
+    margin-top: 30px;
+}
+
+
+.text-content p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 24px;
+}
+
+
+.itin-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    object-fit: cover; 
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px;
+    
+}
+
+  .itin-cards {
+    width: 650px;
+    height: 250px;
+    margin-bottom: 50px;
+    background-color: rgba(76, 175, 80, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin-left: 300px;
+    position: relative;
+}
+
+
+.itin-activity {
+    position: relative;
+}
+
+
+.itin-card-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.itin-card-container ul:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 250px;
+    width: 1px;
+    height: 100%;
+    border: 1px dashed #aaa;
+}
+
+
+.itin-card-container ul li {
+    margin: 50px 60px;
+    position: relative;
+}
+
+.itin-card-container ul li > span {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 190px;
+    width: 1px;
+    height: 100%;
+    border: 1px solid #aaa;
+}
+
+.itin-card-container ul li > span:before, .itin-card-container ul li > span:after  {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 8px solid green;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    position: absolute;
+    border-radius: 50%;
+    left: -8px;
+    
+}
+
+.itin-card-container ul li > span:before {
+    top: -10px; 
+ 
+}
+
+ .itin-card-container ul li > span:after {
+    top: 100%;
+}  
+
+.itin-card-container ul li .time span {
+    position: absolute;
+    font-size: 15px;
+    left: -110px;
+    width: 30px;
+    text-align: center;
+}
+
+.itin-card-container ul li .time span:first-child {
+    top: -12px;
+    left: 140px;
+}
+
+.itin-card-container ul li .time span:last-child {
+    top: 98%;
+    left: 135px;
+}
+
+
+
+
+/* ------old version ------ */
+/* .itin-card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -564,7 +720,7 @@ ion-icon {
 
 .itin-activity p {
     font-size: 15px;
-}
+} */
 
 /* ------Add Activity Page------ */
 .add-act-card-container {
