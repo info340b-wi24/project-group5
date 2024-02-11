@@ -1086,6 +1086,86 @@ label[for="add-place"] {
 @media (max-width: 600px) {
     header {
         flex-direction: column;
+    
+    }
+
+    .topnav {
+        margin-top: 30px;
+        align-self: center;
+    }
+
+    .final-form-body {
+        padding: 1rem;
+
+    }
+
+    .final-form-container {
+        padding: 1rem;
+
+    }
+
+    .final-info {
+        margin-top: 20px;
+        margin-bottom: -90px;
+    }
+
+    .itin-img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        float: none;
+        margin-right: 0;
+    }
+
+    .itin-cards {
+        width: 300px;
+        height: auto;
+        margin-left: 90px;
+    }
+
+    .text-content h2,
+    .text-content p {
+        margin-left: 10px;
+    }
+
+    .itin-card-container ul li > span {
+        left: 20px;
+    } 
+
+    .itin-card-container ul:before {
+        left: 80px;
+       
+    }
+
+    .itin-card-container ul li > span:before,
+    .itin-card-container ul li > span:after {
+        width: 8px;
+        height: 8px;
+        left: -8px;
+    }
+
+    .itin-card-container ul li .time span {
+        left: -50px;
+    }
+
+    .itin-card-container ul li .time span:first-child {
+        top: -12px;
+        left: -25px;
+    }
+
+    .itin-card-container ul li .time span:last-child {
+        top: 99%;
+        left: -30px;
+    }
+
+    footer {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+/* @media (max-width: 600px) {
+    header {
+        flex-direction: column;
     }
 
     .topnav {
@@ -1095,24 +1175,24 @@ label[for="add-place"] {
 
 @media (min-width: 768px) {
     .topnav a {
-        font-size: 18px; /* Slightly larger font size for larger devices */
+        font-size: 18px; 
     }
 }
 
 @media (min-width: 1024px) {
     .topnav {
-        justify-content: flex-end; /* Adjust navigation for large screens */
+        justify-content: flex-end; 
     }
     
     .itin-activity {
         padding-bottom: 30px;
-        height: 375px; /* Height increase to accommodate larger font size */
+        height: 375px; 
     }
 
     .itin-activity h2 {
-        font-size: 30px; /* Larger font size to improve readability */
+        font-size: 30px; 
     }
-}
+} */
 
 /* ------Add Activities Page------ */
 
