@@ -917,7 +917,7 @@ label[for="add-place"] {
     margin-top: 6px;
     margin-bottom: 20px; 
   }
-  input[type="submit"][value="Next"]{
+  input[type="submit"][value="Start building"]{
         color: white;
         text-decoration: none;
         background: green;
