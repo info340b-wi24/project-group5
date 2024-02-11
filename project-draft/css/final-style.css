@@ -780,7 +780,7 @@ ion-icon {
 
     }
   .my-itinerary h1{
-    padding-left: 2rem;
+    padding-left: 3rem;
     font-size: 25px;
     text-align: left;
     }
@@ -817,6 +817,7 @@ ion-icon {
         justify-content:center;
         margin-left: 1em;
         margin-right: 1em;
+        margin-bottom: 1rem;
         }
     
       .sample-saved-activities .card {
@@ -834,8 +835,8 @@ ion-icon {
         object-fit: cover; 
         }
       .sample-saved-activities h1{
-        padding-left: 2rem;
-        padding-bottom:1rem;
+        padding-left: 3rem;
+        padding-bottom:4rem;
         font-size: 25px;
         text-align: left;
         }
@@ -873,16 +874,24 @@ ion-icon {
     padding-left:8rem;
     padding-right:8rem;
 }
-.itin-form-card-container{
-    margin-top: 1rem;
+.sample-saved-activities{
+    padding-top:2rem;
 }
 .trending-spots-form h1{
-    text-align: center;
+    font-size: 25px;
+    padding-left:4.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 label[for="add-place"] {
     font-weight: bold;
-    font-size: larger;
+    font-size: 30px;
     padding-left: 0rem;
+    padding-bottom: 2rem;
+}
+.add-place-label{
+    padding-bottom: 2rem;
+    text-align: center;
 }
 .form-card-button{
         color: white;
@@ -916,6 +925,11 @@ label[for="add-place"] {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 20px; 
+  
+  }
+  .bar-container{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   input[type="submit"][value="Start building"]{
         color: white;
