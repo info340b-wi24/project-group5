@@ -46,7 +46,7 @@ header {
     font-weight: bold;
 }
 
-.topnav a[href="#sign-in"] {
+.topnav a[href="sign-in.html"] {
     color: white;
     background-color: black;
     border: 0.063rem solid #333;
@@ -54,7 +54,7 @@ header {
     border-radius: 20px;
 }
 
-.topnav a[href="#sign-in"]:hover {
+.topnav a[href="sign-in.html"]:hover {
     background-color: #333;
 }
 
