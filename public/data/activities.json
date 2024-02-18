@@ -1,0 +1,86 @@
+[
+    {
+        "activity_name": "Elm Coffee Roasters",
+        "activity_type": ["Foodie Delights", "Local Markets"],
+        "img": "project-draft/img/elm",
+        "location": "Pioneer Square",
+        "cost": "5"
+    },
+    {
+        "activity_name": "Space Needle",
+        "activity_type": ["Best Scenic Spots", "Family-Friendly Activities"],
+        "img": "project-draft/img/space_needle",
+        "location": "Seattle Center",
+        "cost": "32"
+    },
+    {
+        "activity_name": "Chihuly Garden and Glass",
+        "activity_type": ["Indoor Escapes", "Art Exhibitions"],
+        "img": "project-draft/img/chihuly",
+        "location": "Seattle Center",
+        "cost": "30"
+    },
+    {
+        "activity_name": "Pike Place Market",
+        "activity_type": ["Local Markets", "Foodie Delights"],
+        "img": "project-draft/img/pike_place",
+        "location": "Downtown",
+        "cost": "0"
+    },
+    {
+        "activity_name": "Gas Works Park",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "img": "project-draft/img/gas_works",
+        "location": "Wallingford",
+        "cost": "0"
+    },
+    {
+        "activity_name": "Seattle Aquarium",
+        "activity_type": ["Family-Friendly Activities", "Indoor Escapes"],
+        "img": "project-draft/img/aquarium",
+        "location": "Waterfront",
+        "cost": "25"
+    },
+    {
+        "activity_name": "Museum of Pop Culture (MoPOP)",
+        "activity_type": ["Indoor Escapes", "Entertainment", "Historic/Cultural"],
+        "img": "project-draft/img/mopop",
+        "location": "Seattle Center",
+        "cost": "28"
+    },
+    {
+        "activity_name": "Discovery Park",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "img": "project-draft/img/discovery_park",
+        "location": "Magnolia",
+        "cost": "0"
+    },
+    {
+        "activity_name": "Seattle Art Museum",
+        "activity_type": ["Indoor Escapes", "Historic/Cultural"],
+        "img": "project-draft/img/sam",
+        "location": "Downtown",
+        "cost": "20"
+    },
+    {
+        "activity_name": "Alki Beach",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "img": "project-draft/img/alki_beach",
+        "location": "West Seattle",
+        "cost": "0"
+    },
+    {
+        "activity_name": "Woodland Park Zoo",
+        "activity_type": ["Family-Friendly Activities", "Outdoor Activities"],
+        "img": "project-draft/img/zoo",
+        "location": "Phinney Ridge",
+        "cost": "22"
+    },
+    {
+        "activity_name": "Fremont Troll",
+        "activity_type": ["Unique Experiences", "Outdoor Activities"],
+        "img": "project-draft/img/troll",
+        "location": "Fremont",
+        "cost": "0"
+    }
+]
