@@ -1,6 +1,7 @@
  [
     {
         "activity_name": "Elm Coffee Roasters",
+        "description": "House-roasted, single-origin brews are the specialty at this casual coffeehouse in a calm palette.",
         "activity_type": ["Foodie Delights", "Local Markets"],
         "img": "project-draft/img/elm",
         "location": "Pioneer Square",
@@ -8,13 +9,16 @@
     },
     {
         "activity_name": "Space Needle",
+        "description": "The Space Needle is an observation tower in Seattle, Washington, United States.",
         "activity_type": ["Best Scenic Spots", "Family-Friendly Activities"],
         "img": "project-draft/img/space_needle",
         "location": "Seattle Center",
         "cost": "32"
     },
+    
     {
         "activity_name": "Chihuly Garden and Glass",
+        "description": "Chihuly Garden and Glass is an exhibit in the Seattle Center directly next to the Space Needle, showcasing the studio glass of Dale Chihuly.",
         "activity_type": ["Indoor Escapes", "Art Exhibitions"],
         "img": "project-draft/img/chihuly",
         "location": "Seattle Center",
@@ -22,6 +26,7 @@
     },
     {
         "activity_name": "Pike Place Market",
+        "description": "One of the oldest continuously operated public farmers' markets in the United States.",
         "activity_type": ["Local Markets", "Foodie Delights"],
         "img": "project-draft/img/pike_place",
         "location": "Downtown",
@@ -29,6 +34,7 @@
     },
     {
         "activity_name": "Gas Works Park",
+        "description": " It is a 19.1-acre public park located on the north shore of Lake Union at the south end of the Wallingford neighborhood.",
         "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
         "img": "project-draft/img/gas_works",
         "location": "Wallingford",
