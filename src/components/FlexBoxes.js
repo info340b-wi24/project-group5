@@ -3,7 +3,7 @@ import React from 'react';
 const Flexboxes = () => {
     return (
         <div>
-            {/* Categories Section */}
+            {/* Categories Section */}  
             <section className="categories">
                 {/* Categories lists go here */}
             </section>
