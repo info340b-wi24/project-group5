@@ -9,4 +9,4 @@ const SearchBar = () => {
     );
 };
 
-export default Search;
+export default SearchBar;
