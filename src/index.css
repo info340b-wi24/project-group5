@@ -1,0 +1,1435 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem; 
+    margin-top: 0.313rem;
+    margin-bottom: 3.125rem;
+}
+
+#logo {
+    font-family: "Shadows Into Light Two", cursive;
+    color: green;
+    font-size: 2.5rem;
+}
+
+.topnav a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.topnav a:hover {
+    color: blue;
+    border-radius: 0.625rem;
+}
+
+.topnav a.home {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topnav a[href="sign-in.html"] {
+    color: white;
+    background-color: black;
+    border: 0.063rem solid #333;
+    padding: 0.5rem 0.938rem;
+    border-radius: 20px;
+}
+
+.topnav a[href="sign-in.html"]:hover {
+    background-color: #333;
+}
+
+/* -----Home Page----- */
+/* Main Section */
+.question {
+    text-align: center;
+    margin-top: 100px; 
+}
+
+#search-bar {
+    width: 65%; 
+    padding: 15px; 
+    font-size: 18px;
+    background-color: #cefad0;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* Categories Section */
+.categories_top, .categories_bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 8px; 
+}
+
+.categories_top li, .categories_bottom li {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.25rem; /* Adjusted font size */
+}
+
+.categories_top li:hover, .categories_bottom li:hover {
+    color: green;
+}
+
+/* Trending Spots Section */
+.trend-container {
+    margin-left: 0.625rem;
+}
+
+.trending-spots {
+    margin-top: 100px;
+    margin-left: 165px;
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.card {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover; 
+}
+
+.card-content {
+    margin-left: 10px;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    color: white;
+    text-decoration: none;
+    background: #3498db;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+} 
+
+/* Icon Container */
+.icon-container {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 35px;
+    height: 35px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+ion-icon {
+    color: #333;
+    font-size: 25px;
+}
+
+/* Footer */
+footer {
+    padding-top: 1rem;
+    font-size: 80%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+/* ------Categories Page------ */
+/* Categories Section */
+.c-categories {
+    margin-top: 4.375rem;
+}
+
+.c-categories_top,
+.c-categories_bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0.5rem; 
+    gap: 1.25rem;
+}
+
+.c-categories_top li,
+.c-categories_bottom li {
+    margin: 0 0.625rem;
+    cursor: pointer;
+    padding: 0.625rem;
+    font-size: 1.25rem; 
+}
+
+#outdoors {
+    background-color: green;
+    color: white;
+    border-radius: .625rem;
+}
+
+/* Categories List with Checkboxes */
+.categories-container {
+    display: flex;
+    flex-direction: row; /* Row layout for desktop */
+    justify-content: space-around; /* Distribute space around elements */
+    margin-left: 0.625rem;
+    margin-top: 5rem;
+}
+
+#outdoor-cat {
+    margin-bottom: 1.2rem;
+}
+
+.category-section {
+    display: flex;
+    margin-left: 1.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.category-section form p {
+    margin: 15px 0;
+}
+
+form {
+    margin-top: 0;
+}
+
+/* All Outdoor Activities Section */
+
+#outdoor-act {
+    margin-left: 120px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Row layout for larger screens */
+    align-items: flex-start;
+    max-width: 500px;
+}
+
+.oa-card {
+    width: 300px;
+    /* flex: 1; */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+    /* margin: 0.5rem; Add margin to cards */
+}
+
+.oa-card img {
+    width: 18.75rem;
+    height: auto;
+    object-fit: cover; 
+}
+
+.oa-card-content {
+    /* margin-left: 0.625rem; */
+    margin-left: 10px;
+}
+
+.oa-card-content h2 {
+    /* font-size: 1.5rem;  */
+    /* Larger font size for headings */
+    /* margin-top: 0.313rem;
+    margin-bottom: 1.25rem; */
+
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    color: white;
+    text-decoration: none;
+    background: #3498db;
+    padding: 0.5rem 0.938rem;
+    border-radius: 0.313rem;
+    display: inline-block;
+    margin-top: 1.563rem;
+    margin-bottom: 10px;
+} 
+
+.icon-container {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 35px;
+    height: 35px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+ion-icon {
+    color:#333;
+    font-size: 25px;
+}
+
+
+/* activities-review page css */
+.activity-detail {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.activity-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.image-container {
+    position: relative;
+}
+
+
+.pic-title {
+    position: absolute;
+    margin-left: -300px;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.activity-image {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-left: -300px;
+    padding-bottom: 20px;
+}
+
+
+.activity-info {
+    max-width: 500px; /* Adjust if needed */
+    /* Remove any large left margin if present */
+    margin-left: -300px;
+    margin-top: 100px;
+}
+
+
+.google-review-summary img {
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+
+.reviews {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+
+.review-title {
+    margin-top: 100px;
+}
+
+
+.review-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+
+.review-card {
+    width: 280px;
+    height: 350px;
+    background-color: #747070;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+
+.write-review {
+    align-self: center;
+    width: 50%;
+}
+
+
+.write-review textarea {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space between textarea and button */
+    padding: 10px;
+    margin-top: 10px;
+   
+}
+
+
+.write-review button {
+    width: 25%; /* Adjust button width as needed */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center the button */
+}
+
+
+
+
+/* -----Saved Activities Page----- */
+.text-item {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+.text-item h1 {
+    text-align: center;
+    margin: .5rem;
+    align-items: center;
+}
+
+.or {
+    text-align: center;
+    background-color: lightgray;
+    padding-top: 15rem;
+}
+
+.saved-activities h1 {
+    text-align: left;
+    vertical-align: bottom;
+    padding-top: 10rem;
+    margin-left: 100px;
+}
+
+.saved-activities {
+    background-color: lightgray;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.saved-activities div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top: 50px;
+    justify-content: space-evenly;
+  }
+
+.saved-activities div div{
+    flex:0 0 250px;
+    background-color:rgba(76, 175, 80, 0.3);
+    margin: .5rem;
+    border-radius: 10px;
+}
+
+.saved-activities div div img{
+   width: 200px;
+   height: 200px;
+   padding: 1rem;
+}
+
+.saved-activities div div p{
+    padding: 0.5rem 1rem;
+}  
+
+.saved-activities button{
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+#act-search-bar {
+    display: flex;
+    overflow: hidden;
+    vertical-align: center;
+    flex-grow: .5;
+    position: relative;
+    top: 50px;
+    height: 70px;
+    width: 65%; 
+    padding: 15px; 
+    font-size: 18px;
+    background-color: #cefad0;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#act-search-bar input[type=text]{
+    float: right;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 16px;
+    font-size: 30px;
+}
+
+.saved-act-card img{
+    object-fit: cover; 
+}
+
+.act-container {
+    background-color: lightgray;
+    margin-left: 250px;
+    margin-right: 80px;
+}
+
+/* ------Final Itinerary Page------ */
+
+.final-form-body{
+    padding-left:8rem;
+    padding-right:8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.final-form-container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.3rem;
+    text-align: left;
+  }
+
+
+/* box */
+.final-info {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.itin-card-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    width: 75%
+}
+
+
+
+.text-content h2 {
+    font-size: 30px;
+    margin-left: 24px;
+    margin-top: 30px;
+}
+
+
+.text-content p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 24px;
+}
+
+
+.itin-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    object-fit: cover; 
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px;
+    
+}
+
+  .itin-cards {
+    width: 650px;
+    height: 250px;
+    margin-bottom: 50px;
+    background-color: rgba(76, 175, 80, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin-left: 300px;
+    position: relative;
+}
+
+
+.itin-activity {
+    position: relative;
+}
+
+
+.itin-card-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.itin-card-container ul:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 250px;
+    width: 1px;
+    height: 100%;
+    border: 1px dashed #aaa;
+}
+
+
+.itin-card-container ul li {
+    margin: 50px 60px;
+    position: relative;
+}
+
+.itin-card-container ul li > span {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 190px;
+    width: 1px;
+    height: 100%;
+    border: 1px solid #aaa;
+}
+
+.itin-card-container ul li > span:before, .itin-card-container ul li > span:after  {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 8px solid green;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    position: absolute;
+    border-radius: 50%;
+    left: -8px;
+    
+}
+
+.itin-card-container ul li > span:before {
+    top: -10px; 
+ 
+}
+
+ .itin-card-container ul li > span:after {
+    top: 100%;
+}  
+
+.itin-card-container ul li .time span {
+    position: absolute;
+    font-size: 15px;
+    left: -110px;
+    width: 30px;
+    text-align: center;
+}
+
+.itin-card-container ul li .time span:first-child {
+    top: -12px;
+    left: 140px;
+}
+
+.itin-card-container ul li .time span:last-child {
+    top: 98%;
+    left: 135px;
+}
+
+
+
+
+/* ------old version ------ */
+/* .itin-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.itin-activity {
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+    background-color: rgba(76, 175, 80, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.itin-cards img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.itin-cards .btn {
+    font-size: 12px;
+}
+
+.itin-activity h2 {
+    font-size: 20px;
+}
+
+.itin-activity p {
+    font-size: 15px;
+} */
+
+/* ------Add Activity Page------ */
+.add-act-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.add-activity {
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: rgba(76, 175, 80, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.add-act-card img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.time-start {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.time-end {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.btn {
+    margin-left: 10px;
+}
+
+.add-activity-btn {
+    text-align: center
+}
+
+.picker-window {
+    position: absolute;
+    border-top: 1px solid #d4d9d9;
+    border-bottom: 1px solid #d4d9d9;
+    height: 1.4em;
+    left: 0;
+    top: 50%;
+    transform: translateY(-65%);
+    width: 100%;
+    pointer-events: none;
+}
+
+.picker {
+    display: inline-grid;
+    box-shadow: 0 0.2vw 1vw -5px rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    position: relative;
+    border-top: 0.8rem solid white;
+    border-bottom: 0.8rem solid white;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    background: white;
+    grid-template-columns: repeat(4, fit-content(150px)); /* Reduced width */
+    font-size: calc(.3rem + 1.2vw);
+    font-feature-settings: "tnum";
+    font-weight: 400;
+}
+
+.picker:before, .picker:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.2em;
+    pointer-events: none;
+}
+
+.picker:before {
+    top: -0.2em;
+    background: linear-gradient(white, rgba(255, 255, 255, .7));
+}
+
+.picker:after {
+    bottom: -0.2em;
+    background: linear-gradient(rgba(255, 255, 255, .7), white);
+}
+
+.picker ul {
+    -ms-overflow-style: none;
+    max-height: 1.5em;
+    overflow-y: scroll;
+    margin-right: 0.2em;
+    margin-left: -1rem;
+    scroll-snap-type: y mandatory;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    list-style-type: none;
+}
+
+.picker ul::-webkit-scrollbar {
+    display: none;
+}
+
+.picker li {
+    scroll-snap-align: center;
+    height: 1.2em; /* Increased height for more space between numbers */
+    text-align: right;
+    word-spacing: 0.2em;
+}
+
+.picker-day {
+    padding-right: 0.5em;
+}
+
+.picker-day span {
+    padding-left: 0.56em;
+}
+
+.button-container {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/*Itinerary Page*/
+.itinerary-container{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom:1rem;
+
+    }
+  .my-itinerary h1{
+    padding-left: 3rem;
+    font-size: 25px;
+    text-align: left;
+    }
+
+  .button1-container{
+    text-align: center;
+    padding:2rem;
+    }
+
+  .button1-container button{
+    color: white;
+    background:green;
+    padding: 8px 15px;
+    border-radius: 30px;
+    display: inline-block;
+    border-color: none;
+    }
+
+  .button1-container button a{
+    text-decoration: none;
+    font-size: larger;
+    color:black;
+    margin: 1rem;
+    }
+    .sample-saved-activities{
+        align-content: center;
+        flex-basis: 240px;
+        padding-top: 5rem;
+        }
+    
+      .sample-saved-activities div{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 1rem;
+        }
+    
+      .sample-saved-activities .card {
+        width: 300px;
+        height: 300px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+        overflow: hidden;
+        } 
+    
+      .sample-saved-activities img{
+        width: 300px;
+        height: 220px;
+        object-fit: cover; 
+        }
+      .sample-saved-activities h1{
+        padding-left: 3rem;
+        padding-bottom:4rem;
+        font-size: 25px;
+        text-align: left;
+        }
+    
+      .sample-saved-actvities p{
+        padding: 0.5rem 1rem;
+        }
+
+/* Sign In Page */
+.sign-in-button1-container{
+    padding-bottom: 1rem;
+    padding-top:15rem;
+    text-align: center;
+}
+.sign-in-button2-container{
+    padding-bottom: 4rem;
+    text-align: center;
+}
+.sign-in-button1-container button,
+.sign-in-button2-container button{
+    padding:1rem;
+    font-size: larger;
+    border-radius: 10px;
+    background-color: lightgray;
+    border-style: none;
+}
+.sign-in-button1-container button a,
+.sign-in-button2-container button a{
+    text-decoration: none;
+    color: #333333;
+}
+
+/* Itinerary Form (both 1&2) */
+.form-body{
+    padding-left:8rem;
+    padding-right:8rem;
+}
+.sample-saved-activities{
+    padding-top:2rem;
+}
+.trending-spots-form h1{
+    font-size: 25px;
+    padding-left:4.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+label[for="add-place"] {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 0rem;
+    padding-bottom: 2rem;
+}
+.add-place-label{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.form-card-button{
+        color: white;
+        text-decoration: none;
+        background: #3498db;
+        padding: 8px 15px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 25px;
+        margin-bottom: 10px;
+}
+
+.form-container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 3rem;
+    margin-bottom: 0rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-top:3rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    text-align:left;
+  }
+
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 20px; 
+  
+  }
+  .bar-container{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  input[type="submit"][value="Start building"]{
+        color: white;
+        text-decoration: none;
+        background: green;
+        padding: 8px 15px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 25px;
+        margin-bottom: 10px;
+  }
+  
+/* Media Queries */
+
+/* ------Home Page------ */
+
+@media (max-width: 1024px) {
+    #logo {
+        font-size: 2rem;
+    }
+
+    .topnav a {
+        font-size: 1rem;
+    }
+
+    .categories_top li, .categories_bottom li {
+        font-size: 1.25rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .trend-container, .card-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .topnav {
+        margin-top: 30px;
+        align-self: center;
+    }
+
+    .categories_top, .categories_bottom {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 0.25rem;
+    }
+
+    .card-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .trending-spots {
+        margin-left: 145px;
+    }
+}
+
+/* ------Category Page------ */
+@media (max-width: 1024px) {
+    #logo {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    .topnav a {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .c-categories_top li, .c-categories_bottom li {
+        font-size: 1.25rem; /* Smaller font size */
+    }
+
+    .oa-card {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+
+    .categories-container {
+        flex-direction: column; /* Column layout for smaller screens */
+    }
+
+    .oa-container {
+        flex-direction: column; /* Column layout for smaller screens */
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack elements for mobile */
+    }
+
+    .topnav {
+        align-self: center;
+    }
+
+    .c-categories_top, .c-categories_bottom {
+        flex-direction: column; /* Stack categories for mobile */
+    }
+
+    .oa-card {
+        margin: 0.25rem; /* Smaller margin for cards */
+        
+    }
+
+    .oa-card-content h2 {
+        font-size: 1.25rem; /* Smaller font size for headings */
+    }
+
+    #outdoor-act {
+        margin-left: 120px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .categories-container {
+        margin-top: 30px;
+        flex-direction: column;
+
+    }
+}
+
+/* ------Saved Activities Page------ */
+@media (min-width: 768px) {
+    .topnav a {
+        font-size: 18px; /* Slightly larger font size for larger devices */
+    }
+
+    .saved-activities {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .act-container {
+        width: 900px;
+        padding-right: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .topnav {
+        justify-content: flex-end; /* Adjust navigation for large screens */
+    }
+
+    .act-container {
+        align-items: center;
+        padding: 25px; /* More spacious layout for larger screen */
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .topnav {
+        align-self: center;
+    }
+}
+
+/* ------Final Itineraries Page------ */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    
+    }
+
+    .topnav {
+        margin-top: 30px;
+        align-self: center;
+    }
+
+    .final-form-body {
+        padding: 1rem;
+
+    }
+
+    .final-form-container {
+        padding: 1rem;
+
+    }
+
+    .final-info {
+        margin-top: 20px;
+        margin-bottom: -90px;
+    }
+
+    .itin-img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        float: none;
+        margin-right: 0;
+    }
+
+    .itin-cards {
+        width: 300px;
+        height: auto;
+        margin-left: 90px;
+    }
+
+    .text-content h2,
+    .text-content p {
+        margin-left: 10px;
+    }
+
+    .itin-card-container ul li > span {
+        left: 20px;
+    } 
+
+    .itin-card-container ul:before {
+        left: 80px;
+       
+    }
+
+    .itin-card-container ul li > span:before,
+    .itin-card-container ul li > span:after {
+        width: 8px;
+        height: 8px;
+        left: -8px;
+    }
+
+    .itin-card-container ul li .time span {
+        left: -50px;
+    }
+
+    .itin-card-container ul li .time span:first-child {
+        top: -12px;
+        left: -25px;
+    }
+
+    .itin-card-container ul li .time span:last-child {
+        top: 99%;
+        left: -30px;
+    }
+
+    footer {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+/* @media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .topnav {
+        align-self: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .topnav a {
+        font-size: 18px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .topnav {
+        justify-content: flex-end; 
+    }
+    
+    .itin-activity {
+        padding-bottom: 30px;
+        height: 375px; 
+    }
+
+    .itin-activity h2 {
+        font-size: 30px; 
+    }
+} */
+
+/* ------Add Activities Page------ */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .topnav {
+        align-self: center;
+    }
+}
+@media (min-width: 768px) {
+    .topnav a {
+        font-size: 18px; 
+        flex-wrap: wrap;
+    }
+
+    .topnav a[href="#sign-in"] {
+        color: white;
+        background-color: black;
+        border: 1px solid #333;
+        padding: 6px 11px;
+        border-radius: 15px;
+    }
+
+    .add-activity {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .add-act-card-container {
+        flex-wrap: wrap;
+    }
+
+    .add-act-card {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    .topnav {
+        justify-content: flex-end; 
+    }
+
+    .add-act-card-container {
+        width: 100%; 
+    }
+
+    .add-act-card {
+        width: 100%;
+    }
+}
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+    #logo {
+        font-size: 2rem;
+    }
+
+
+    .topnav a {
+        font-size: 1rem; 
+    }
+
+
+    .categories_top li, .categories_bottom li {
+        font-size: 1.25rem; 
+    }
+
+
+    .activity-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+
+    .image-container, .activity-info {
+        width: 100%; 
+        margin-left: 0; 
+    }
+
+
+    .activity-image {
+        max-width: 100%; 
+        margin-left: 0; 
+    }
+
+
+    .google-review-summary img, .reviews, .write-review {
+        width: 100%; 
+        margin-left: 0; 
+    }
+}
+
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; 
+    }
+
+
+    .topnav {
+        align-self: center;
+    }
+
+
+    .categories_top, .categories_bottom {
+        flex-direction: column; 
+    }
+
+
+   
+    .topnav a[href="#sign-in"] {
+        display: block; 
+        text-align: center;
+        margin-top: 10px; 
+    }
+
+
+    .activity-detail, .review-card {
+        width: 100%; 
+    }
+
+
+    .write-review button {
+        width: 50%; 
+    }
+
+
+}
+
+/* ------ ------ */

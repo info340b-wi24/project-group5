@@ -1,10 +1,15 @@
 import React from 'react';
-import ActivityFilter from './components/ActivityFilter';
+import Navbar from './components/NavBar';
+//import SearchBar from './components/SearchBar';
+import FlexBoxes from './components/FlexBoxes';
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <ActivityFilter />
+    <div>
+      <Navbar />
+   
+      <FlexBoxes />
     </div>
   );
 }
