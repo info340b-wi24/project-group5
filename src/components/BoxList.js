@@ -8,17 +8,14 @@ const Flexboxes = (data) => {
                         <div className="card mb-8">
                             <div className="card">
                                 <div className="row"> 
-                                    <div className="col-sm-auto col-xl-12"> 
-                                        <div className="icon-container"> 
-                                            <ion-icon name="bookmark-outline"></ion-icon>
-                                        </div>
+                                    <div className="col-sm-auto col-xl-12">
                                         <img src={img} className="img-fluid" alt={activity_name} />
                                     </div>
                                     <div className="col-sm"> 
                                         <div className="card-content">
                                             <h2>{activity_name}</h2>
                                             <p>{description}</p>
-                                            <a href="#" class="card-button">Read More</a>
+                                            <a href="#" className="card-button">Read More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -28,7 +25,7 @@ const Flexboxes = (data) => {
     );
 };
 
-export default function boxList({activities}) {
+export default function BoxList({activities}) {
     return (
        <div className= 'row'> 
             {activities.map(activity => 

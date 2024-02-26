@@ -3,7 +3,7 @@
         "activity_name": "Elm Coffee Roasters",
         "description": "House-roasted, single-origin brews are the specialty at this casual coffeehouse in a calm palette.",
         "activity_type": ["Foodie Delights", "Local Markets"],
-        "img": "project-draft/img/elm",
+        "img": "img/elm",
         "location": "Pioneer Square",
         "cost": "5"
     },
@@ -11,7 +11,7 @@
         "activity_name": "Space Needle",
         "description": "The Space Needle is an observation tower in Seattle, Washington, United States.",
         "activity_type": ["Best Scenic Spots", "Family-Friendly Activities"],
-        "img": "project-draft/img/space_needle",
+        "img": "img/space_needle",
         "location": "Seattle Center",
         "cost": "32"
     },
@@ -20,7 +20,7 @@
         "activity_name": "Chihuly Garden and Glass",
         "description": "Chihuly Garden and Glass is an exhibit in the Seattle Center directly next to the Space Needle, showcasing the studio glass of Dale Chihuly.",
         "activity_type": ["Indoor Escapes", "Art Exhibitions"],
-        "img": "project-draft/img/chihuly",
+        "img": "img/chihuly",
         "location": "Seattle Center",
         "cost": "30"
     },
@@ -28,7 +28,7 @@
         "activity_name": "Pike Place Market",
         "description": "One of the oldest continuously operated public farmers' markets in the United States.",
         "activity_type": ["Local Markets", "Foodie Delights"],
-        "img": "project-draft/img/pike_place",
+        "img": "img/pike_place",
         "location": "Downtown",
         "cost": "0"
     },
