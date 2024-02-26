@@ -1,0 +1,34 @@
+[
+    {
+        "activity_name": "Elm Coffee Roasters",
+        "description": "House-roasted, single-origin brews are the specialty at this casual coffeehouse in a calm palette.",
+        "activity_type": ["Foodie Delights", "Local Markets"],
+        "img": "img/elm.jpg",
+        "location": "Pioneer Square",
+        "cost": "5"
+    },
+    {
+        "activity_name": "Gas Works Park",
+        "description": "It is a 19.1-acre public park located on the north shore of Lake Union at the south end of the Wallingford neighborhood.",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "img": "img/gasworks.jpeg",
+        "location": "Wallingford",
+        "cost": "0"
+    },
+    {
+        "activity_name": "Chihuly Garden and Glass",
+        "description": "Chihuly Garden and Glass is an exhibit in the Seattle Center directly next to the Space Needle, showcasing the studio glass of Dale Chihuly.",
+        "activity_type": ["Indoor Escapes", "Art Exhibitions"],
+        "img": "img/chi.jpeg",
+        "location": "Seattle Center",
+        "cost": "30"
+    },
+    {
+        "activity_name": "Pike Place Market",
+        "description": "One of the oldest continuously operated public farmers' markets in the United States.",
+        "activity_type": ["Local Markets", "Foodie Delights"],
+        "img": "img/pike.jpeg",
+        "location": "Downtown",
+        "cost": "0"
+    }
+]

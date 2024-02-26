@@ -11,7 +11,7 @@
         "activity_name": "Space Needle",
         "description": "The Space Needle is an observation tower in Seattle, Washington, United States.",
         "activity_type": ["Best Scenic Spots", "Family-Friendly Activities"],
-        "img": "img/space_needle",
+        "img": "img/space.jpg",
         "location": "Seattle Center",
         "cost": "32"
     },
@@ -20,7 +20,7 @@
         "activity_name": "Chihuly Garden and Glass",
         "description": "Chihuly Garden and Glass is an exhibit in the Seattle Center directly next to the Space Needle, showcasing the studio glass of Dale Chihuly.",
         "activity_type": ["Indoor Escapes", "Art Exhibitions"],
-        "img": "img/chihuly",
+        "img": "img/chi.jpeg",
         "location": "Seattle Center",
         "cost": "30"
     },
@@ -28,65 +28,72 @@
         "activity_name": "Pike Place Market",
         "description": "One of the oldest continuously operated public farmers' markets in the United States.",
         "activity_type": ["Local Markets", "Foodie Delights"],
-        "img": "img/pike_place",
+        "img": "img/pike.jpeg",
         "location": "Downtown",
         "cost": "0"
     },
     {
         "activity_name": "Gas Works Park",
-        "description": " It is a 19.1-acre public park located on the north shore of Lake Union at the south end of the Wallingford neighborhood.",
+        "description": "It is a 19.1-acre public park located on the north shore of Lake Union at the south end of the Wallingford neighborhood.",
         "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
-        "img": "project-draft/img/gas_works",
+        "img": "img/gasworks.jpeg",
         "location": "Wallingford",
         "cost": "0"
     },
     {
         "activity_name": "Seattle Aquarium",
+        "description": "The Seattle Aquarium offers fun, exciting ways to discover more about the Puget Sound and our world's big ocean.",
         "activity_type": ["Family-Friendly Activities", "Indoor Escapes"],
-        "img": "project-draft/img/aquarium",
+        "img": "img/aquarium.jpg",
         "location": "Waterfront",
         "cost": "25"
     },
     {
         "activity_name": "Museum of Pop Culture (MoPOP)",
+        "description": "MoPOP is home to the worlds most immersive pop culture experiences in TV, music, and science fiction.",
         "activity_type": ["Indoor Escapes", "Entertainment", "Historic/Cultural"],
-        "img": "project-draft/img/mopop",
+        "img": "img/mpop.jpeg",
         "location": "Seattle Center",
         "cost": "28"
     },
     {
         "activity_name": "Discovery Park",
+        "description": "Discovery Park offers a spectacular view of the Cascade and Olympic Mountain ranges with a scenic lighthouse.",
         "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
-        "img": "project-draft/img/discovery_park",
+        "img": "img/disco.jpg",
         "location": "Magnolia",
         "cost": "0"
     },
     {
         "activity_name": "Seattle Art Museum",
+        "description": "Experience historical and contemporary art pieces and galleries at the incredible SAM exhibitions.",
         "activity_type": ["Indoor Escapes", "Historic/Cultural"],
-        "img": "project-draft/img/sam",
+        "img": "img/sam.jpg",
         "location": "Downtown",
         "cost": "20"
     },
     {
         "activity_name": "Alki Beach",
+        "description": "A beautiful spot for a long walk across Elliott Bay, with many restaurants and shops nearby.", 
         "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
-        "img": "project-draft/img/alki_beach",
+        "img": "img/alki.jpg",
         "location": "West Seattle",
         "cost": "0"
     },
     {
         "activity_name": "Woodland Park Zoo",
+        "description": "Explore exciting wildlife and the 1000 animals who call Woodland Park Zoo home.", 
         "activity_type": ["Family-Friendly Activities", "Outdoor Activities"],
-        "img": "project-draft/img/zoo",
+        "img": "img/zoo.jpg",
         "location": "Phinney Ridge",
         "cost": "22"
     },
     {
-        "activity_name": "Fremont Troll",
-        "activity_type": ["Unique Experiences", "Outdoor Activities"],
-        "img": "project-draft/img/troll",
-        "location": "Fremont",
-        "cost": "0"
+        "activity_name": "Pink Door Restaurant",
+        "description": "Treat yourself to delicious and unique Italian meals with a great ambience at this popular spot.", 
+        "activity_type": ["Foodie Delights", "Local Markets"],
+        "img": "img/pinkdoor.jpg",
+        "location": "Downtown",
+        "cost": "100"
     }
 ]

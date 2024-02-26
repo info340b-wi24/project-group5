@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Flexboxes = (props) => {
-    //const {activity_name, description, img} = data;
-
     return (
         <div className="col-md-6 col-xl-3 d-flex"> 
                         <div className="card mb-8">
