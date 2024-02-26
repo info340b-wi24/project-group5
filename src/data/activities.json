@@ -3,7 +3,7 @@
         "activity_name": "Elm Coffee Roasters",
         "description": "House-roasted, single-origin brews are the specialty at this casual coffeehouse in a calm palette.",
         "activity_type": ["Foodie Delights", "Local Markets"],
-        "img": "img/elm",
+        "img": "img/elm.jpg",
         "location": "Pioneer Square",
         "cost": "5"
     },
