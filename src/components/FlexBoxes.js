@@ -1,40 +1,23 @@
 import React from 'react';
 
 const Flexboxes = (data) => {
-    const {activity_name, description} = data;
+    const {activity_name, description, img} = data;
 
-    
     return (
-        <div>
-            {/* Categories Section */}
-            <section className="categories">
-                {/* Categories lists go here */}
-            </section>
-
-            {/* Trending Spots Section */}
-            <section className="trending-spots">
-                <h2>Trending Spots in Seattle</h2>
-            </section>
-
-    <section class="trend-container">
-        <div class="card-container">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6 col-xl-3 d-flex"> 
-                        <div class="card mb-8">
-                            <div class="card">
-                                <div class="row"> 
-                                    <div class="col-sm-auto col-xl-12"> 
-                                        <div class="icon-container"> 
+        <div className="col-md-6 col-xl-3 d-flex"> 
+                        <div className="card mb-8">
+                            <div className="card">
+                                <div className="row"> 
+                                    <div className="col-sm-auto col-xl-12"> 
+                                        <div className="icon-container"> 
                                             <ion-icon name="bookmark-outline"></ion-icon>
                                         </div>
-                                        <img src="img/elm.jpg" class="img-fluid" alt="picture of the cafe inside">
+                                        <img src={img} className="img-fluid" alt={activity_name} />
                                     </div>
-                                    <div class="col-sm"> 
-                                        <div class="card-content">
-                                            <h2>Elm Coffee Roasters</h2>
-                                            <p>House-roasted, single-origin brews are the specialty at this casual coffeehouse in a calm palette.</p>
+                                    <div className="col-sm"> 
+                                        <div className="card-content">
+                                            <h2>{activity_name}</h2>
+                                            <p>{description}</p>
                                             <a href="#" class="card-button">Read More</a>
                                         </div>
                                     </div>
@@ -42,16 +25,17 @@ const Flexboxes = (data) => {
                             </div> 
                         </div>
                     </div>
-
-
-
-                </div> 
-            </div>
-        </div>
-    </section>
-    
-        </div>
     );
 };
 
-export default Flexboxes;
+export default function boxList({activities}) {
+    return (
+       <div className= 'row'> 
+            {activities.map(activity => 
+                <Flexboxes key={activity.activity_name} data={activity} />)}
+       </div>
+    );
+    }
+
+
+
