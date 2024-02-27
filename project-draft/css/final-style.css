@@ -111,9 +111,10 @@ header {
 .card-container {
     display: flex;
     margin-left: 100px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     padding: 10px;
+    flex-wrap:wrap;
 }
 
 .card {
@@ -127,7 +128,7 @@ header {
 
 .card img {
     width: 300px;
-    height: auto;
+    height: 300px;
     object-fit: cover; 
 }
 
