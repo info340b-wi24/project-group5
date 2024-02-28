@@ -2,8 +2,11 @@ import React from 'react';
 
 const Flexboxes = (props) => {
     return (
-        
-        <div className="col-md-6 col-xl-3 d-flex"> 
+
+
+       <div className="test-container">
+                <div className="row">
+                    <div className="col-md-6 col-xl-3 d-flex"> 
                         <div className="card mb-8">
                             <div className="card">
                                 <div className="row"> 
@@ -21,13 +24,15 @@ const Flexboxes = (props) => {
                             </div> 
                         </div>
                     </div>
+                </div>
+            </div>
     );
 };
 
 export default function BoxList({activities}) {
     return (
  
-       <div className= 'container'> 
+       <div className= 'test-container'> 
             {activities.map(activity => 
                 <Flexboxes key={activity.activity_name} data={activity} />)}
        </div>

@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
+// import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from './components/NavBar';
 import SearchBar from './components/SearchBar';
 import Categories from './components/Categories';
 import BoxList from './components/BoxList';
+import CreateForm from './components/CreateForm';
 import './index.css';
 
 function App(props) {
@@ -28,9 +30,9 @@ function App(props) {
                 </div>
                 </div>
                 </div>
-                </section>
+                </section>      
     </div>
-
+    
 
   );
 }
