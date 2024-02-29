@@ -1031,7 +1031,7 @@ label[for="add-place"] {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  input[type="submit"][value="Start building"]{
+  .start-building {
         color: white;
         text-decoration: none;
         background: green;

@@ -4,6 +4,22 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 import sample_activities from './data/trending.json';
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyADAg-Qj34jTiLLsFO7yMteUezVJEhBBbs",
+  authDomain: "seattlehangoutguide.firebaseapp.com",
+  projectId: "seattlehangoutguide",
+  storageBucket: "seattlehangoutguide.appspot.com",
+  messagingSenderId: "659671280063",
+  appId: "1:659671280063:web:ca06443541dc3b1e83990a"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
