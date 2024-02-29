@@ -15,6 +15,8 @@ function Form() {
   }
 
   return (
+<main class="form-body">
+  <div class="form-container">
     <form onSubmit={handleSubmit}>
       <label className="itinerary-title">Itinerary Title:</label>
       <input 
@@ -44,6 +46,8 @@ function Form() {
 
       <input type="submit" value="Start building" />
     </form>
+  </div>
+</main>
   )
 }
 
