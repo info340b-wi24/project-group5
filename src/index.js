@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
-<<<<<<< HEAD
-import sample_activities from './data/trending.json';
+import sample_activities from './data/activities.json';
+import outdoors from './data/outsideAct.json';
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -22,14 +22,11 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-=======
-import sample_activities from './data/activities.json';
->>>>>>> def4bdee347d2c813b3dd457997c5013bee7adb6
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App activities={sample_activities}/>
+    <App activities={sample_activities} tags = {outdoors}/>
   </React.StrictMode>
 );
 
