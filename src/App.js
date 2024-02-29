@@ -5,16 +5,20 @@ import React, {useState} from 'react';
 // import Categories from './components/Categories';
 // import BoxList from './components/BoxList';
 // import CreateForm from './components/CreateForm';
-// import './index.css';
+import './index.css';
 import Indexhome from './components/Indexhome';
+import Categoriespage from './components/Categoriespage';
+
 import sample_activities from './data/activities.json';
+import outdoors from './data/outsideAct.json';
 
 function App(props) {
 
   return (
     
     <div>
-       <Indexhome activities={sample_activities} />
+       {/* <Indexhome activities={sample_activities} /> */}
+       <Categoriespage tags={outdoors}/>
     </div>
   )
 

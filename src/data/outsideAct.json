@@ -1,0 +1,22 @@
+[
+    {
+        "id": "hiking",
+        "tag": "hiking trails"
+    },
+    {
+        "id": "water",
+        "tag": "Waterfront Walks"
+    },
+    {
+        "id": "kayak",
+        "tag": "Kayaking Spots"
+    },
+    {
+        "id": "bike",
+        "tag": "Bike Routes"
+    },
+    {
+        "id": "parks",
+        "tag": "Parks and Gardens"
+    }
+]
