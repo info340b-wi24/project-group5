@@ -9,13 +9,18 @@ import './index.css';
 
 function App(props) {
 
-  const [activities, setactivities] = useState(props.activities);
-  console.log(props.activities);
+  const [activities, setActivities] = useState(props.activities);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Update activities based on search query
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
 
   return (
     <div>
       <Navbar />
-      <SearchBar />
+      <SearchBar onSearch={handleSearch}/>
       <Categories />
       <section className="trending-spots">
            <h2>Trending Spots in Seattle</h2>
@@ -25,7 +30,7 @@ function App(props) {
         <div className="card-container">
             <div className="container">
                 <div className="row">
-                <BoxList activities={activities} />
+                <BoxList activities={activities} searchQuery={searchQuery} />
 
                 </div>
                 </div>
