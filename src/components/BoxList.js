@@ -29,15 +29,21 @@ const Flexboxes = (props) => {
     );
 };
 
-export default function BoxList({activities}) {
-    return (
- 
-       <div className= 'test-container'> 
-            {activities.map(activity => 
-                <Flexboxes key={activity.activity_name} data={activity} />)}
-       </div>
+
+export default function BoxList({ activities, searchQuery }) {
+    // Filter activities based on the search query
+    const filteredActivities = activities.filter((activity) =>
+      activity.activity_name.toLowerCase().includes(searchQuery.toLowerCase())
     );
-    }
+  
+    return (
+      <div className="test-container">
+        {filteredActivities.map((activity) => (
+          <Flexboxes key={activity.activity_name} data={activity} />
+        ))}
+      </div>
+    );
+  }
 
 
 
