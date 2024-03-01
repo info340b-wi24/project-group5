@@ -20,6 +20,9 @@ function App(props) {
        { <Indexhome activities={sample_activities} /> }
       {/* <Categoriespage tags={outdoors}/> */}
       
+       {/* <Indexhome activities={sample_activities} /> */}
+       <Categoriespage tags={outdoors} activities={sample_activities}/>
+        
     </div>
   )
 

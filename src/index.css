@@ -220,7 +220,7 @@ footer {
 .categories-container {
     display: flex;
     flex-direction: row; /* Row layout for desktop */
-    justify-content: space-around; /* Distribute space around elements */
+    /* justify-content: space-around;  */
     margin-left: 0.625rem;
     margin-top: 5rem;
 }
@@ -230,11 +230,11 @@ footer {
 }
 
 .category-section {
-    display: flex;
+    /* display: flex; */
     margin-left: 1.875rem;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* padding: 10px; */
 }
 
 .category-section form p {
@@ -246,8 +246,8 @@ form {
 }
 
 .cat-container {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    
 }
 
 
@@ -255,44 +255,48 @@ form {
 
 #outdoor-act {
     margin-left: 120px;
-    margin-top: 8px;
-    margin-bottom: 30px;
+  
+
 }
+
+.outdoors-section {
+    display: flex;
+    justify-content: center;
+   
+}
+
 
 .container {
     display: flex;
-    flex-direction: row; /* Row layout for larger screens */
+    flex-direction: row; 
     align-items: flex-start;
     max-width: 500px;
 }
 
-.oa-card {
+/* .oa-card {
     width: 300px;
-    /* flex: 1; */
+
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
     overflow: hidden;
     position: relative;
-    /* margin: 0.5rem; Add margin to cards */
+    
 }
 
 .oa-card img {
     width: 18.75rem;
     height: auto;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .oa-card-content {
-    /* margin-left: 0.625rem; */
+   
     margin-left: 10px;
 }
 
 .oa-card-content h2 {
-    /* font-size: 1.5rem;  */
-    /* Larger font size for headings */
-    /* margin-top: 0.313rem;
-    margin-bottom: 1.25rem; */
+   
 
     font-size: 20px;
     margin-top: 5px;
@@ -325,6 +329,17 @@ form {
 ion-icon {
     color:#333;
     font-size: 25px;
+} */
+
+.catbox-container{
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row; /* Row layout for larger screens */
+    align-items: flex-start;
+    /* max-width: 500px; */
+    margin-left: 100px;
+    margin-top: 20px;
 }
 
 
