@@ -8,8 +8,7 @@ import React, {useState} from 'react';
 import './index.css';
 import Indexhome from './components/Indexhome';
 import Categoriespage from './components/Categoriespage';
-import StartBuilding from './components/StartBuilding';
-import ItineraryFormPage2 from './components/ItineraryFormPage2'
+
 import sample_activities from './data/activities.json';
 import outdoors from './data/outsideAct.json';
 
@@ -20,9 +19,7 @@ function App(props) {
     <div>
        {/* <Indexhome activities={sample_activities} /> */}
        <Categoriespage tags={outdoors}/>
-  
     </div>
-
   )
 
 

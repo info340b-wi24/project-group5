@@ -350,6 +350,7 @@ ion-icon {
 
 .image-container {
     position: relative;
+    margin-left: 50px;
 }
 
 .pic-title {
@@ -363,27 +364,31 @@ ion-icon {
 }
 
 .activity-image {
-    max-width: 500px;
+    max-width: 520px;
     border-radius: 10px;
-    padding-bottom: 20px;
 }
 
 .activity-info {
-    max-width: 500px;
-    margin-left: 600px; 
-    margin-top: -200px;
+    max-width: 350px;
+    margin-left: 650px; 
+    margin-top: -260px;
+    font-size: 20px;
 }
 
-.google-review-summary img {
-    width: 70%;
-    margin-top: 300px;
-    margin-left: 70px;
+.revdescription {
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.address {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .reviews {
     width: 80%;
-    margin-top: 20px;
-    margin-left: 70px;
+    margin-top: 200px;
+    margin-left: 50px;
 }
 
 .review-title {
@@ -407,12 +412,13 @@ ion-icon {
 
 .write-review {
     align-self: center;
-    margin: 0 auto;
+    margin: 0;
     width: 50%;
 }
 
 .write-review textarea {
-    width: 100%;
+    width: 190%;
+    height: 100px;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 10px;
@@ -428,7 +434,7 @@ ion-icon {
     border: none;
     cursor: pointer;
     display: block;
-    margin: 0 auto;
+    margin-left: 350px;
 }
 
 
