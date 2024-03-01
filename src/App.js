@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 // import Navbar from './components/NavBar';
 // import SearchBar from './components/SearchBar';
 // import Categories from './components/Categories';
-// import BoxList from './components/BoxList';
+ import BoxList from './components/BoxList';
 // import CreateForm from './components/CreateForm';
 import './index.css';
 import Indexhome from './components/Indexhome';
@@ -17,8 +17,9 @@ function App(props) {
   return (
     
     <div>
-       {/* <Indexhome activities={sample_activities} /> */}
-       <Categoriespage tags={outdoors}/>
+       { <Indexhome activities={sample_activities} /> }
+      {/* <Categoriespage tags={outdoors}/> */}
+      
     </div>
   )
 
