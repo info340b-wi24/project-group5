@@ -342,22 +342,18 @@ ion-icon {
     border-radius: 10px;
 }
 
-
 .activity-content {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 
-
 .image-container {
     position: relative;
 }
 
-
 .pic-title {
     position: absolute;
-    margin-left: -300px;
     top: 10px;
     left: 10px;
     color: white;
@@ -366,29 +362,23 @@ ion-icon {
     border-radius: 5px;
 }
 
-
 .activity-image {
     max-width: 500px;
     border-radius: 10px;
-    margin-left: -300px;
     padding-bottom: 20px;
 }
 
-
 .activity-info {
-    max-width: 500px; /* Adjust if needed */
-    /* Remove any large left margin if present */
-    margin-left: -300px;
-    margin-top: 100px;
+    max-width: 500px;
+    margin-left: 600px; 
+    margin-top: -200px;
 }
-
 
 .google-review-summary img {
     width: 70%;
-    margin-top: 50px;
+    margin-top: 300px;
     margin-left: 70px;
 }
-
 
 .reviews {
     width: 80%;
@@ -396,11 +386,9 @@ ion-icon {
     margin-left: 70px;
 }
 
-
 .review-title {
     margin-top: 100px;
 }
-
 
 .review-cards {
     display: flex;
@@ -408,7 +396,6 @@ ion-icon {
     margin-top: 10px;
     margin-bottom: 100px;
 }
-
 
 .review-card {
     width: 280px;
@@ -418,34 +405,32 @@ ion-icon {
     margin-right: 50px;
 }
 
-
 .write-review {
     align-self: center;
+    margin: 0 auto;
     width: 50%;
 }
-
 
 .write-review textarea {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 20px; /* Add space between textarea and button */
+    margin-bottom: 20px;
     padding: 10px;
     margin-top: 10px;
-   
 }
 
-
 .write-review button {
-    width: 25%; /* Adjust button width as needed */
+    width: 25%;
     padding: 10px;
     border-radius: 10px;
     background-color: #3498db;
     color: white;
     border: none;
     cursor: pointer;
-    display: block; /* Make the button a block element */
-    margin: 0 auto; /* Center the button */
+    display: block;
+    margin: 0 auto;
 }
+
 
 
 

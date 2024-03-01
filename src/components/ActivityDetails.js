@@ -1,20 +1,20 @@
 import React from 'react';
-import ImageContainer from './ImageContainer';
-import ActivityInfo from './ActivityInfo';
-import GoogleReviewSummary from './GoogleReviewSummary';
+import ImageContainer from './ImageContainer'; // Import ImageContainer
+import ActivityInfo from './ActivityInfo'; // Import ActivityInfo
+import GoogleReviewSummary from './GoogleReviewSummary'; // Import GoogleReviewSummary
+import Reviews from './Reviews'; // Import Reviews
 
-function ActivityDetail({ data }) {
-  const { activity_name, description, img, location, cost, activity_type } = data;
-
+const ActivityDetail = ({ activities }) => {
+  const firstActivity = activities[0];
+  
   return (
     <article className="activity-detail">
-      <div className="activity-content">
-        <ImageContainer title={activity_name} imageSrc={img} />
-        <ActivityInfo description={description} location={location} cost={cost} activityType={activity_type} />
-      </div>
+      <ImageContainer activity={firstActivity} />
+      <ActivityInfo activity={firstActivity} />
       <GoogleReviewSummary />
+      <Reviews />
     </article>
   );
-}
+};
 
 export default ActivityDetail;
