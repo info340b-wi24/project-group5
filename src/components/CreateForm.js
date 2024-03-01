@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Form() {
+function CreateForm() {
   const [formData, setFormData] = useState({});
 
   const handleChange = (event) => {
@@ -51,4 +51,4 @@ function Form() {
   )
 }
 
-export default Form;
+export default CreateForm;
