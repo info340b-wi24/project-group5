@@ -4,6 +4,7 @@ import React, {useState} from 'react';
 // import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from './NavBar';
 import SearchBar from './SearchBar';
+import Footer from './Footer';
 import Categories from './Categories';
 import BoxList from './BoxList';
 import '../index.css';
@@ -36,7 +37,9 @@ export default function Indexhome(props) {
                 </div>
                 </div>
                 </div>
-                </section>      
+                <Footer />  
+                </section>   
+ 
     </div>
     
 

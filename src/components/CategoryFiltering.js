@@ -2,22 +2,23 @@ import React from 'react';
 
 const CategoryFilterbox = (props) => {
     return (
-        <div>
+        
             <form>
-                <div className="cat-container"></div>
+                {/* <div className="cat-container"> */}
                 <p>
                     <input type="checkbox" id={props.data.id} name="visits"/>
                     <label htmlFor={props.data.id}> {props.data.tag} </label>
                 </p>
+                {/* </div> */}
             </form>
-        </div>
+    
     );
 }
 
 
 export default function CategoryFiltering({ tags }) {
     return (
-      <div className="test-container">
+      <div className="cat-container">
         {tags.map((tag) => (
           <CategoryFilterbox key={tag.id} data={tag} />
         ))}
