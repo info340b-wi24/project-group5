@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import NavBar from './NavBar'
 
 function CreateForm() {
   const [formData, setFormData] = useState({});
@@ -15,6 +16,8 @@ function CreateForm() {
   }
 
   return (
+  <div>
+  <NavBar />
 <main class="form-body">
   <div class="form-container">
     <form onSubmit={handleSubmit}>
@@ -45,9 +48,11 @@ function CreateForm() {
       ></textarea>
 
       <input type="submit" value="Start building" />
+      <button type="button" name="submit" value="submit"><a href="itenerary-form-2nd-page.html">Start building</a></button> 
     </form>
   </div>
 </main>
+</div>
   )
 }
 
