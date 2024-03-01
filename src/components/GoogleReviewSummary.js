@@ -1,12 +1,13 @@
 import React from 'react';
 
-function GoogleReviewSummary() {
+const GoogleReviewSummary = () => {
   return (
     <div className="google-review-summary">
-      <img src="" alt="Google Review Summary" />
-      {/* You can replace the src attribute value with the actual path to your placeholder image */}
+      {/* Placeholder for Google review summary (e.g., an image) */}
+      <img src="img\google-reviews.png" alt="Google Review Summary" />
     </div>
   );
-}
+};
 
 export default GoogleReviewSummary;
+

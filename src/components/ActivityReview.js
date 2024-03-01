@@ -1,25 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import ActivityDetail from './ActivityDetails';
-import ReviewsSection from './ReviewsSection';
-import activitiesData from '../data/activities.json';
+import React, {useState} from 'react';
+import '../index.css';
+import ActivityDetail from './ActivityDetails'
+import Navbar from './NavBar';
+import Categories from './Categories';
+import sample_activities from '../data/activities.json';
 
-function ActivityComponent() {
-  // State to hold activities data
-  const [activities, setActivities] = useState([]);
 
-  useEffect(() => {
-    // Simulating fetching data
-    setActivities(activitiesData);
-  }, []);
-
+function ActivityReview(props) {
   return (
-    <main>
-      {activities.map((activity, index) => (
-        <ActivityDetail key={index} data={activity} />
-      ))}
-      <ReviewsSection />
-    </main>
-  );
+    
+    <div>
+      <Navbar />
+      <Categories />
+      <ActivityDetail activities={sample_activities}/>
+    </div>
+  )
 }
 
-export default ActivityComponent;
+export default ActivityReview;

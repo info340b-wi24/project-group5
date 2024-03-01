@@ -1,16 +1,16 @@
 import React from 'react';
 
-function ActivityInfo({ description, location, cost, activityType }) {
+const ActivityInfo = ({ activity }) => {
   return (
     <div className="activity-info">
       <ul>
-        <li>{description}</li>
-        <li>{location}</li>
-        <li>{cost}</li>
-        <li>{activityType.join(', ')}</li> {/* Assuming activityType is an array */}
+        <li>Description: {activity.description}</li>
+        <li>Location: {activity.location}</li>
+        <li>Cost: ${activity.cost}</li>
+        <li>Other Info: {activity.activity_type.join(', ')}</li>
       </ul>
     </div>
   );
-}
+};
 
 export default ActivityInfo;
