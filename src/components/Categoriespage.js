@@ -22,7 +22,7 @@ export default function Categoriespage({tags, activities}) {
             <div className="outdoors-section">
                 <div className="container">
                     <div className="row">
-                        <h2 id="outdoor-act">All Outdoor Activities</h2>
+                        <h2 id="outdoor-act">All Outdoors Activities</h2>
                         <Catbox activities={activities} />
                         
                         

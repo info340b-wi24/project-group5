@@ -20,50 +20,19 @@ function App(props) {
   return (
     
     <div>
-       {/*<Indexhome activities={sample_activities} /> */}
-       {/*<Categoriespage tags={outdoors} activities={sample_activities}/>*/}
-       {/*<AddActivity></AddActivity>>*/}
-       {/*<FinalItinerary></FinalItinerary>*/}
-       { <Indexhome activities={sample_activities} /> }
-      {/* <Categoriespage tags={outdoors}/> */}
+       <Categoriespage tags={outdoors} activities={sample_activities}/>
+       {/* <AddActivity></AddActivity> */}
+       {/* <FinalItinerary></FinalItinerary> */}
+       {/* { <Indexhome activities={sample_activities} /> } */}
+
       
-       {/* <Indexhome activities={sample_activities} /> */}
-       {/* <Categoriespage tags={outdoors} activities={sample_activities}/>*/}
+
         
     </div>
   )
 
 
-  // const [searchQuery, setSearchQuery] = useState('');
 
-  // // Update activities based on search query
-  // const handleSearch = (query) => {
-  //   setSearchQuery(query);
-  // };
-
-  // return (
-  //   <div>
-  //     <Navbar />
-  //     <SearchBar onSearch={handleSearch}/>
-  //     <Categories />
-  //     <section className="trending-spots">
-  //          <h2>Trending Spots in Seattle</h2>
-  //     </section>
-
-  //     <section className="trend-container">
-  //       <div className="card-container">
-  //           <div className="container">
-  //               <div className="row">
-  //               <BoxList activities={activities} searchQuery={searchQuery} />
-
-  //               </div>
-  //               </div>
-  //               </div>
-  //               </section>      
-  //   </div>
-    
-
-  // );
 }
 
 export default App;

@@ -7,7 +7,7 @@ const CategoryFilterbox = (props) => {
                 {/* <div className="cat-container"> */}
                 <p>
                     <input type="checkbox" id={props.data.id} name="visits"/>
-                    <label htmlFor={props.data.id}> {props.data.tag} </label>
+                    <label htmlFor={props.data.id} className = 'checkboxLabel'> {props.data.tag} </label>
                 </p>
                 {/* </div> */}
             </form>
