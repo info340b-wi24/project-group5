@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 // import Navbar from './components/NavBar';
 // import SearchBar from './components/SearchBar';
 // import Categories from './components/Categories';
-// import BoxList from './components/BoxList';
+ import BoxList from './components/BoxList';
 // import CreateForm from './components/CreateForm';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -20,10 +20,18 @@ function App(props) {
   return (
     
     <div>
+<<<<<<< HEAD
        {/*<Indexhome activities={sample_activities} /> */}
        {/*<Categoriespage tags={outdoors} activities={sample_activities}/>*/}
        {/*<AddActivity></AddActivity>>*/}
        <FinalItinerary></FinalItinerary>
+=======
+       { <Indexhome activities={sample_activities} /> }
+      {/* <Categoriespage tags={outdoors}/> */}
+      
+       {/* <Indexhome activities={sample_activities} /> */}
+       <Categoriespage tags={outdoors} activities={sample_activities}/>
+>>>>>>> 9fd44304c69a9add728332ca3fc93e8bfc9bf65f
         
     </div>
   )

@@ -4,7 +4,7 @@ const Flexboxes = (props) => {
     return (
 
 
-       <div className="test-container">
+       <div className="card-container">
                 <div className="row">
                     <div className="col-md-6 col-xl-3 d-flex"> 
                         <div className="card mb-8">
@@ -37,7 +37,7 @@ export default function BoxList({ activities, searchQuery }) {
     );
   
     return (
-      <div className="test-container">
+      <div className="card-container">
         {filteredActivities.map((activity) => (
           <Flexboxes key={activity.activity_name} data={activity} />
         ))}
