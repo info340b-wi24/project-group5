@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from './Footer';
 const SavedActivities = ({ activities }) => {
     return (
         <main className="">
@@ -20,6 +20,7 @@ const SavedActivities = ({ activities }) => {
                     </div>
                 </section>
             </div>
+            <Footer />
         </main>
     );
 };

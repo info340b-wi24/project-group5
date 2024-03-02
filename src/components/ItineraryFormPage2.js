@@ -1,7 +1,6 @@
 import React from 'react';
 
 const SavedActivities = () => {
-
     return (
         <main className="form-body">
             <div className="form-container">
@@ -28,6 +27,7 @@ const SavedActivities = () => {
                     </section>
                 </div>
             </div>
+            <Footer />
         </main>
     );
 };
