@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SavedActivities = () => {
+const SavedActivities = (props) => {
     return (
         <main className="form-body">
             <div className="form-container">
@@ -19,9 +19,9 @@ const SavedActivities = () => {
                     <section className="sample-saved-activities">
                         <div>
                                 <div className="card">
-                                    
-                                    <p>{}</p>
-                                    <p>{}</p>
+                                    <img src={props.data.img} className="img-fluid" alt={props.data.activity_name} />
+                                    <p>{props.activity_name}</p>
+                                    <p>{props.activity}</p>
                                 </div>
                         </div>
                     </section>

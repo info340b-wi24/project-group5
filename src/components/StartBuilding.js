@@ -1,8 +1,11 @@
 import React from 'react';
 import Footer from './Footer';
-const SavedActivities = ({ activities }) => {
+import Navbar from './NavBar';
+
+const SavedActivities = ({ props }) => {
     return (
         <main className="">
+            <Navbar />
             <div className="itinerary-container">
                 <section className="my-itinerary">
                     <h1>My Itinerary</h1>
@@ -15,7 +18,11 @@ const SavedActivities = ({ activities }) => {
                     <h1>Saved Activities</h1>
                     <div className="test-container">
                         <div className="row">
-                        {/* add the dynamic cards */}
+                                <div className="card">
+                                    <img src={props.data.img} className="img-fluid" alt={props.data.activity_name} />
+                                    <p>{props.activity_name}</p>
+                                    <p>{props.activity}</p>
+                                </div>
                         </div>
                     </div>
                 </section>

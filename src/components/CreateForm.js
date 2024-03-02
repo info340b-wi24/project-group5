@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import NavBar from './NavBar'
+import Footer from './Footer';
 
 function CreateForm() {
   const [formData, setFormData] = useState({});
@@ -15,9 +16,9 @@ function CreateForm() {
  
   }
 
-  return (
-  <div>
-  <NavBar />
+    return (
+    <div>
+    <NavBar />
 <main class="form-body">
   <div class="form-container">
     <form onSubmit={handleSubmit}>
@@ -52,6 +53,7 @@ function CreateForm() {
     </form>
   </div>
 </main>
+<Footer />
 </div>
   )
 }
