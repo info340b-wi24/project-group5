@@ -1,0 +1,44 @@
+[
+    {
+        "activity_name": "Alki Beach",
+        "description": "Alki Beach is a popular beach park in West Seattle, known for its sandy shores and stunning views of the Seattle skyline. It offers a range of activities including sunbathing, beach volleyball, and kayaking, making it a favorite spot for locals and tourists alike.",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "img": "img/alki.jpeg"
+        
+    },
+    {
+        "activity_name": "Cheshiahud Lake Union Loop",
+        "description": "The Cheshiahud Lake Union Loop offers a scenic waterfront walk around Lake Union, providing stunning views of the lake and city skyline, ideal for a leisurely stroll.",
+        "activity_type": ["Foodie Delights", "Local Markets"],
+        "img": "img/chesh.jpg"
+       
+    },
+    {
+        "activity_name": "Lake Washington Loop segment",
+        "description": "The Lake Washington Loop segment offers a scenic pathway along the shores of Lake Washington, providing beautiful views of the lake and surrounding landscape, perfect for a leisurely walk or bike ride.",
+        "activity_type": ["Indoor Escapes", "Art Exhibitions"],
+        "img": "img/lakewash.jpg"
+        
+    },
+    {
+        "activity_name": "Burke-Gilman Trail",
+        "description": "The Burke-Gilman Trail is a popular 18-mile biking route in Seattle, offering scenic views and a relaxing ride from Ballard to Bothell.",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "img": "img/burke.jpeg"
+        
+    },
+    {
+        "activity_name": "Sammamish River Trail",
+        "description": "The Sammamish River Trail is a popular biking trail in Seattle, running from Bothell to Redmond and offering scenic views along the Sammamish River.",
+        "activity_type": ["Foodie Delights", "Local Markets"],
+        "img": "img/sam.jpeg"
+        
+    },
+    {
+        "activity_name": "Myrtle Edwards Park ",
+        "description": "Myrtle Edwards Park in Seattle offers a scenic waterfront bike trail with stunning views of Elliott Bay and the Olympic Mountains.",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "img": "img/myrtle.jpeg"
+       
+    }
+]

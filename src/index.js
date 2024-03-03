@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 import sample_activities from './data/activities.json';
-import outdoors from './data/outsideAct.json';
+import outdoors from './data/outsideActsubcat.json';
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries

@@ -1,3 +1,4 @@
+
 // Categories page 
 
 import React, {useState} from 'react';
@@ -10,6 +11,24 @@ import Catbox from './Catbox';
 
 
 export default function Categoriespage({tags, activities}) {
+
+    const [selectedCategories, setSelectedCategories] = useState([]);
+
+    const handleCategoryChange = (categoryId, checked) => {
+        setSelectedCategories(prevCategories => {
+            if (checked) {
+                return [...prevCategories, categoryId];
+            } else {
+                return prevCategories.filter(id => id !== categoryId);
+            }
+        });
+    };
+
+    const filteredActivities = selectedCategories.length > 0 ?
+        activities.filter(activity => selectedCategories.includes(activity.categoryId)) :
+        activities;
+
+
     return (
         <div>
         <Navbar />
@@ -17,13 +36,13 @@ export default function Categoriespage({tags, activities}) {
         <section className="categories-container">
             <div className="category-section">
                <h2 id="outdoor-cat">Categories</h2>
-               <CategoryFiltering tags={tags} />
+               <CategoryFiltering tags={tags} onChange = {handleCategoryChange} />
             </div>
             <div className="outdoors-section">
                 <div className="container">
                     <div className="row">
-                        <h2 id="outdoor-act">All Outdoors Activities</h2>
-                        <Catbox activities={activities} />
+                        <h2 id="outdoor-act">All Outdoor Activities</h2>
+                        <Catbox activities={filteredActivities} />
                         
                         
                     </div>
@@ -36,3 +55,8 @@ export default function Categoriespage({tags, activities}) {
    </div>
     );
 }
+
+
+
+
+

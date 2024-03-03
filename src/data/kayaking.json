@@ -1,0 +1,44 @@
+[
+    {
+        "activity_name": "Lake union",
+        "description": "Kayaking on Lake Union offers stunning views of Seattle's skyline, houseboats, and seaplanes, providing a memorable and picturesque experience on the water.",
+        "activity_type": ["Foodie Delights", "Local Markets"],
+        "img": "img/lakeunion.jpeg"
+        
+    },
+    {
+        "activity_name": "Alki Beach",
+        "description": "Alki Beach is a popular beach park in West Seattle, known for its sandy shores and stunning views of the Seattle skyline. It offers a range of activities including sunbathing, beach volleyball, and kayaking, making it a favorite spot for locals and tourists alike.",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "img": "img/alki.jpeg"
+       
+    },
+    {
+        "activity_name": "Ballard Kayak",
+        "description": "Ballard Kayak offers a variety of kayak tours and rentals, providing a unique way to explore Seattle's waterways and enjoy views of the city from the water.",
+        "activity_type": ["Indoor Escapes", "Art Exhibitions"],
+        "img": "img/ballardkayak.jpeg"
+        
+    },
+    {
+        "activity_name": "Elliott Bay ",
+        "description": "Elliott Bay is a picturesque body of water in Seattle, offering stunning views of the city skyline, the Olympic Mountains, and Mount Rainier. It's a popular spot for kayaking, sailing, and enjoying waterfront dining, providing a quintessential Seattle experience.",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "img": "img/elliot.jpeg"
+        
+    },
+    {
+        "activity_name": "Owen Beach",
+        "description": "Owen Beach in Point Defiance Park, Tacoma, offers stunning views of Puget Sound and the Olympic Mountains, perfect for picnics and beach activities.",
+        "activity_type": ["Foodie Delights", "Local Markets"],
+        "img": "img/owen.jpeg"
+        
+    },
+    {
+        "activity_name": "Gig Harbor",
+        "description": "Gig Harbor is a charming waterfront town in Pierce County, Washington, known for its picturesque harbor, waterfront dining, and stunning views of the Puget Sound and Mount Rainier.",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "img": "img/gig.jpeg"
+       
+    }
+]

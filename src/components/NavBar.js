@@ -7,7 +7,7 @@ const Navbar = () => {
                 Sleepless in Seattle
             </div>
             <div className="topnav">
-                <a className="home" href="index.html">Home</a>
+                <a className="home" href="Indexhome.js">Home</a>
                 <a href="itinerary.html">My Itinerary</a>
                 <a href="sign-in.html">Sign In</a>
             </div>

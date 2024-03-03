@@ -14,9 +14,5 @@
     {
         "id": "bike",
         "tag": "Bike Routes"
-    },
-    {
-        "id": "parks",
-        "tag": "Parks and Gardens"
     }
 ]
