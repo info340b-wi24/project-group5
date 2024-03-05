@@ -2,28 +2,28 @@
     {
         "activity_name": "Forest Hike to Snowqualmie Falls",
         "description": "A 268-foot waterfall, located east of Seattle on the Snoqualmie River.",
-        "activity_type": ["Foodie Delights", "Local Markets"],
+        "category": ["Outdoor Activities", "Local Markets"],
         "img": "img/snoqualmie.jpg"
         
     },
     {
         "activity_name": "Mt. Rainier National Park",
         "description": "Mount Rainier National Park offers breathtaking hiking trails with stunning views of the majestic Mount Rainier.",
-        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "category": ["Outdoor Activities", "Best Scenic Spots"],
         "img": "img/rainier.jpeg"
        
     },
     {
         "activity_name": "Discovery Park Loop Trail",
         "description": "The Discovery Park Loop Trail offers a scenic hike through Seattle's largest park, showcasing stunning views of Puget Sound, the Olympic Mountains, and diverse wildlife habitats.",
-        "activity_type": ["Indoor Escapes", "Art Exhibitions"],
+        "category": ["Outdoor Activities", "Best Scenic Spots"],
         "img": "img/discovery.jpg"
         
     },
     {
         "activity_name": "Cedar River Trail",
         "description": "The Cedar River Trail is a beautiful hike along the Cedar River, offering picturesque views of the river, surrounding forests, and opportunities for birdwatching and wildlife spotting.",
-        "activity_type": ["Local Markets", "Foodie Delights"],
+        "category": ["Outdoor Activities", "Best Scenic Spots"],
         "img": "img/cedarTrail.jpeg"
         
     },

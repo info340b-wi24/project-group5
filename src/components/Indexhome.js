@@ -7,6 +7,8 @@ import SearchBar from './SearchBar';
 import Footer from './Footer';
 import Categories from './Categories';
 import BoxList from './BoxList';
+
+
 import '../index.css';
 
 export default function Indexhome(props) {

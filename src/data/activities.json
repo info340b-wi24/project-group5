@@ -2,15 +2,16 @@
     {
         "activity_name": "Elm Coffee Roasters",
         "description": "House-roasted, single-origin brews are the specialty at this casual coffeehouse in a calm palette.",
-        "activity_type": ["Foodie Delights", "Local Markets"],
+        "category": ["Foodie Delights", "Local Markets"],
         "img": "img/elm.jpg",
         "location": "Pioneer Square, 240 2nd Ave S #103, Seattle, WA 98104",
         "time": "7am - 3pm"
+        
     },
     {
         "activity_name": "Space Needle",
         "description": "The Space Needle is an observation tower in Seattle, Washington, United States.",
-        "activity_type": ["Best Scenic Spots", "Family-Friendly Activities"],
+        "category": ["Best Scenic Spots", "Family-Friendly Activities"],
         "img": "img/space.jpg",
         "location": "Seattle Center",
         "cost": "32"
@@ -36,6 +37,7 @@
         "activity_name": "Gas Works Park",
         "description": "It is a 19.1-acre public park located on the north shore of Lake Union at the south end of the Wallingford neighborhood.",
         "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "sub-type":["Waterfront Walks"],
         "img": "img/gasworks.jpeg",
         "location": "Wallingford",
         "cost": "0"

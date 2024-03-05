@@ -1,13 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <header> 
-            <div id="logo">
-                Sleepless in Seattle
-            </div>
+            <Link to="/">
+                <div id="logo">
+                    Sleepless in Seattle
+                </div>
+            </Link>
+            
             <div className="topnav">
-                <a className="home" href="Indexhome.js">Home</a>
+                <Link to="/">
+                    <a className="home" href="/">Home</a>
+                </Link>
+                
                 <a href="itinerary.html">My Itinerary</a>
                 <a href="sign-in.html">Sign In</a>
             </div>
