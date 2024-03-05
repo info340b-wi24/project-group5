@@ -9,7 +9,7 @@ import '../index.css';
 import CategoryFiltering from './CategoryFiltering';
 import Catbox from './Catbox';
 import { useParams } from 'react-router-dom';
-
+import BoxList from './BoxList';
 
 
 const ActivityFlexbox = ({ activity }) => {
@@ -19,7 +19,7 @@ const ActivityFlexbox = ({ activity }) => {
                 <div className="card">
                     <div className="row"> 
                         <div className="col-sm-auto col-xl-12">
-                            <img src={activity.img} className="img-fluid" alt={activity.activity_name} />
+                        <img src={`${process.env.PUBLIC_URL}/${activity.img}`} className="img-fluid" alt={activity.activity_name} />
                         </div>
                         <div className="col-sm"> 
                             <div className="card-content">
@@ -59,7 +59,7 @@ export default function Categoriespage({tags, activities}) {
             <div className="outdoors-section">
                 <div className="container">
                     <div className="row">
-                    <h2>{decodedCategoryName}</h2>
+                    <h2 id="outdoor-act">{decodedCategoryName}</h2>
                     {filteredActivities.map(activity => (
                                 <ActivityFlexbox key={activity.activity_name} activity={activity} />
                             ))}
