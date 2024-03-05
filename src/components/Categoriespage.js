@@ -14,7 +14,7 @@ import BoxList from './BoxList';
 
 const ActivityFlexbox = ({ activity }) => {
     return (
-        <div className="col-md-6 col-xl-3 mb-4"> 
+        <div className="col-md-6 col-lg-4 mb-4"> 
             <div className="card mb-8">
                 <div className="card">
                     <div className="row"> 
@@ -34,6 +34,7 @@ const ActivityFlexbox = ({ activity }) => {
         </div>
     );
 };
+
 
 export default function Categoriespage({tags, activities}) {
 
