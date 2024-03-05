@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Indexhome from './components/Indexhome';
-import Categoriespage from './components/Categoriespage';
+import CategoriesPage from './components/Categoriespage';
 
 import sample_activities from './data/activities.json';
 import outdoorsSub from './data/outsideActsubcat.json';
@@ -19,11 +19,11 @@ function App(props) {
 
 
     <Router>
-      <Routes>
-        <Route path="/" element={<Indexhome activities={sample_activities} />} />
-        <Route path="/outdoorActivities" element={<Categoriespage tags={outdoorsSub} activities={totaloutdoors} />} />
-      </Routes>
-    </Router>
+            <Routes>
+                <Route path="/" element={<Indexhome activities={sample_activities} />} />
+                <Route path="/categories/:categoryName" element={<CategoriesPage activities={sample_activities} tags={outdoorsSub}/>} />
+            </Routes>
+        </Router>
 
 
 

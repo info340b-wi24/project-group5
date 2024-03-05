@@ -2,21 +2,10 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Categories = ({ activities, setFilteredActivities }) => {
-    const [selectedCategory, setSelectedCategory] = useState(null);
-
+const Categories = ({ activities }) => {
     const handleCategoryClick = (category) => {
-        setSelectedCategory(category);
-
-        // Filter activities based on the selected category
-        const filteredActivities = activities.filter(activity => {
-            console.log("Activity Category:", activity.category);
-            return activity.category === category;
-        });
-
-        console.log("Filtered Activities:", filteredActivities);
-
-        setFilteredActivities(filteredActivities);
+        // This function will now only be used for logging, if necessary.
+        console.log("Category Selected:", category);
     };
 
 
@@ -25,7 +14,7 @@ const Categories = ({ activities, setFilteredActivities }) => {
                     <ul className="categories_top">
                          <li>Style</li>
                          <li>
-                             <Link to="#" onClick={() => handleCategoryClick('Outdoor Activities')}>Outdoor Activities</Link>
+                         <Link to={`/categories/${encodeURIComponent('Outdoor Activities')}`} onClick={() => handleCategoryClick('Outdoor Activities')}>Outdoor Activities</Link>
                          </li>
                          <li>Indoor Escapes</li>
                          <li>Foodie Delights</li>
