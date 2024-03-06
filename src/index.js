@@ -6,6 +6,7 @@ import App from './App';
 import sample_activities from './data/activities.json';
 import outdoors from './data/outsideActsubcat.json';
 import { initializeApp } from "firebase/app";
+import { getDatabase } from 'firebase/database';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -22,6 +23,9 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const db = getDatabase();
+
+export{app,db}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

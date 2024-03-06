@@ -5,10 +5,11 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Indexhome from './components/Indexhome';
 import CategoriesPage from './components/Categoriespage';
-
+import CreateFormTest from './components/CreateFormTest'
 import sample_activities from './data/activities.json';
 import outdoorsSub from './data/outsideActsubcat.json';
 import totaloutdoors from './data/totaloutsideActs.json';
+import SignIn-2 from './components/SignIn-2.js';
 
 import { AddActivity } from './components/AddActivity';
 import { FinalItinerary } from './components/FinalFinalItinerary';
@@ -16,14 +17,15 @@ import { FinalItinerary } from './components/FinalFinalItinerary';
 function App(props) {
 
   return (
-
-
-    <Router>
-            <Routes>
-                <Route path="/" element={<Indexhome activities={sample_activities} />} />
-                <Route path="/categories/:categoryName" element={<CategoriesPage activities={sample_activities} tags={outdoorsSub}/>} />
-            </Routes>
-        </Router>
+// <Indexhome />
+//<CreateFormTest />
+<SignIn-2 />
+    // <Router>
+           // <Routes>
+             //   <Route path="/" element={<Indexhome activities={sample_activities} />} />
+              //  <Route path="/categories/:categoryName" element={<CategoriesPage activities={sample_activities} tags={outdoorsSub}/>} />
+          //  </Routes>
+       // </Router>
 
 
 
@@ -48,7 +50,7 @@ function App(props) {
     //   </div>
     // </Router>
     
-  )
+   )
 
 
 

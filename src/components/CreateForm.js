@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import NavBar from './NavBar'
 import Footer from './Footer';
+import { db, storage } from 'index.js';
+
 
 function CreateForm() {
   const [formData, setFormData] = useState({});
-
+ // diff states for each input of the form
+ // need a handle for each of the categories
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
