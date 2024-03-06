@@ -9,7 +9,7 @@ import CreateFormTest from './components/CreateFormTest'
 import sample_activities from './data/activities.json';
 import outdoorsSub from './data/outsideActsubcat.json';
 import totaloutdoors from './data/totaloutsideActs.json';
-import SignIn-2 from './components/SignIn-2.js';
+import { MySignInScreen } from './components/SignInScreen.js';
 
 import { AddActivity } from './components/AddActivity';
 import { FinalItinerary } from './components/FinalFinalItinerary';
@@ -19,7 +19,7 @@ function App(props) {
   return (
 // <Indexhome />
 //<CreateFormTest />
-<SignIn-2 />
+<MySignInScreen />
     // <Router>
            // <Routes>
              //   <Route path="/" element={<Indexhome activities={sample_activities} />} />
