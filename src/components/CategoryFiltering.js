@@ -1,29 +1,32 @@
-import React from 'react';
+import { filter } from 'lodash';
+import React, {useState} from 'react';
 
 const CategoryFilterbox = (props) => {
     return (
         
             <form>
-                {/* <div className="cat-container"> */}
+             
                 <p>
                     <input type="checkbox" id={props.data.id} name="visits"/>
                     <label htmlFor={props.data.id} className = 'checkboxLabel'> {props.data.tag} </label>
                 </p>
-                {/* </div> */}
+              
             </form>
     
     );
 }
 
 
-export default function CategoryFiltering({ tags }) {
+export default function CategoryFiltering({ selectedCategory, tags }) {
+  const filteredtags = tags.filter(tag => tag['cat-id'] === selectedCategory);
     return (
       <div className="cat-container">
-        {tags.map((tag) => (
+        {filteredtags.map((tag) => (
           <CategoryFilterbox key={tag.id} data={tag} />
         ))}
       </div>
     );
+    
   }
 
-
+  

@@ -2,7 +2,8 @@
     {
         "activity_name": "Elm Coffee Roasters",
         "description": "House-roasted, single-origin brews are the specialty at this casual coffeehouse in a calm palette.",
-        "category": ["Foodie Delights", "Local Markets"],
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Cafe"],
         "img": "img/elm.jpg",
         "location": "Pioneer Square, 240 2nd Ave S #103, Seattle, WA 98104",
         "time": "7am - 3pm"
@@ -11,7 +12,8 @@
     {
         "activity_name": "Space Needle",
         "description": "The Space Needle is an observation tower in Seattle, Washington, United States.",
-        "category": ["Best Scenic Spots", "Family-Friendly Activities"],
+        "activity_type": ["Family-Friendly Activities"],
+        "sub_type": ["Educational attractions"],
         "img": "img/space.jpg",
         "location": "Seattle Center",
         "cost": "32"
@@ -20,7 +22,8 @@
     {
         "activity_name": "Chihuly Garden and Glass",
         "description": "Chihuly Garden and Glass is an exhibit in the Seattle Center, showcasing the studio glass of Dale Chihuly.",
-        "activity_type": ["Indoor Escapes", "Art Exhibitions"],
+        "activity_type": [ "Family Friendly Activities", "Historic/Cultural"],
+        "sub_type": ["Arts and craft workshop", "Museum and galleries"],
         "img": "img/chi.jpeg",
         "location": "Seattle Center",
         "cost": "30"
@@ -29,6 +32,7 @@
         "activity_name": "Pike Place Market",
         "description": "One of the oldest continuously operated public farmers' markets in the United States.",
         "activity_type": ["Local Markets", "Foodie Delights"],
+        "sub_type": ["Farmers market", "Seafood Restaurants"],
         "img": "img/pike.jpeg",
         "location": "Downtown",
         "cost": "0"
@@ -37,7 +41,7 @@
         "activity_name": "Gas Works Park",
         "description": "It is a 19.1-acre public park located on the north shore of Lake Union at the south end of the Wallingford neighborhood.",
         "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
-        "sub-type":["Waterfront Walks"],
+        "sub-type":["Waterfront Walks", "Waterfront"],
         "img": "img/gasworks.jpeg",
         "location": "Wallingford",
         "cost": "0"
@@ -46,6 +50,7 @@
         "activity_name": "Seattle Aquarium",
         "description": "The Seattle Aquarium offers fun, exciting ways to discover more about the Puget Sound and our world's big ocean.",
         "activity_type": ["Family-Friendly Activities", "Indoor Escapes"],
+        "sub_type": ["Educational attractions"],
         "img": "img/aquarium.jpg",
         "location": "Waterfront",
         "cost": "25"
@@ -53,7 +58,8 @@
     {
         "activity_name": "Museum of Pop Culture (MoPOP)",
         "description": "MoPOP is home to the worlds most immersive pop culture experiences in TV, music, and science fiction.",
-        "activity_type": ["Indoor Escapes", "Entertainment", "Historic/Cultural"],
+        "activity_type": ["Family-Friendly Activities", "Historic/Cultural"],
+        "sub_type": ["Educational attractions", "Museum and galleries"],
         "img": "img/mpop.jpeg",
         "location": "Seattle Center",
         "cost": "28"
@@ -62,6 +68,7 @@
         "activity_name": "Discovery Park",
         "description": "Discovery Park offers a spectacular view of the Cascade and Olympic Mountain ranges with a scenic lighthouse.",
         "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "sub_type": ["Hiking trails", "Waterfront Walks", "Waterfront", "Sunset/sunrise spots"],
         "img": "img/disco.jpg",
         "location": "Magnolia",
         "cost": "0"
@@ -69,7 +76,8 @@
     {
         "activity_name": "Seattle Art Museum",
         "description": "Experience historical and contemporary art pieces and galleries at the incredible SAM exhibitions.",
-        "activity_type": ["Indoor Escapes", "Historic/Cultural"],
+        "activity_type": ["Family-Friendly Activities", "Historic/Cultural"],
+        "sub_type": ["Arts and craft workshop", "Museum and galleries"],
         "img": "img/sam.jpg",
         "location": "Downtown",
         "cost": "20"
@@ -78,6 +86,7 @@
         "activity_name": "Alki Beach",
         "description": "A beautiful spot for a long walk across Elliott Bay, with many restaurants and shops nearby.", 
         "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "sub_type": [ "Waterfront Walks", "Waterfront", "Sunset/sunrise spots"],
         "img": "img/alki.jpg",
         "location": "West Seattle",
         "cost": "0"
@@ -85,7 +94,8 @@
     {
         "activity_name": "Woodland Park Zoo",
         "description": "Explore exciting wildlife and the 1000 animals who call Woodland Park Zoo home.", 
-        "activity_type": ["Family-Friendly Activities", "Outdoor Activities"],
+        "activity_type": ["Family-Friendly Activities"],
+        "sub_type": ["Educational attractions", "Interactive play spaces"],
         "img": "img/zoo.jpg",
         "location": "Phinney Ridge",
         "cost": "22"
@@ -93,9 +103,145 @@
     {
         "activity_name": "Pink Door Restaurant",
         "description": "Treat yourself to delicious and unique Italian meals with a great ambience at this popular spot.", 
-        "activity_type": ["Foodie Delights", "Local Markets"],
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Seafood Restaurants", "Cafe"],
         "img": "img/pinkdoor.jpg",
         "location": "Downtown",
         "cost": "100"
+    },
+    {
+        "activity_name": "Cheshiahud Lake Union Loop",
+        "description": "The Cheshiahud Lake Union Loop offers a scenic waterfront walk around Lake Union, providing stunning views of the lake and city skyline, ideal for a leisurely stroll.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Bike Trails"],
+        "img": "img/chesh.jpg"
+       
+    },
+    {
+        "activity_name": "Lake Washington Loop segment",
+        "description": "The Lake Washington Loop segment offers a scenic pathway along the shores of Lake Washington, providing beautiful views of the lake and surrounding landscape, perfect for a leisurely walk or bike ride.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Bike Trails"],
+        "img": "img/lakewash.jpg"
+        
+    },
+    {
+        "activity_name": "Burke-Gilman Trail",
+        "description": "The Burke-Gilman Trail is a popular 18-mile biking route in Seattle, offering scenic views and a relaxing ride from Ballard to Bothell.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Bike Trails"],
+        "img": "img/burke.jpeg"
+        
+    },
+    {
+        "activity_name": "Sammamish River Trail",
+        "description": "The Sammamish River Trail is a popular biking trail in Seattle, running from Bothell to Redmond and offering scenic views along the Sammamish River.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Bike Trails"],
+        "img": "img/sam.jpeg"
+        
+    },
+    {
+        "activity_name": "Myrtle Edwards Park ",
+        "description": "Myrtle Edwards Park in Seattle offers a scenic waterfront bike trail with stunning views of Elliott Bay and the Olympic Mountains.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Bike Trails"],
+        "img": "img/myrtle.jpeg"
+    },
+    {
+        "activity_name": "Forest Hike to Snowqualmie Falls",
+        "description": "A 268-foot waterfall, located east of Seattle on the Snoqualmie River.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
+        "img": "img/snoqualmie.jpg"
+        
+    },
+    {
+        "activity_name": "Mt. Rainier National Park",
+        "description": "Mount Rainier National Park offers breathtaking hiking trails with stunning views of the majestic Mount Rainier.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
+        "img": "img/rainier.jpeg"
+       
+    },
+    {
+        "activity_name": "Cedar River Trail",
+        "description": "The Cedar River Trail is a beautiful hike along the Cedar River, offering picturesque views of the river, surrounding forests, and opportunities for birdwatching and wildlife spotting.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
+        "img": "img/cedarTrail.jpeg"
+        
+    },
+    {
+        "activity_name": "Evans Creek Preserve",
+        "description": "Evans Creek Preserve is a natural oasis featuring a variety of hiking trails through forests, meadows, and wetlands, providing a peaceful escape and opportunities to observe local flora and fauna.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
+        "img": "img/evans.jpeg"
+        
+    },
+    {
+        "activity_name": "Soaring Eagle Regional Park",
+        "description": "Soaring Eagle Regional Park offers a network of scenic hiking trails through lush forests and open meadows, providing a peaceful retreat and opportunities for wildlife viewing.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
+        "img": "img/eagle.jpeg"
+       
+    },
+    {
+        "activity_name": "The Wildside Trail",
+        "description": "The Wildside Trail - De Leo Wall is a challenging hike that rewards adventurers with stunning views of the surrounding mountains and valleys, offering a thrilling outdoor experience for seasoned hikers.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
+        "img": "img/wild.jpeg"
+        
+    },
+    {
+        "activity_name": "Poo Poo Point",
+        "description": "Poo Poo Point is a popular hiking destination in the Issaquah Alps, offering panoramic views of the surrounding mountains and valleys, making it a favorite spot for paragliders and hikers alike.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
+        "img": "img/poo.jpeg"
+        
+    },
+    {
+        "activity_name": "Elliott Bay ",
+        "description": "Elliott Bay is a picturesque body of water in Seattle, offering stunning views of the city skyline, the Olympic Mountains, and Mount Rainier. It's a popular spot for kayaking, sailing, and enjoying waterfront dining, providing a quintessential Seattle experience.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Waterfront Walks"],
+        "img": "img/elliot.jpeg"
+       
+    },
+    {
+        "activity_name": "West Seattle waterfront",
+        "description": "The West Seattle waterfront offers stunning views of the Puget Sound and downtown Seattle, providing a picturesque setting for a leisurely stroll or bike ride along the water's edge.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Waterfront Walks"],
+        "img": "img/westsea.jpg"
+        
+    },
+    {
+        "activity_name": "David E. Brink Park",
+        "description": "David E. Brink Park in Kirkland offers stunning waterfront views of Lake Washington and the Seattle skyline, perfect for a relaxing stroll by the water.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Waterfront Walks"],
+        "img": "img/david.jpeg"
+        
+    },
+    {
+        "activity_name": "Meydenbauer Park",
+        "description": "Meydenbauer Park in Bellevue offers scenic views of Lake Washington, providing a peaceful escape for a leisurely stroll or a day of picnicking by the water.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Waterfront Walks"],
+        "img": "img/meyden.jpeg"
+       
+    },
+    {
+        "activity_name": "Foster Island Trail",
+        "description": "The Foster Island Trail offers a peaceful nature walk through wetlands and forests, providing a serene escape from the city within Seattle's own Washington Park Arboretum.",
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Waterfront Walks"],
+        "img": "img/foster.jpeg"
+        
     }
 ]

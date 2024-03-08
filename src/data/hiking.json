@@ -2,56 +2,64 @@
     {
         "activity_name": "Forest Hike to Snowqualmie Falls",
         "description": "A 268-foot waterfall, located east of Seattle on the Snoqualmie River.",
-        "activity_type": ["Foodie Delights", "Local Markets"],
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
         "img": "img/snoqualmie.jpg"
         
     },
     {
         "activity_name": "Mt. Rainier National Park",
         "description": "Mount Rainier National Park offers breathtaking hiking trails with stunning views of the majestic Mount Rainier.",
-        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
         "img": "img/rainier.jpeg"
        
     },
     {
         "activity_name": "Discovery Park Loop Trail",
         "description": "The Discovery Park Loop Trail offers a scenic hike through Seattle's largest park, showcasing stunning views of Puget Sound, the Olympic Mountains, and diverse wildlife habitats.",
-        "activity_type": ["Indoor Escapes", "Art Exhibitions"],
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
         "img": "img/discovery.jpg"
         
     },
     {
         "activity_name": "Cedar River Trail",
         "description": "The Cedar River Trail is a beautiful hike along the Cedar River, offering picturesque views of the river, surrounding forests, and opportunities for birdwatching and wildlife spotting.",
-        "activity_type": ["Local Markets", "Foodie Delights"],
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
         "img": "img/cedarTrail.jpeg"
         
     },
     {
         "activity_name": "Evans Creek Preserve",
         "description": "Evans Creek Preserve is a natural oasis featuring a variety of hiking trails through forests, meadows, and wetlands, providing a peaceful escape and opportunities to observe local flora and fauna.",
-        "activity_type": ["Foodie Delights", "Local Markets"],
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
         "img": "img/evans.jpeg"
         
     },
     {
         "activity_name": "Soaring Eagle Regional Park",
         "description": "Soaring Eagle Regional Park offers a network of scenic hiking trails through lush forests and open meadows, providing a peaceful retreat and opportunities for wildlife viewing.",
-        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
         "img": "img/eagle.jpeg"
        
     },
     {
         "activity_name": "The Wildside Trail",
         "description": "The Wildside Trail - De Leo Wall is a challenging hike that rewards adventurers with stunning views of the surrounding mountains and valleys, offering a thrilling outdoor experience for seasoned hikers.",
-        "activity_type": ["Indoor Escapes", "Art Exhibitions"],
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
         "img": "img/wild.jpeg"
         
     },
     {
         "activity_name": "Poo Poo Point",
         "description": "Poo Poo Point is a popular hiking destination in the Issaquah Alps, offering panoramic views of the surrounding mountains and valleys, making it a favorite spot for paragliders and hikers alike.",
-        "activity_type": ["Local Markets", "Foodie Delights"],
+        "activity_type": ["Outdoor Activities"],
+        "sub_type": ["Hiking trails"],
         "img": "img/poo.jpeg"
         
     }

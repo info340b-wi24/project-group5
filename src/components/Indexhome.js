@@ -15,6 +15,9 @@ export default function Indexhome(props) {
 
   const [activities, setActivities] = useState(props.activities);
   const [searchQuery, setSearchQuery] = useState('');
+  
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  console.log(selectedCategory);
 
   // Update activities based on search query
   const handleSearch = (query) => {
@@ -25,7 +28,7 @@ export default function Indexhome(props) {
     <div>
       <Navbar />
       <SearchBar onSearch={handleSearch}/>
-      <Categories />
+      <Categories activities={activities} setSelectedCategory={setSelectedCategory} />
       <section className="trending-spots">
            <h2>Trending Spots in Seattle</h2>
       </section>
