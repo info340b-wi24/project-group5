@@ -1,0 +1,195 @@
+[
+
+    {
+        "id": "hiking",
+        "tag": "Hiking trails",
+        "cat-id": "Outdoor Activities"
+    },
+    
+    {
+        "id": "water",
+        "tag": "Waterfront Walks",
+        "cat-id": "Outdoor Activities"
+    },
+    
+    {
+        "id": "bike",
+        "tag": "Bike Trails",
+        "cat-id": "Outdoor Activities"
+    },
+    
+    {
+        "id": "climbing",
+        "tag": "Climbing Gyms",
+        "cat-id": "Indoor Escapes"
+    },
+    
+    {
+        "id": "escape",
+        "tag": "Escape Rooms",
+        "cat-id": "Indoor Escapes"
+    },
+    
+    {
+        "id": "books",
+        "tag": "Libraries",
+        "cat-id": "Indoor Escapes"
+    },
+    
+    {
+        "id": "seafood",
+        "tag": "Seafood Restaurants",
+        "cat-id": "Foodie Delights"
+    },
+    
+    {
+        "id": "cafe",
+        "tag": "Cafe",
+        "cat-id": "Foodie Delights"
+    },
+    
+    {
+        "id": "foodtruck",
+        "tag": "Food Trucks",
+        "cat-id": "Foodie Delights"
+    },
+    
+    {
+        "id": "waterfront",
+        "tag": "Waterfront",
+        "cat-id": "Best Scenic Spots"
+    },
+    
+    {
+        "id": "sunset/sunrise",
+        "tag": "Sunset/sunrise spots ",
+        "cat-id": "Best Scenic Spots"
+    },
+    
+    {
+        "id": "Beaches",
+        "tag": "Beaches",
+        "cat-id": "Best Scenic Spots"
+    },
+    
+    {
+        "id": "music",
+        "tag": "Live Music Venues",
+        "cat-id": "Entertainment"
+    },
+    
+    {
+        "id": "jazz",
+        "tag": "Jazz Bars",
+        "cat-id": "Entertainment"
+    },
+    
+    {
+        "id": "performingarts",
+        "tag": "Theaters and Performing Arts",
+        "cat-id": "Entertainment"
+    },
+    
+    {
+        "id": "education",
+        "tag": "Educational attractions",
+        "cat-id": "Family-Friendly Activities"
+    },
+    
+    {
+        "id": "Artscraft",
+        "tag": "Arts and craft workshop",
+        "cat-id": "Family-Friendly Activities"
+    },
+    
+    {
+        "id": "playspace",
+        "tag": "Interactive play spaces",
+        "cat-id": "Family-Friendly Activities"
+    },
+    
+    {
+        "id": "galleries",
+        "tag": "Museum and galleries ",
+        "cat-id": "Historic/Cultural"
+    },
+    
+    {
+        "id": "walking",
+        "tag": "Historic walking tours",
+        "cat-id": "Historic/Cultural"
+    },
+    
+    {
+        "id": "culture",
+        "tag": "Cultural performances and events",
+        "cat-id": "Historic/Cultural"
+    },
+    
+    {
+        "id": "musicfest",
+        "tag": "Music festivals",
+        "cat-id": "Festivals"
+    },
+    
+    {
+        "id": "artfest",
+        "tag": "Cultural and art festivals",
+        "cat-id": "Festivals"
+    },
+    
+    {
+        "id": "foodfest",
+        "tag": "Food festivals",
+        "cat-id": "Festivals"
+    },
+    
+    {
+        "id": "farmers",
+        "tag": "Farmers market",
+        "cat-id": "Local Markets"
+    },
+    
+    {
+        "id": "artisan",
+        "tag": "Artisan markets",
+        "cat-id": "Local Markets"
+    },
+    
+    {
+        "id": "flea",
+        "tag": "Flea markets",
+        "cat-id": "Local Markets"
+    },
+    
+    {
+        "id": "adrenaline",
+        "tag": "Adrenaline Rush",
+        "cat-id": "Unique Experiences"
+    },
+    
+    {
+        "id": "nighlife",
+        "tag": "Night Life",
+        "cat-id": "Unique Experiences"
+    },
+    
+    {
+        "id": "rainyday",
+        "tag": "Rainy Day Retreat",
+        "cat-id": "Styles"
+    },
+    
+    {
+        "id": "girls",
+        "tag": "Girls Night Out",
+        "cat-id": "Styles"
+    },
+    
+    {
+        "id": "calm",
+        "tag": "Calm Day Relaxation",
+        "cat-id": "Styles"
+    }
+    
+    ]

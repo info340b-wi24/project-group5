@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 import sample_activities from './data/activities.json';
-import outdoors from './data/outsideActsubcat.json';
+import subcat from './data/subcat.json';
 import { initializeApp } from "firebase/app";
 import { getDatabase } from 'firebase/database';
 // TODO: Add SDKs for Firebase products that you want to use
@@ -31,7 +31,7 @@ export{app,db}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App activities={sample_activities} tags = {outdoors}/>
+    <App activities={sample_activities} tags = {subcat}/>
   </React.StrictMode>
 );
 
