@@ -998,6 +998,7 @@ ion-icon {
 .form-body{
     padding-left:8rem;
     padding-right:8rem;
+    padding-top: 1rem;
 }
 .sample-saved-activities{
     padding-top:2rem;

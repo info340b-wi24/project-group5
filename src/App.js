@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 // import CreateForm from './components/CreateForm';
 import './index.css';
@@ -10,7 +11,7 @@ import sample_activities from './data/activities.json';
 import outdoorsSub from './data/outsideActsubcat.json';
 import totaloutdoors from './data/totaloutsideActs.json';
 import { MySignInScreen } from './components/SignInScreen.js';
-
+import ItineraryFormPage2 from './components/ItineraryFormPage2.js'
 import { AddActivity } from './components/AddActivity';
 import { FinalItinerary } from './components/FinalFinalItinerary';
 
@@ -18,8 +19,8 @@ function App(props) {
 
   return (
 // <Indexhome />
-//<CreateFormTest />
-<MySignInScreen />
+<ItineraryFormPage2 />
+// <MySignInScreen />
     // <Router>
            // <Routes>
              //   <Route path="/" element={<Indexhome activities={sample_activities} />} />
