@@ -9,6 +9,7 @@ import CreateFormTest from './components/CreateFormTest'
 import sample_activities from './data/activities.json';
 import outdoorsSub from './data/outsideActsubcat.json';
 import totaloutdoors from './data/totaloutsideActs.json';
+import subcat from './data/subcat.json';
 import { MySignInScreen } from './components/SignInScreen.js';
 import StartBuilding from './components/StartBuilding.js'; 
 import CreateForm from './components/CreateForm.js'; 

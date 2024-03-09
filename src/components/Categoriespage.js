@@ -36,47 +36,41 @@ const ActivityFlexbox = ({ activity }) => {
 };
 
 
-export default function Categoriespage({tags, activities}) {
-
+export default function Categoriespage({ tags, activities }) {
     const { categoryName } = useParams();
     const decodedCategoryName = decodeURIComponent(categoryName);
 
     const filteredActivities = activities.filter(activity => 
         activity.activity_type && activity.activity_type.includes(decodedCategoryName)
     );
-    
-    console.log('Filtered Activities:', filteredActivities);
 
+    const [selectedCategory, setSelectedCategory] = useState(null);
+    console.log(selectedCategory);
 
     return (
         <div>
-        <Navbar />
-        <Categories />
-        <section className="categories-container">
-            <div className="category-section">
-               <h2 id="outdoor-cat">Categories</h2>
-               <CategoryFiltering tags={tags}/>
-            </div>
-            <div className="outdoors-section">
-                <div className="container">
-                    <div className="row">
-                    <h2 id="outdoor-act">{decodedCategoryName}</h2>
-                    {filteredActivities.map(activity => (
+            <Navbar />
+            {/* Pass setSelectedCategory function as a prop */}
+            <Categories activities={activities} setSelectedCategory={setSelectedCategory} />
+            <section className="categories-container">
+                <div className="category-section">
+                    <h2 id="outdoor-cat">Categories</h2>
+                    <CategoryFiltering selectedCategory={selectedCategory} tags={tags}/>
+                </div>
+                <div className="outdoors-section">
+                    <div className="container">
+                        <div className="row">
+                            <h2 id="outdoor-act">{decodedCategoryName}</h2>
+                            {filteredActivities.map(activity => (
                                 <ActivityFlexbox key={activity.activity_name} activity={activity} />
                             ))}
-                        
+                        </div>
                     </div>
                 </div>
-            </div>
-
-      
-       </section>
-       <Footer />  
-   </div>
+            </section>
+            <Footer />  
+        </div>
     );
 }
-
-
-
 
 
