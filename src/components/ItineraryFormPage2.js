@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import React from 'react';
+import Footer from './Footer'; 
 
 const ActivitySearchPage = () => {
   const [searchQuery, setSearchQuery] = useState('');

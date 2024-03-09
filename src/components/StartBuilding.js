@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 import Navbar from './NavBar';
 
-const SavedActivities = ({ props }) => {
+const SavedActivities = (props) => {
     return (
         <main className="">
             <Navbar />
@@ -10,7 +10,7 @@ const SavedActivities = ({ props }) => {
                 <section className="my-itinerary">
                     <h1>My Itinerary</h1>
                     <div className="button1-container">
-                        <button type="button"><a href="itinerary-form.html">Build Itinerary</a></button>
+                        <button type="button"><a href="itinerary-form">Build Itinerary</a></button>
                     </div>
                 </section>
 
