@@ -1,8 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
-import { ref, push } from 'firebase/database';
+import { ref, push} from 'firebase/database';
+import { getAuth } from 'firebase/auth'
 import { db } from '../index.js';
 // import Navbar from './NavBar.js';
+
 
 const FormComponent = () => {
   const [name, setName] = useState('');
@@ -12,8 +14,19 @@ const FormComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
+    // Get the current user's UID
+    const auth = getAuth(); //access the "authenticator"
+    const user = auth.currentUser;
+    if (!user) {
+      console.error('User not authenticated.');
+      return;
+    }
+    const userId = user.uid;
+
     // Push data to Firebase Realtime Database
-    push(ref(db, 'itineraries'), {
+    const itineraryRef = ref(db, 'itineraries');
+    push(itineraryRef, {
+      userId,
       name,
       dates,
       description
@@ -23,9 +36,10 @@ const FormComponent = () => {
       setDates('');
       setDescription('');
     }).catch((error) => {
-      console.error('Error adding document: ', error);
+      console.error('Error adding itinerary: ', error);
     });
   };
+
 
 
   return (

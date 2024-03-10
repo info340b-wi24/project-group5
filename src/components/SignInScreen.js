@@ -29,7 +29,7 @@ export function MySignInScreen() {
 
   const auth = getAuth(); //access the "authenticator"
   const [user, error] = useAuthState(auth)
-  //if (error){
+
     let status; 
     if (error) {
       status = "Error:" + {error}
