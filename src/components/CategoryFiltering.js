@@ -1,32 +1,48 @@
 import { filter } from 'lodash';
 import React, {useState} from 'react';
 
-const CategoryFilterbox = (props) => {
-    return (
-        
-            <form>
-             
-                <p>
-                    <input type="checkbox" id={props.data.id} name="visits"/>
-                    <label htmlFor={props.data.id} className = 'checkboxLabel'> {props.data.tag} </label>
-                </p>
-              
-            </form>
-    
-    );
-}
+const CategoryFilterbox = ({ data, onChange, isChecked }) => {
+  return (
+      <form>
+          <p>
+              <input 
+                  type="checkbox" 
+                  id={data.id} 
+                  name="visits" 
+                  onChange={() => onChange(data.tag)} 
+                  checked={isChecked}
+              />
+              <label htmlFor={data.id} className='checkboxLabel'> {data.tag} </label>
+          </p>
+      </form>
+  );
+};
 
 
-export default function CategoryFiltering({ selectedCategory, tags }) {
-  const filteredtags = tags.filter(tag => tag['cat-id'] === selectedCategory);
-    return (
+export default function CategoryFiltering({ selectedCategory, tags, onSelectedTagsChange }) {
+  const filteredTags = tags.filter(tag => tag['cat-id'] === selectedCategory);
+  const [selectedTags, setSelectedTags] = useState([]);
+
+  const handleTagChange = (tag) => {
+      const newSelectedTags = selectedTags.includes(tag)
+          ? selectedTags.filter(t => t !== tag)
+          : [...selectedTags, tag];
+      setSelectedTags(newSelectedTags);
+      onSelectedTagsChange(newSelectedTags);
+  };
+
+  return (
       <div className="cat-container">
-        {filteredtags.map((tag) => (
-          <CategoryFilterbox key={tag.id} data={tag} />
-        ))}
+          {filteredTags.map((tag) => (
+              <CategoryFilterbox 
+                  key={tag.id} 
+                  data={tag} 
+                  onChange={handleTagChange} 
+                  isChecked={selectedTags.includes(tag.tag)} 
+              />
+          ))}
       </div>
-    );
-    
-  }
+  );
+}
 
   
