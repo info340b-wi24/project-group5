@@ -5,9 +5,7 @@ import { ItineraryCards } from './ItineraryCard';
 import { ref, onValue} from 'firebase/database';
 import { db } from '../index.js';
 import { useState, useEffect } from 'react';
-
-
-
+import { getAuth } from 'firebase/auth'
 
 export function FinalItinerary () {
     const [activities, setActivities] = useState([]);
@@ -20,11 +18,19 @@ export function FinalItinerary () {
 
         const activityList = []
 
+        const auth = getAuth(); //access the "authenticator"
+        const user = auth.currentUser;
+        if (!user) {
+        console.error('User not authenticated.');
+        //return;
+        }
+    //const userId = user.uid;
         for (const activity in activitiesValue) {
             const activityData = activitiesValue[activity]
-            activityList.push(activityData)
+            //if (userId == activity.userId) {
+                activityList.push(activityData)
+            //}
         }
-
         activityList.sort(function(a, b){return a.start - b.start});
         console.log(activityList)
 
@@ -50,9 +56,9 @@ export function FinalItinerary () {
                 <div className="itin-card-container">
                     <div className="itin-activity">
                         <ul>
-                        <ItineraryCards imgName="img/pike.jpeg" imgAlt = "Pike Place Market sign" activityName = "Pike Place Market" activityDescription = "Start your day at one of the oldest continuously operated public farmers' markets in the United States." timeStart="9:00" timeEnd ="11:00"></ItineraryCards>
-                        <ItineraryCards imgName="img/mpop.jpeg" imgAlt = "Cool structures at MOPOP"activityName = "Museum of Pop Culture" activityDescription= "Explore exciting exhibitions of music, film, and science at the Museum of Pop Culture." timeStart="12:30" timeEnd="4:00" ></ItineraryCards>
-                        <ItineraryCards imgName="img/pinkdoor.jpeg" imgAlt = "Pasta plate at dinner table" activityName = "The Pink Door" activityDescription="Treat yourself to a delicious Italian meal with a beautiful ambience at this classic Seattle restaurant." timeStart="6:30" timeEnd="8:00"></ItineraryCards>
+                        {activities.map((activity) => {
+                            return <ItineraryCards imgName={activity.img} imgAlt={activity.alt} activityName={activity.name} activityDescription={activity.description} timeStart= {activity.start} timeEnd = {activity.end} ></ItineraryCards>
+                        })}
                         </ul>
                 </div>
             </div>

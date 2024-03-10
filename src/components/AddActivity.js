@@ -9,32 +9,30 @@ import { getAuth } from 'firebase/auth'
 
 
 export function AddActivity () { 
-    const [startHour, setStartHour] = useState('1'); 
+    const [startHour, setStartHour] = useState('01'); 
     const [startMin, setStartMin] = useState('00'); 
     const [startAMPM, setStartAMPM] = useState('AM'); 
-    const [endHour, setEndHour] = useState('1'); 
+    const [endHour, setEndHour] = useState('01'); 
     const [endMin, setEndMin] = useState('00'); 
     const [endAMPM, setEndAMPM] = useState('AM'); 
-
-
-
+    
     const addingAct = () => {
         const auth = getAuth(); //access the "authenticator"
         const user = auth.currentUser;
         if (!user) {
         console.error('User not authenticated.');
-        return;
+        //return; 
         }
-    const userId = user.uid;
+    //const userId = user.uid;
         push(ref(db, 'activities'), {
         name: 'Pike Place Market',
+        alt: 'pike place sign',
+        img: 'img/pike.jpeg',
         description: "Start your day at one of the oldest continuously operated public farmers' markets in the United States.",
         start: startHour + ":" + startMin + " " + startAMPM, 
         end: endHour + ":" + endMin + " " + endAMPM,
-        userId
+        //userId
         })
-    
-
 };
 
     return (
