@@ -32,7 +32,7 @@ function App(props) {
 
   );
 // <Indexhome />
-<ItineraryFormPage2 />
+//<ItineraryFormPage2 />
 // <MySignInScreen />
     // <Router>
            // <Routes>
@@ -64,7 +64,7 @@ function App(props) {
     //   </div>
     // </Router>
     
-   )
+  
  //<Indexhome />
 // <AddActivity></AddActivity>
 //<CreateFormTest />
@@ -102,7 +102,7 @@ function App(props) {
     //   </div>
     // </Router>
     
-   )
+  
 
 
 

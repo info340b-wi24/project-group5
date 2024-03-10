@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import React from 'react';
 import Footer from './Footer'; 
 
 const ActivitySearchPage = () => {
@@ -29,7 +28,7 @@ const ActivitySearchPage = () => {
       {/* Example: */}
       <div>
         {/* Assume savedActivities is an array of saved activity objects */}
-        {savedActivities.map(activity => (
+        {activities.map(activity => (
           <div key={activity.id} onClick={() => handleActivitySelect(activity.id)}>
             <h2>{activity.name}</h2>
             <p>{activity.description}</p>
