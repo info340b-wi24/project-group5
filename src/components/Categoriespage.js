@@ -36,26 +36,25 @@ const ActivityFlexbox = ({ activity }) => {
 };
 
 
-export default function Categoriespage({ tags, activities }) {
+export default function CategoriesPage({ tags, activities }) {
     const { categoryName } = useParams();
     const decodedCategoryName = decodeURIComponent(categoryName);
+    const [selectedTags, setSelectedTags] = useState([]);
+    const [selectedCategory, setSelectedCategory] = useState(null);
 
     const filteredActivities = activities.filter(activity => 
-        activity.activity_type && activity.activity_type.includes(decodedCategoryName)
+        activity.activity_type && activity.activity_type.includes(decodedCategoryName) &&
+        (selectedTags.length === 0 || selectedTags.some(tag => activity.sub_type?.includes(tag)))
     );
-
-    const [selectedCategory, setSelectedCategory] = useState(null);
-    console.log(selectedCategory);
 
     return (
         <div>
             <Navbar />
-            {/* Pass setSelectedCategory function as a prop */}
             <Categories activities={activities} setSelectedCategory={setSelectedCategory} />
             <section className="categories-container">
                 <div className="category-section">
                     <h2 id="outdoor-cat">Categories</h2>
-                    <CategoryFiltering selectedCategory={selectedCategory} tags={tags}/>
+                    <CategoryFiltering selectedCategory={selectedCategory} tags={tags} onSelectedTagsChange={setSelectedTags}/>
                 </div>
                 <div className="outdoors-section">
                     <div className="container">
