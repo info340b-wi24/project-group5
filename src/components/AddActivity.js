@@ -1,14 +1,38 @@
 import React from 'react'; 
+import { useState } from 'react';
 import Footer from './Footer';
 import NavBar from './NavBar'; 
 import { TimePick } from './TimePicker';
+import { db } from '../index.js';
+import { getDatabase, ref, push } from 'firebase/database';
+
 
 export function AddActivity () { 
+    const [startHour, setStartHour] = useState('1'); 
+    const [startMin, setStartMin] = useState('00'); 
+    const [startAMPM, setStartAMPM] = useState('AM'); 
+    const [endHour, setEndHour] = useState('1'); 
+    const [endMin, setEndMin] = useState('00'); 
+    const [endAMPM, setEndAMPM] = useState('AM'); 
+
+
+
+    const addingAct = () => {
+        push(ref(db, 'activities'), {
+        name: 'Pike Place Market',
+        description: "Start your day at one of the oldest continuously operated public farmers' markets in the United States.",
+        start: startHour + ":" + startMin + " " + startAMPM, 
+        end: endHour + ":" + endMin + " " + endAMPM
+        })
+    
+
+};
+
     return (
     <>
     <NavBar></NavBar>
     <main>
-    <h1>Sunday, February 21</h1>
+    <h1 style={{display:'flex', justifyContent:'center'}}>Sunday, February 21</h1>
     </main>
     <section>
         <div className="add-act-card-container">
@@ -23,14 +47,15 @@ export function AddActivity () {
         <div className="act-time-container">
             <div className="time-start">
                 <h2>Starts:</h2>
-                <TimePick></TimePick>
+                <TimePick setHour={setStartHour} setMin={setStartMin} setAMPM={setStartAMPM}></TimePick>
             </div>
             <div className="time-end">
                 <h2>Ends:</h2>
-                <TimePick></TimePick>
+                <TimePick setHour={setEndHour} setMin={setEndMin} setAMPM={setEndAMPM}></TimePick>
             </div>
             <div className="add-activity-btn">
-                <button type="button" className="btn btn-success">Add Activity</button>
+                <button onClick={addingAct} type="button" className="btn btn-success">Add Activity</button>
+                <a href="/itinerary-form" type="button" className="btn btn-success">Done!</a>
             </div>
         </div>
     </section>
