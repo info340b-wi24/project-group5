@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import { TimePick } from './TimePicker';
 import { db } from '../index.js';
 import { getDatabase, ref, push } from 'firebase/database';
+import { getAuth } from 'firebase/auth'
 
 
 export function AddActivity () { 
@@ -18,11 +19,19 @@ export function AddActivity () {
 
 
     const addingAct = () => {
+        const auth = getAuth(); //access the "authenticator"
+        const user = auth.currentUser;
+        if (!user) {
+        console.error('User not authenticated.');
+        return;
+        }
+    const userId = user.uid;
         push(ref(db, 'activities'), {
         name: 'Pike Place Market',
         description: "Start your day at one of the oldest continuously operated public farmers' markets in the United States.",
         start: startHour + ":" + startMin + " " + startAMPM, 
-        end: endHour + ":" + endMin + " " + endAMPM
+        end: endHour + ":" + endMin + " " + endAMPM,
+        userId
         })
     
 

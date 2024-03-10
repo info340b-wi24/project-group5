@@ -26,8 +26,10 @@ function App(props) {
     //<CreateFormTest></CreateFormTest>
     <Router>
       <Routes>
+        <Route path="/signin" element={<MySignInScreen></MySignInScreen>}></Route>
         <Route path="/add-activity" element={<AddActivity></AddActivity>}></Route>
-        <Route path="/itinerary-form" element={<CreateForm></CreateForm>}></Route>
+        <Route path="/final-itin" element={<FinalItinerary></FinalItinerary>}></Route>
+        <Route></Route>
      </Routes>
    </Router>
     
