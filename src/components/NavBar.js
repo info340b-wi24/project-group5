@@ -15,7 +15,7 @@ const Navbar = () => {
                     <a className="home" href="/">Home</a>
                 </Link>
                 
-                <a href="itinerary.html">My Itinerary</a>
+                <a href="itinerary">My Itinerary</a>
                 <a href="sign-in.html">Sign In</a>
             </div>
         </header>

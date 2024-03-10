@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import NavBar from './NavBar'
 import Footer from './Footer';
-import { db, storage } from 'index.js';
+//import { db, storage } from 'index.js';
 
 
 function CreateForm() {
@@ -51,8 +51,8 @@ function CreateForm() {
         onChange={handleChange}
       ></textarea>
 
-      <input type="submit" value="Start building" />
-      <button type="button" name="submit" value="submit"><a href="itenerary-form-2nd-page.html">Start building</a></button> 
+      {/*<input type="submit" value="Start building" />*/}
+      <button type="button" name="submit" value="submit"><a href="itinerary-form-2nd-page">Start building</a></button> 
     </form>
   </div>
 </main>
