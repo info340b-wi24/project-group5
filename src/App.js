@@ -40,9 +40,12 @@ function App(props) {
   /*   
   
   Hannah's testing stuff 
-    <div>
+  <div>
   <MySignInScreen />
+  Create Itinerary Page:
   <CreateFormTest />
+  Search for activities to add page:
+  <ItineraryFormPage />
   </div>
   
   
