@@ -20,8 +20,8 @@ const Navbar = () => {
             //</div>
         //</header>
         <header>
-          <Link to="/">
-            <div id="logo" className="nav-link">
+          <Link to="/" className="nav-link">
+            <div id="logo">
                 Sleepless in Seattle
             </div>
           </Link>
