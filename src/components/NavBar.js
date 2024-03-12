@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <header> 
-            <Link to="/">
+            <Link to="/" className="nav-link">
                 <div id="logo">
                     Sleepless in Seattle
                 </div>

@@ -2,8 +2,8 @@
     {
         "activity_name": "Elm Coffee Roasters",
         "description": "House-roasted, single-origin brews are the specialty at this casual coffeehouse in a calm palette.",
-        "activity_type": ["Foodie Delights"],
-        "sub_type": ["Cafe"],
+        "activity_type": ["Foodie Delights", "Styles"],
+        "sub_type": ["Cafe", "Calm Day Relax"],
         "img": "img/elm.jpg",
         "location": "Pioneer Square, 240 2nd Ave S #103, Seattle, WA 98104",
         "time": "7am - 3pm"
@@ -22,8 +22,8 @@
     {
         "activity_name": "Chihuly Garden and Glass",
         "description": "Chihuly Garden and Glass is an exhibit in the Seattle Center, showcasing the studio glass of Dale Chihuly.",
-        "activity_type": [ "Family Friendly Activities", "Historic/Cultural"],
-        "sub_type": ["Arts and craft workshop", "Museum and galleries"],
+        "activity_type": [ "Family Friendly Activities", "Historic/Cultural", "Styles"],
+        "sub_type": ["Arts and craft workshop", "Museum and Galleries", "Rainy Day Retreat"],
         "img": "img/chi.jpeg",
         "location": "Seattle Center",
         "cost": "30"
@@ -32,16 +32,16 @@
         "activity_name": "Pike Place Market",
         "description": "One of the oldest continuously operated public farmers' markets in the United States.",
         "activity_type": ["Local Markets", "Foodie Delights"],
-        "sub_type": ["Farmers market", "Seafood Restaurants"],
+        "sub_type": ["Farmers market"],
         "img": "img/pike.jpeg",
         "location": "Downtown",
         "cost": "0"
     },
     {
         "activity_name": "Gas Works Park",
-        "description": "It is a 19.1-acre public park located on the north shore of Lake Union at the south end of the Wallingford neighborhood.",
-        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
-        "sub-type":["Waterfront Walks", "Waterfront"],
+        "description": "It's a 19.1-acre park on Lake Union's north shore, in Seattle's Wallingford, at its southern end.",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots", "Styles"],
+        "sub_type": ["Waterfront Walks", "Waterfront", "Sunset/Sunrise spots", "Calm Day Relax"],
         "img": "img/gasworks.jpeg",
         "location": "Wallingford",
         "cost": "0"
@@ -49,8 +49,8 @@
     {
         "activity_name": "Seattle Aquarium",
         "description": "The Seattle Aquarium offers fun, exciting ways to discover more about the Puget Sound and our world's big ocean.",
-        "activity_type": ["Family-Friendly Activities", "Indoor Escapes"],
-        "sub_type": ["Educational attractions"],
+        "activity_type": ["Family-Friendly Activities", "Styles"],
+        "sub_type": ["Educational attractions", "Interactive play spaces", "Rainy Day Retreat"],
         "img": "img/aquarium.jpg",
         "location": "Waterfront",
         "cost": "25"
@@ -58,8 +58,8 @@
     {
         "activity_name": "Museum of Pop Culture (MoPOP)",
         "description": "MoPOP is home to the worlds most immersive pop culture experiences in TV, music, and science fiction.",
-        "activity_type": ["Family-Friendly Activities", "Historic/Cultural"],
-        "sub_type": ["Educational attractions", "Museum and galleries"],
+        "activity_type": ["Family-Friendly Activities", "Historic/Cultural", "Styles"],
+        "sub_type": ["Educational attractions", "Museum and Galleries", "Rainy Day Retreat"],
         "img": "img/mpop.jpeg",
         "location": "Seattle Center",
         "cost": "28"
@@ -68,7 +68,7 @@
         "activity_name": "Discovery Park",
         "description": "Discovery Park offers a spectacular view of the Cascade and Olympic Mountain ranges with a scenic lighthouse.",
         "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
-        "sub_type": ["Hiking trails", "Waterfront Walks", "Waterfront", "Sunset/sunrise spots"],
+        "sub_type": ["Hiking trails", "Waterfront Walks", "Waterfront", "Sunset/sunrise spots", "Beaches"],
         "img": "img/disco.jpg",
         "location": "Magnolia",
         "cost": "0"
@@ -77,7 +77,7 @@
         "activity_name": "Seattle Art Museum",
         "description": "Experience historical and contemporary art pieces and galleries at the incredible SAM exhibitions.",
         "activity_type": ["Family-Friendly Activities", "Historic/Cultural"],
-        "sub_type": ["Arts and craft workshop", "Museum and galleries"],
+        "sub_type": ["Arts and craft workshop", "Museum and Galleries"],
         "img": "img/sam.jpg",
         "location": "Downtown",
         "cost": "20"
@@ -86,7 +86,7 @@
         "activity_name": "Alki Beach",
         "description": "A beautiful spot for a long walk across Elliott Bay, with many restaurants and shops nearby.", 
         "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
-        "sub_type": [ "Waterfront Walks", "Waterfront", "Sunset/sunrise spots"],
+        "sub_type": ["Waterfront Walks", "Waterfront", "Sunset/Sunrise spots", "Beaches"],
         "img": "img/alki.jpg",
         "location": "West Seattle",
         "cost": "0"
@@ -103,8 +103,8 @@
     {
         "activity_name": "Pink Door Restaurant",
         "description": "Treat yourself to delicious and unique Italian meals with a great ambience at this popular spot.", 
-        "activity_type": ["Foodie Delights"],
-        "sub_type": ["Seafood Restaurants", "Cafe"],
+        "activity_type": ["Foodie Delights", "Unique Experiences"],
+        "sub_type": ["Seafood Restaurants", "Cafe", "Night Life"],
         "img": "img/pinkdoor.jpg",
         "location": "Downtown",
         "cost": "100"
@@ -119,7 +119,7 @@
     },
     {
         "activity_name": "Lake Washington Loop segment",
-        "description": "The Lake Washington Loop segment offers a scenic pathway along the shores of Lake Washington, providing beautiful views of the lake and surrounding landscape, perfect for a leisurely walk or bike ride.",
+        "description": "The Lake Washington Loop offers a scenic pathway along the lake's shores, perfect for a leisurely walk or bike ride with beautiful views.",
         "activity_type": ["Outdoor Activities"],
         "sub_type": ["Bike Trails"],
         "img": "img/lakewash.jpg"
@@ -135,7 +135,7 @@
     },
     {
         "activity_name": "Sammamish River Trail",
-        "description": "The Sammamish River Trail is a popular biking trail in Seattle, running from Bothell to Redmond and offering scenic views along the Sammamish River.",
+        "description": "The Sammamish River Trail is a popular biking route in Seattle, offering scenic views along the river from Bothell to Redmond.",
         "activity_type": ["Outdoor Activities"],
         "sub_type": ["Bike Trails"],
         "img": "img/sam.jpeg"
@@ -174,7 +174,7 @@
     },
     {
         "activity_name": "Evans Creek Preserve",
-        "description": "Evans Creek Preserve is a natural oasis featuring a variety of hiking trails through forests, meadows, and wetlands, providing a peaceful escape and opportunities to observe local flora and fauna.",
+        "description": "Evans Creek Preserve is a natural oasis with hiking trails through forests, meadows, and wetlands, offering a peaceful escape and wildlife observation opportunities.",
         "activity_type": ["Outdoor Activities"],
         "sub_type": ["Hiking trails"],
         "img": "img/evans.jpeg"
@@ -190,7 +190,7 @@
     },
     {
         "activity_name": "The Wildside Trail",
-        "description": "The Wildside Trail - De Leo Wall is a challenging hike that rewards adventurers with stunning views of the surrounding mountains and valleys, offering a thrilling outdoor experience for seasoned hikers.",
+        "description": "The Wildside Trail - De Leo Wall is a challenging hike with stunning mountain and valley views, ideal for seasoned hikers seeking a thrilling outdoor adventure.",
         "activity_type": ["Outdoor Activities"],
         "sub_type": ["Hiking trails"],
         "img": "img/wild.jpeg"
@@ -198,7 +198,7 @@
     },
     {
         "activity_name": "Poo Poo Point",
-        "description": "Poo Poo Point is a popular hiking destination in the Issaquah Alps, offering panoramic views of the surrounding mountains and valleys, making it a favorite spot for paragliders and hikers alike.",
+        "description": "Poo Poo Point in the Issaquah Alps is a popular hiking spot with panoramic mountain and valley views, attracting paragliders and hikers alike.",
         "activity_type": ["Outdoor Activities"],
         "sub_type": ["Hiking trails"],
         "img": "img/poo.jpeg"
@@ -206,7 +206,7 @@
     },
     {
         "activity_name": "Elliott Bay ",
-        "description": "Elliott Bay is a picturesque body of water in Seattle, offering stunning views of the city skyline, the Olympic Mountains, and Mount Rainier. It's a popular spot for kayaking, sailing, and enjoying waterfront dining, providing a quintessential Seattle experience.",
+        "description": "Elliott Bay in Seattle offers stunning views of the city skyline, the Olympic Mountains, and Mount Rainier. It's popular for kayaking, sailing, and waterfront dining, providing a quintessential Seattle experience.",
         "activity_type": ["Outdoor Activities"],
         "sub_type": ["Waterfront Walks"],
         "img": "img/elliot.jpeg"
@@ -223,25 +223,494 @@
     {
         "activity_name": "David E. Brink Park",
         "description": "David E. Brink Park in Kirkland offers stunning waterfront views of Lake Washington and the Seattle skyline, perfect for a relaxing stroll by the water.",
-        "activity_type": ["Outdoor Activities"],
-        "sub_type": ["Waterfront Walks"],
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "sub_type": ["Waterfront Walks", "Waterfront", "Sunset/Sunrise spots"],
         "img": "img/david.jpeg"
         
     },
     {
         "activity_name": "Meydenbauer Park",
         "description": "Meydenbauer Park in Bellevue offers scenic views of Lake Washington, providing a peaceful escape for a leisurely stroll or a day of picnicking by the water.",
-        "activity_type": ["Outdoor Activities"],
-        "sub_type": ["Waterfront Walks"],
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots", "Styles"],
+        "sub_type": ["Waterfront Walks", "Waterfront", "Sunset/Sunrise spots", "Calm Day Relax"],
         "img": "img/meyden.jpeg"
        
     },
     {
         "activity_name": "Foster Island Trail",
-        "description": "The Foster Island Trail offers a peaceful nature walk through wetlands and forests, providing a serene escape from the city within Seattle's own Washington Park Arboretum.",
+        "description": "The Foster Island Trail offers a peaceful nature walk through wetlands and forests in Seattle's Washington Park Arboretum, providing a serene escape from the city.",
         "activity_type": ["Outdoor Activities"],
         "sub_type": ["Waterfront Walks"],
         "img": "img/foster.jpeg"
         
+    },
+    {
+        "activity_name": "City Cycle",
+        "description": "City Cycle offers high-energy cycling workouts driven by music, with passionate trainers, top-notch equipment for an authentic ride, promising exceptional results, and a pure love for what they do.",
+        "activity_type": ["Indoor Escapes"],
+        "sub_type": ["Fitness"],
+        "img": "img/cycle.jpg"
+    },
+    {
+        "activity_name": "Commune Yoga",
+        "description": "Commune Yoga provides a welcoming and inclusive space for yoga practitioners, emphasizing punctuality, hydration, and personal mat preferences to enhance comfort and enjoyment.",
+        "activity_type": ["Indoor Escapes", "Styles"],
+        "sub_type": ["Fitness", "Calm Day Relax"],
+        "img": "img/yoga.jpeg"
+    },
+    {
+        "activity_name": "Emerald City Athletics",
+        "description": "Emerald City Athletics is a premier fitness facility offering top-notch equipment, expert trainers, and a supportive community to help you achieve your fitness goals.",
+        "activity_type": ["Indoor Escapes"],
+        "sub_type": ["Fitness"],
+        "img": "img/gym.jpeg"
+    },
+    {
+        "activity_name": "Pop Rox Dance",
+        "description": "Pop Rox Dance Studio offers dynamic classes for dancers of all levels, providing a vibrant space to refine skills and ignite creativity.",
+        "activity_type": ["Indoor Escapes"],
+        "sub_type": ["Fitness"],
+        "img": "img/dance.png"
+    },
+    {
+        "activity_name": "WestLake Center ",
+        "description": "Downtown shopping hub offering a range of shops, eateries, and access to the Monorail.",
+        "activity_type": ["Indoor Escapes"],
+        "sub_type": ["Shopping"],
+        "img": "img/westcenter.jpg"
+    },
+    {
+        "activity_name": "Bellevue Square Mall",
+        "description": "Upscale shopping center in Bellevue with a mix of luxury and popular retailers, plus dining options and a cinema.",
+        "activity_type": ["Indoor Escapes"],
+        "sub_type": ["Shopping"],
+        "img": "img/bsquare.jpeg"
+    },
+    {
+        "activity_name": "Southcenter Mall",
+        "description": "Large shopping mall in Tukwila with a wide range of stores, restaurants, and entertainment options.",
+        "activity_type": ["Indoor Escapes"],
+        "sub_type": ["Shopping"],
+        "img": "img/southcenter.jpeg"
+    },
+    {
+        "activity_name": "University Village",
+        "description": "Outdoor shopping center near the University of Washington campus with a variety of shops and dining options in a park-like setting.",
+        "activity_type": ["Indoor Escapes"],
+        "sub_type": ["Shopping"],
+        "img": "img/uvillage.jpeg"
+    },
+    {
+        "activity_name": "Seattle University Library",
+        "description": "A modern facility offering diverse academic resources and study spaces for Seattle University students and faculty.",
+        "activity_type": ["Indoor Escapes"],
+        "sub_type": ["Libraries"],
+        "img": "img/sulib.jpeg"
+    },
+    {
+        "activity_name": "Bellevue King County Library",
+        "description": "A contemporary library offering a wide range of materials and programs for all ages in the Bellevue community.",
+        "activity_type": ["Indoor Escapes"],
+        "sub_type": ["Libraries"],
+        "img": "img/kingbellevue.jpg"
+    },
+    {
+        "activity_name": "Suzzallo Library",
+        "description": "A Gothic-style building at the University of Washington with a vast collection of books, periodicals, and digital resources.",
+        "activity_type": ["Indoor Escapes"],
+        "sub_type": ["Libraries"],
+        "img": "img/suzzallo.jpg"
+    },
+    {
+        "activity_name": "Seattle Public Library",
+        "description": "A modern architectural masterpiece housing a vast collection of books, media, and digital resources.",
+        "activity_type": ["Indoor Escapes", "Styles"],
+        "sub_type": ["Libraries", "Rainy Day Retreat"],
+        "img": "img/seattlepublic.jpg"
+    },
+
+    {
+        "activity_name": "The Walrus and the Carpenter",
+        "description": "Known for its fresh oysters and innovative seafood dishes, this restaurant offers a cozy, intimate atmosphere in the heart of Ballard.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Seafood Restaurants"],
+        "img": "img/walrus.jpeg"
+    },
+    {
+        "activity_name": "Elliott's Oyster House",
+        "description": "Elliott's is famous for its seafood buffet and stunning views of Puget Sound, offering a true taste of the Pacific Northwest.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Seafood Restaurants"],
+        "img": "img/elliott.jpeg"
+    },
+    {
+        "activity_name": "Taylor Shellfish Farms",
+        "description": "A local favorite, Taylor Shellfish Farms serves up a variety of sustainably harvested shellfish, including oysters, clams, and mussels, with a focus on quality and freshness.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Seafood Restaurants"],
+        "img": "img/taylor.jpeg"
+    },
+    {
+        "activity_name": "Ivar's Acres of Clams",
+        "description": "Ivar's is renowned for its classic fish and chips and clam chowder, served in a casual, family-friendly setting on the waterfront.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Seafood Restaurants"],
+        "img": "img/ivar.png"
+    },
+    {
+        "activity_name": "The Crab Pot ",
+        "description": "The Crab Pot is a lively waterfront spot where diners can enjoy a variety of seafood cooked in a large pot and dumped onto the table for a fun, interactive dining experience.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Seafood Restaurants"],
+        "img": "img/crabpot.jpeg"
+    },
+    {
+        "activity_name": "Marination Mobile",
+        "description": "This Hawaiian-Korean fusion truck is famous for its flavorful dishes like the SPAM musubi and Kalbi beef tacos.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Food Trucks"],
+        "img": "img/mobile.png"
+    },
+    {
+        "activity_name": "Nosh",
+        "description": "Nosh serves up British-inspired street food with a Pacific Northwest twist, featuring dishes like fish and chips and savory pies made with locally sourced ingredients.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Food Trucks"],
+        "img": "img/nosh.jpeg"
+    },
+    {
+        "activity_name": "Where Ya At Matt",
+        "description": "Where Ya At Matt serves up classic Creole dishes like gumbo, po'boys, and beignets, all made with authentic Louisiana flavors.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Food Trucks"],
+        "img": "img/matt.jpeg"
+    },
+    {
+        "activity_name": "Off the Rez",
+        "description": "Specializing in Native American cuisine, Off the Rez serves up delicious fry bread tacos and other indigenous-inspired dishes with a modern twist.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Food Trucks"],
+        "img": "img/rez.jpeg"
+    },
+    {
+        "activity_name": "Cafe Solstice",
+        "description": "A popular hangout for students and locals alike, Cafe Solstice offers a cozy atmosphere, strong coffee, and tasty pastries.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Cafe"],
+        "img": "img/solstice.jpeg"
+    },
+    {
+        "activity_name": "Mr. West",
+        "description": "A stylish cafe serving artisanal coffee and locally sourced dishes in a modern setting.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Cafe"],
+        "img": "img/mrwest.jpeg"
+    },
+    {
+        "activity_name": "Storyville Coffee",
+        "description": "A cozy cafe with a mission to make the world better through coffee, offering a warm atmosphere and ethically sourced beans.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Cafe"],
+        "img": "img/story.jpg"
+    },
+    {
+        "activity_name": "Cafe Allegro",
+        "description": "Seattle's oldest espresso bar, Cafe Allegro offers a charming, vintage ambiance and a wide selection of coffee drinks.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Cafe"],
+        "img": "img/allegro.png"
+    },
+    {
+        "activity_name": "Analog Coffee",
+        "description": "A hip cafe known for its carefully crafted espresso drinks, spacious interior, and laid-back vibe.",
+        "activity_type": ["Foodie Delights"],
+        "sub_type": ["Cafe"],
+        "img": "img/analog.jpeg"
+    },
+    {
+        "activity_name": "Kerry Park",
+        "description": "Offering panoramic views of the city skyline, Elliott Bay, and Mount Rainier, Kerry Park is a popular spot for both sunrise and sunset, providing a stunning backdrop for your photos.",
+        "activity_type": ["Outdoor Activities", "Best Scenic Spots"],
+        "sub_type": ["Waterfront Walks", "Waterfront", "Sunset/Sunrise spots"],
+        "img": "img/kerry.jpeg"
+        
+    },
+    {
+        "activity_name": "Golden Gardens Park",
+        "description": "Golden Gardens Park offers sandy beaches and stunning views of the Olympic Mountains, making it a popular spot for watching the sunset.",
+        "activity_type": [ "Best Scenic Spots"],
+        "sub_type": ["Sunset/Sunrise spots", "Beaches"],
+        "img": "img/golden.jpeg"
+       
+    },
+    {
+        "activity_name": "Carkeek Park Beach",
+        "description": "Nestled along the Puget Sound, Carkeek Park Beach offers rocky shores, scenic walking trails, and views of the Olympic Mountains and Puget Sound.",
+        "activity_type": ["Best Scenic Spots"],
+        "sub_type": ["Beaches"],
+        "img": "img/car.jpeg"
+        
+    },
+    {
+        "activity_name": "Madison Park Beach",
+        "description": "Madison Park Beach features a sandy swimming area, grassy picnic spots, and beautiful views of the lake and surrounding mountains.",
+        "activity_type": ["Best Scenic Spots"],
+        "sub_type": ["Beaches"],
+        "img": "img/madison.jpg"
+       
+    },
+    {
+        "activity_name": "The Crocodile",
+        "description": "The Crocodile has hosted iconic bands and continues to showcase both local and national talent in an intimate setting.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Live Music Venues"],
+        "img": "img/crocodile.jpeg"
+    },
+    {
+        "activity_name": "Neumos",
+        "description": "Neumos offers a vibrant atmosphere and excellent sound quality, making it a favorite among music lovers.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Live Music Venues"],
+        "img": "img/Neumos.jpeg"
+    },
+    {
+        "activity_name": "The Sunset",
+        "description": "A cozy venue in the Ballard neighborhood, The Sunset features an intimate stage and a diverse lineup of local and touring artists..",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Live Music Venues"],
+        "img": "img/sunset.jpeg"
+    },
+    {
+        "activity_name": "The Triple Door",
+        "description": "Offering a unique experience that combines live music with gourmet dining, The Triple Door is a classy venue known for its acoustics and elegant ambiance.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Live Music Venues"],
+        "img": "img/triple.jpeg"
+    },
+    {
+        "activity_name": "GameWorks",
+        "description": "GameWorks offers a diverse range of arcade games, virtual reality experiences, and classic favorites in a vibrant entertainment setting.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Arcades"],
+        "img": "img/GameWorks.jpeg"
+    },
+    {
+        "activity_name": "Seattle Pinball Museum",
+        "description": "This museum features a collection of playable pinball machines from different eras, offering a nostalgic gaming experience.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Arcades"],
+        "img": "img/pinball.jpeg"
+    },
+    {
+        "activity_name": "Add-a-Ball Arcade",
+        "description": "Add-a-Ball Arcade features a retro vibe with a variety of classic arcade games and pinball machines.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Arcades"],
+        "img": "img/addball.jpeg"
+    },
+    {
+        "activity_name": "Round1",
+        "description": "Round1 in Southcenter Mall offers a wide range of arcade games, bowling, karaoke, and other entertainment options for all ages.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Arcades"],
+        "img": "img/round.jpeg"
+    },
+    {
+        "activity_name": "Seattle Repertory Theatre",
+        "description": "A leading regional theater known for its diverse productions and commitment to artistic excellence.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Performing Arts"],
+        "img": "img/rep.jpg"
+    },
+    {
+        "activity_name": "Seattle Symphony",
+        "description": "Renowned for its exceptional musical performances and innovative programming, the Seattle Symphony is a cultural gem of the city.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Performing Arts"],
+        "img": "img/symphony.jpg"
+    },
+    {
+        "activity_name": "Pacific Northwest Ballet",
+        "description": "Internationally acclaimed for its artistic innovation and superb performances, Pacific Northwest Ballet is a cornerstone of the Seattle dance scene.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Performing Arts"],
+        "img": "img/ballet.jpg"
+    },
+    {
+        "activity_name": "ACT Theatre",
+        "description": "A contemporary theater presenting bold and thought-provoking performances by local and national artists.",
+        "activity_type": ["Entertainment"],
+        "sub_type": ["Performing Arts"],
+        "img": "img/act.jpeg"
+    },
+    {
+        "activity_name": "Seattle Glassblowing Studio",
+        "description": "Offers hands-on glassblowing classes and workshops for all skill levels, allowing participants to create their own glass art.",
+        "activity_type": ["Family-Friendly Activities"],
+        "sub_type": ["Arts and craft workshop"],
+        "img": "img/glass.jpeg"
+    },
+    {
+        "activity_name": "Seattle ReCreative",
+        "description": "A nonprofit organization offering eco-friendly art classes and workshops using recycled materials, promoting sustainability and creativity.",
+        "activity_type": ["Family-Friendly Activities"],
+        "sub_type": ["Arts and craft workshop"],
+        "img": "img/recreative.jpeg"
+    },
+    {
+        "activity_name": "Seattle Children's Museum",
+        "description": "A vibrant space where children can learn through play and exploration, featuring interactive exhibits and educational programs..",
+        "activity_type": ["Family-Friendly Activities"],
+        "sub_type": ["Interactive play spaces"],
+        "img": "img/children.jpeg"
+    },
+    {
+        "activity_name": "Wunderkind",
+        "description": "A unique play space offering imaginative play experiences and creative activities for children of all ages.",
+        "activity_type": ["Family-Friendly Activities"],
+        "sub_type": ["Interactive play spaces"],
+        "img": "img/wunder.jpeg"
+    },
+    {
+        "activity_name": "Bill Speidel’s Underground Tour",
+        "description": "Explore Seattle's subterranean passages and learn about the city's history, including its early pioneers and the Great Seattle Fire of 1889.",
+        "activity_type": ["Historic/Cultural"],
+        "sub_type": ["Historic walking tours"],
+        "img": "img/underground.jpeg"
+    },
+    {
+        "activity_name": "Pioneer Square Walking",
+        "description": "Discover Seattle's oldest neighborhood, Pioneer Square, with its historic buildings, including the famous Smith Tower, and learn about the city's early days.",
+        "activity_type": ["Historic/Cultural"],
+        "sub_type": ["Historic walking tours"],
+        "img": "img/pioneer.jpeg"
+    },
+    {
+        "activity_name": "Ballard Historical Walking",
+        "description": "A unique play space offering imaginative play experiences and creative activities for children of all ages.",
+        "activity_type": ["Historic/Cultural"],
+        "sub_type": ["Historic walking tours"],
+        "img": "img/ballardstreet.jpeg"
+    },
+    {
+        "activity_name": "Bumbershoot",
+        "description": "Seattle's premier music and arts festival, featuring a diverse lineup of music, comedy, film, and more.",
+        "activity_type": ["Festivals"],
+        "sub_type": ["Music festivals"],
+        "img": "img/bum.jpeg"
+    },
+    {
+        "activity_name": "Capitol Hill Block Party",
+        "description": "A three-day music and arts festival showcasing indie rock, hip-hop, and electronic music in the heart of Capitol Hill.",
+        "activity_type": ["Festivals"],
+        "sub_type": ["Music festivals"],
+        "img": "img/capitol.jpeg"
+    },
+    {
+        "activity_name": "Upstream Music Fest + Summit",
+        "description": "A festival celebrating emerging artists and innovative music experiences, curated by local music legend, Macklemore.",
+        "activity_type": ["Festivals"],
+        "sub_type": ["Music festivals"],
+        "img": "img/upstream.jpeg"
+    },
+    {
+        "activity_name": "Seattle Street Food Festival",
+        "description": "A vibrant festival showcasing a diverse array of street food vendors from the Pacific Northwest and beyond.",
+        "activity_type": ["Festivals"],
+        "sub_type": ["Food festivals"],
+        "img": "img/streetfood.jpeg"
+    },
+    {
+        "activity_name": "Bite of Seattle",
+        "description": "One of the city's largest food festivals, Bite of Seattle features over 60 restaurants and pop-up vendors offering a taste of the region's culinary delights.",
+        "activity_type": ["Festivals"],
+        "sub_type": ["Food festivals"],
+        "img": "img/bite.jpeg"
+    },
+    {
+        "activity_name": "Seafood Fest",
+        "description": "Highlighting Seattle's rich seafood heritage, SeafoodFest offers a variety of seafood dishes, cooking demonstrations, and live music.",
+        "activity_type": ["Festivals"],
+        "sub_type": ["Food festivals"],
+        "img": "img/seafoodfest.png"
+    },
+    {
+        "activity_name": "University District Farmers Market",
+        "description": "A vibrant market near the University of Washington campus, showcasing farm-fresh produce, baked goods, and specialty foods.",
+        "activity_type": ["Local Markets"],
+        "sub_type": ["Farmers market"],
+        "img": "img/udistrict.jpeg"
+    },
+    {
+        "activity_name": "West Seattle Farmers Market",
+        "description": "Located in the West Seattle Junction, this market offers a variety of locally grown produce, flowers, and artisanal products.",
+        "activity_type": ["Local Markets"],
+        "sub_type": ["Farmers market"],
+        "img": "img/farmerswest.jpeg"
+    },
+    {
+        "activity_name": "Columbia City Farmers Market",
+        "description": "Serving the diverse Columbia City neighborhood, this market offers a range of local produce, crafts, and prepared foods every Wednesday.",
+        "activity_type": ["Local Markets"],
+        "sub_type": ["Farmers market"],
+        "img": "img/columbia.jpeg"
+    },
+    {
+        "activity_name": "Fremont Sunday Market",
+        "description": "Seattle's longest-running market featuring local crafts, antiques, and food in the eclectic Fremont neighborhood.",
+        "activity_type": ["Local Markets"],
+        "sub_type": ["Flea markets"],
+        "img": "img/fremont.jpeg"
+    },
+    {
+        "activity_name": "Seattle Antiques Market",
+        "description": "A treasure trove of vintage finds and collectibles, offering a diverse selection of antiques and unique items.",
+        "activity_type": ["Local Markets"],
+        "sub_type": ["Flea markets"],
+        "img": "img/antique.jpeg"
+    },
+    {
+        "activity_name": "SODO Flea Market",
+        "description": "Featuring a mix of new, used, and handmade items, SODO Flea Market is a popular destination for bargain hunters.",
+        "activity_type": ["Local Markets"],
+        "sub_type": ["Flea markets"],
+        "img": "img/sodo.jpeg"
+    },
+    {
+        "activity_name": "Seattle Bouldering Project",
+        "description": "Experience indoor rock climbing at one of the country's largest bouldering gyms, suitable for all skill levels.",
+        "activity_type": ["Unique Experiences"],
+        "sub_type": ["Adrenaline Rush"],
+        "img": "img/boulder.jpg"
+    },
+    {
+        "activity_name": "Seattle Great Wheel",
+        "description": "Take a ride on this iconic Ferris wheel on the waterfront, offering breathtaking views of the city skyline and Puget Sound.",
+        "activity_type": ["Unique Experiences"],
+        "sub_type": ["Adrenaline Rush"],
+        "img": "img/great.jpeg"
+    },
+    {
+        "activity_name": "iFLY Seattle Indoor Skydiving",
+        "description": "Experience the sensation of skydiving in a safe and controlled environment, with a vertical wind tunnel that simulates freefall conditions.",
+        "activity_type": ["Unique Experiences"],
+        "sub_type": ["Adrenaline Rush"],
+        "img": "img/fly.jpg"
+    },
+    {
+        "activity_name": "Kells Irish Pub",
+        "description": "Long-standing outfit serving beer, stout & numerous whiskeys, plus pub grub & regular live music.",
+        "activity_type": ["Unique Experiences"],
+        "sub_type": ["Night Life"],
+        "img": "img/kells.jpeg"
+    },
+    {
+        "activity_name": "Big Time Brewery",
+        "description": "Brewpub in yellow brick building open since 1988, drawing college crowd with suds, pizza & bar fare.",
+        "activity_type": ["Unique Experiences"],
+        "sub_type": ["Night Life"],
+        "img": "img/big.jpeg"
     }
 ]
+
+
