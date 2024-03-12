@@ -32,6 +32,7 @@ function App(props) {
         <Route path="/final-itin" element={<FinalItinerary></FinalItinerary>}></Route>
         <Route path ="/itinerary-form" element={<CreateFormTest></CreateFormTest>}></Route>
         <Route path="/start-building" element={<StartBuilding></StartBuilding>}></Route>
+        <Route path="/search-activity" element={<ItineraryFormPage></ItineraryFormPage>}></Route>
      </Routes>
   
 

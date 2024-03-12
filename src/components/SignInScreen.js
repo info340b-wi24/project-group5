@@ -1,7 +1,7 @@
 //import auth functions and variables from Firebase
 import { getAuth, EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth'
 import { useAuthState } from 'react-firebase-hooks/auth'; 
-import { Navigate } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
 
 //import the component -- pick one!
@@ -30,11 +30,12 @@ export default function MySignInScreen() {
 
   const auth = getAuth(); //access the "authenticator"
   //const user = useAuthState(auth)
+  
   const currentUser = auth.currentUser;
 
   
   if (currentUser) { //if signed in
-    return <Navigate to="/itinerary-form" />
+    return <Navigate to="/start-building" />
   }
   // const [user, error] = useState(auth)
     //let status; 
