@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import activitiesData from '../data/activities.json';
+import NavBar from './NavBar'
+import Footer from './Footer';
 
 
 const Flexbox = ({ activity }) => {
@@ -43,7 +45,7 @@ const SearchActivity = () => {
 
   return (
     <div>
-     
+     <NavBar></NavBar>
         <div className='form-container'> 
         <section class="add-place-label">
             {/* IT SHOULD DISPLAY THE ITINERARY NAME MADE IN CREATFORMTEST */}
@@ -64,6 +66,7 @@ const SearchActivity = () => {
       )}
       </section>
     </div>
+    <Footer></Footer>
     </div>
 
   );

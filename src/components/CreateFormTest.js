@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { ref, push} from 'firebase/database';
 import { getAuth } from 'firebase/auth'
 import { db } from '../index.js';
-// import Navbar from './NavBar.js';
+import Footer from './Footer.js';
+import NavBar from './NavBar.js';
 
 
 const FormComponent = () => {
@@ -43,7 +44,8 @@ const FormComponent = () => {
 
 
   return (
-  
+    <div>
+    <NavBar></NavBar>
     <div className="form-body">
       <div class="form-container">
       <form onSubmit={handleSubmit}>
@@ -63,6 +65,8 @@ const FormComponent = () => {
         <button className="start-building" type="submit">Start building</button>
       </form>
     </div>
+    </div>
+    <Footer></Footer>
     </div>
   );
 };

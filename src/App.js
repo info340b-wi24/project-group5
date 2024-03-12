@@ -24,14 +24,16 @@ import { FinalItinerary } from './components/FinalFinalItinerary';
 function App(props) {
 
   return (
-    <Router>
+
       <Routes>
+        <Route path="/" element={<Indexhome activities={sample_activities} />} />
         <Route path="/signin" element={<SignInScreen></SignInScreen>}></Route>
         <Route path="/add-activity" element={<AddActivity></AddActivity>}></Route>
         <Route path="/final-itin" element={<FinalItinerary></FinalItinerary>}></Route>
         <Route path ="/itinerary-form" element={<CreateFormTest></CreateFormTest>}></Route>
+        <Route path="/start-building" element={<StartBuilding></StartBuilding>}></Route>
      </Routes>
-   </Router>
+  
 
 
   /*   

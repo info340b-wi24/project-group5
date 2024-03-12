@@ -1,6 +1,7 @@
 //import auth functions and variables from Firebase
 import { getAuth, EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth'
 import { useAuthState } from 'react-firebase-hooks/auth'; 
+import { Navigate } from 'react-router-dom';
 
 
 //import the component -- pick one!
@@ -28,23 +29,29 @@ const firebaseUIConfig = {
 export default function MySignInScreen() {
 
   const auth = getAuth(); //access the "authenticator"
-  const [user, error] = useAuthState(auth)
+  //const user = useAuthState(auth)
+  const currentUser = auth.currentUser;
 
-    let status; 
-    if (error) {
-      status = "Error:" + {error}
-    }
-    if (user) {
-      status = "You're now signed in!" 
-    } else {
-      status = "Please sign in to your account."
-    }
+  
+  if (currentUser) { //if signed in
+    return <Navigate to="/itinerary-form" />
+  }
+  // const [user, error] = useState(auth)
+    //let status; 
+    //if (error) {
+     // status = "Error:" + {error}
+   //}
+   //if (user) {
+      //status = "You're now signed in!" 
+   // } else {
+     // status = "Please sign in to your account."
+    //}
     
-  // write a function for the logic of logging -> wrong password = error msh should appear
+  // write a function /for the logic of logging -> wrong password = error msh should appear
 
   return (
     <div>
-      <h1>My App</h1>
+  
       <p>Please sign-in:</p>
       <StyledFirebaseAuth uiConfig={firebaseUIConfig} firebaseAuth={auth} />
     </div>

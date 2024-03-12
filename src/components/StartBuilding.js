@@ -1,43 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Footer from './Footer';
-import Navbar from './NavBar';
-import { db } from '../index'; // Import the db instance from your index.js file
-import { getAuth } from 'firebase/auth';
-import { ref, get, child } from 'firebase/database';
+import NavBar from './NavBar';
+import { Link } from 'react-router-dom';
+
 
 const SavedActivities = (props) => {
-    const [itineraries, setItineraries] = useState([]);
-    const auth = getAuth();
-
-    useEffect(() => {
-        const fetchItineraries = async () => {
-            try {
-                const user = auth.currentUser;
-                if (user) {
-                    const userId = user.uid;
-                    const snapshot = await get(child(ref(db), 'itineraries'));
-                    if (snapshot.exists()) {
-                        const itinerariesData = Object.values(snapshot.val()).filter(itinerary => itinerary.userId === userId);
-                        setItineraries(itinerariesData);
-                    } else {
-                        console.log('No itineraries found in the database');
-                    }
-                }
-            } catch (error) {
-                console.error('Error fetching itineraries:', error);
-            }
-        };
-
-        fetchItineraries();
-    }, [auth]);
-
     return (
         <main className="">
+            <NavBar></NavBar>
             <div className="itinerary-container">
                 <section className="my-itinerary">
                     <h1>My Itinerary</h1>
                     <div className="button1-container">
+                        <Link to="/itinerary-form">
                         <button type="button">Build Itinerary</button>
+                        </Link>
                     </div>
                 </section>
 
@@ -45,18 +22,16 @@ const SavedActivities = (props) => {
                     <h1>Saved Itineraries</h1>
                     <div className="test-container">
                         <div className="row">
-                            {itineraries.map((itinerary, index) => (
-                                <div key={index} className="card">
-                                    <p className='itin-name'>{itinerary.name}</p>
-                                    <p className='itin-date'>{itinerary.date}</p>
-                                    <p className='itin-desc'>{itinerary.description}</p>
+                                <div className="card">
+                                    <p className='itin-name'>Itinerary Name</p>
+                                    <p className='itin-date'>Itinerary Date</p>
+                                    <p className='itin-desc'>Itinerary Description</p>
                                 </div>
-                            ))}
                         </div>
                     </div>
                 </section>
             </div>
-            {/* <Footer /> */}
+          <Footer></Footer>
         </main>
     );
 };
