@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
-
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-// import CreateForm from './components/CreateForm';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
+
 import Indexhome from './components/Indexhome';
 import CategoriesPage from './components/Categoriespage';
 import CreateFormTest from './components/CreateFormTest'
@@ -11,13 +10,11 @@ import sample_activities from './data/activities.json';
 // import outdoorsSub from './data/outsideActsubcat.json';
 //import totaloutdoors from './data/totaloutsideActs.json';
 // import subcat from './data/subcat.json';
-import { MySignInScreen } from './components/SignInScreen.js';
+import SignInScreen from './components/SignInScreen.js';
 
 //import outdoorsSub from './data/outsideActsubcat.json';
 import totaloutdoors from './data/totaloutsideActs.json';
 //import subcat from './data/subcat.json';
-//import { MySignInScreen } from './components/SignInScreen.js';
-//import ItineraryFormPage2 from './components/ItineraryFormPage2.js'
 import StartBuilding from './components/StartBuilding.js'; 
 import ItineraryFormPage from './components/ItineraryFormPage.js';
 
@@ -29,10 +26,10 @@ function App(props) {
   return (
     <Router>
       <Routes>
-        <Route path="/signin" element={<MySignInScreen></MySignInScreen>}></Route>
+        <Route path="/signin" element={<SignInScreen></SignInScreen>}></Route>
         <Route path="/add-activity" element={<AddActivity></AddActivity>}></Route>
         <Route path="/final-itin" element={<FinalItinerary></FinalItinerary>}></Route>
-        <Route></Route>
+        <Route path ="/itinerary-form" element={<CreateFormTest></CreateFormTest>}></Route>
      </Routes>
    </Router>
 
