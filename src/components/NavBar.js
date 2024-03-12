@@ -3,21 +3,12 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-<<<<<<< HEAD
-        <header> 
-            <Link to="/" className="nav-link">
-                <div id="logo">
-                    Sleepless in Seattle
-                </div>
-            </Link>
-=======
-        //<header> 
-            //<Link to="/">
-                //<div id="logo">
-                    //Sleepless in Seattle
-                //</div>
-            //</Link>
->>>>>>> 0aa0472a4d50cbe4922371879726b6d45c57cff1
+        // <header> 
+        //     <Link to="/" className="nav-link">
+        //         <div id="logo">
+        //             Sleepless in Seattle
+        //         </div>
+        //     </Link>
             
             //<div className="topnav">
                 //<Link to="/">
@@ -30,7 +21,7 @@ const Navbar = () => {
         //</header>
         <header>
           <Link to="/">
-            <div id="logo">
+            <div id="logo" className="nav-link">
                 Sleepless in Seattle
             </div>
           </Link>

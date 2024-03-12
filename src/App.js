@@ -16,108 +16,26 @@ import StartBuilding from './components/StartBuilding.js';
 import ItineraryFormPage from './components/ItineraryFormPage.js';
 import ActivityReview from './components/ActivityReview.js';
 
-import { AddActivity } from './components/AddActivity.js';
-import { FinalItinerary } from './components/FinalFinalItinerary';
+// import { FinalItinerary } from './components/FinalFinalItinerary';
 
 function App(props) {
 
   return (
-    //michelle's 
-//     <Router>
-//     <Routes>
-//         <Route path="/" element={<Indexhome activities={sample_activities} />} />
-//         <Route path="/activities/:activity_name" element={<ActivityReview activities={sample_activities} />} />
-//         <Route path="/categories/:categoryName" element={<CategoriesPage activities={sample_activities} tags={subcat}/>} />
-//        <Route path="/itinerary" element={<StartBuilding activity_name={'Museum of Pop Culture'} data={{activity_name: 'Museum of Pop Culture', img: "img/mpop.jpeg"}}></StartBuilding>}></Route>
-//       </Routes>
-// </Router>
 
-
-  //   <Router>
-  //     <Routes>
-  //       <Route path="/signin" element={<MySignInScreen></MySignInScreen>}></Route>
-  //       <Route path="/add-activity" element={<AddActivity></AddActivity>}></Route>
-  //       <Route path="/final-itin" element={<FinalItinerary></FinalItinerary>}></Route>
-  //       <Route></Route>
-  //    </Routes>
-  //  </Router>
-
-
-  /*   
-  
-  Hannah's testing stuff 
-  <div>
-  <MySignInScreen />
-  Create Itinerary Page:
-  <CreateFormTest />
-  Search for activities to add page:
-  <ItineraryFormPage />
-  </div>
-  
-  
-
-
-  Rima's testing stuff 
-  <Router>
-      <Routes>
-        <Route path="/signin" element={<MySignInScreen></MySignInScreen>}></Route>
-        <Route path="/add-activity" element={<AddActivity></AddActivity>}></Route>
-        <Route path="/final-itin" element={<FinalItinerary></FinalItinerary>}></Route>
-        <Route></Route>
-     </Routes>
-   </Router>
-
-
-
-
-
-   
-  <Router>
       <Routes>
         <Route path="/" element={<Indexhome activities={sample_activities} />} />
-        <Route path="/categories/:categoryName" element={<CategoriesPage activities={sample_activities} tags={subcat}/>} /> 
+        <Route path="/activities/:activity_name" element={<ActivityReview activities={sample_activities} />} />
+        <Route path="/categories/:categoryName" element={<CategoriesPage activities={sample_activities} tags={subcat}/>} />
+        <Route path="/itinerary" element={<StartBuilding activity_name={'Museum of Pop Culture'} data={{activity_name: 'Museum of Pop Culture', img: "img/mpop.jpeg"}}></StartBuilding>} />
+        {/* <Route path="/signin" element={<MySignInScreen />} /> */}
+        {/* <Route path="/add-activity" element={<AddActivity />} /> */}
+        {/* <Route path="/final-itin" element={<FinalItinerary />} /> */}
       </Routes>
-    </Router>
 
-   
-    
 
-    //<CreateFormTest></CreateFormTest>
-    <Router>
-      <Routes>
-        <Route path="/signin" element={<MySignInScreen></MySignInScreen>}></Route>
-        <Route path="/add-activity" element={<AddActivity></AddActivity>}></Route>
-        <Route path="/final-itin" element={<FinalItinerary></FinalItinerary>}></Route>
-        <Route></Route>
-     </Routes>
-   </Router>
-    
-  );
-
-   // <Router>
-     // <Routes>
-      //  <Route path="/" element={<Indexhome activities={sample_activities} />} />
-      //  <Route path="/categories/:categoryName" element={<CategoriesPage activities={sample_activities} tags={subcat}/>} />
-     // </Routes>
-  //  </Router>
-
-//  );
-// <Indexhome />
-//<ItineraryFormPage2 />
-// <MySignInScreen />
-    // <Router>
-           // <Routes>
-             //   <Route path="/" element={<Indexhome activities={sample_activities} />} />
-              //  <Route path="/categories/:categoryName" element={<CategoriesPage activities={sample_activities} tags={outdoorsSub}/>} />
-          //  </Routes>
-       // </Router>
-  */
-     
+  
   )
     
-  
-
-
 
 
 }
