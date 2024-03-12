@@ -19,14 +19,14 @@
     },
     
     {
-        "id": "climbing",
-        "tag": "Climbing Gyms",
+        "id": "fitness",
+        "tag": "Fitness",
         "cat-id": "Indoor Escapes"
     },
     
     {
-        "id": "escape",
-        "tag": "Escape Rooms",
+        "id": "shopping",
+        "tag": "Shopping",
         "cat-id": "Indoor Escapes"
     },
     
@@ -62,7 +62,7 @@
     
     {
         "id": "sunset/sunrise",
-        "tag": "Sunset/sunrise spots ",
+        "tag": "Sunset/Sunrise spots",
         "cat-id": "Best Scenic Spots"
     },
     
@@ -79,14 +79,14 @@
     },
     
     {
-        "id": "jazz",
-        "tag": "Jazz Bars",
+        "id": "game",
+        "tag": "Arcades",
         "cat-id": "Entertainment"
     },
     
     {
         "id": "performingarts",
-        "tag": "Theaters and Performing Arts",
+        "tag": "Performing Arts",
         "cat-id": "Entertainment"
     },
     
@@ -110,7 +110,7 @@
     
     {
         "id": "galleries",
-        "tag": "Museum and galleries ",
+        "tag": "Museum and Galleries",
         "cat-id": "Historic/Cultural"
     },
     
@@ -121,20 +121,8 @@
     },
     
     {
-        "id": "culture",
-        "tag": "Cultural performances and events",
-        "cat-id": "Historic/Cultural"
-    },
-    
-    {
         "id": "musicfest",
         "tag": "Music festivals",
-        "cat-id": "Festivals"
-    },
-    
-    {
-        "id": "artfest",
-        "tag": "Cultural and art festivals",
         "cat-id": "Festivals"
     },
     
@@ -147,12 +135,6 @@
     {
         "id": "farmers",
         "tag": "Farmers market",
-        "cat-id": "Local Markets"
-    },
-    
-    {
-        "id": "artisan",
-        "tag": "Artisan markets",
         "cat-id": "Local Markets"
     },
     
@@ -181,14 +163,8 @@
     },
     
     {
-        "id": "girls",
-        "tag": "Girls Night Out",
-        "cat-id": "Styles"
-    },
-    
-    {
         "id": "calm",
-        "tag": "Calm Day Relaxation",
+        "tag": "Calm Day Relax",
         "cat-id": "Styles"
     }
     

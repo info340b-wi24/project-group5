@@ -22,9 +22,7 @@ const Flexbox = ({ activity, addToItinerary }) => {
                 <p>Location: {activity.location}</p>
                 <p>Cost: ${activity.cost}</p>
                 <p>{activity.description}</p>
-                <Link to="/add-activity">
                 <button onClick={() => addToItinerary(activity)}>Add to Itinerary</button>
-                </Link>
               </div>
             </div>
           </div>
@@ -37,17 +35,6 @@ const Flexbox = ({ activity, addToItinerary }) => {
 const SearchActivity = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-
-  const handleSearch = (event) => {
-    const newSearchTerm = event.target.value.toLowerCase();
-    setSearchTerm(newSearchTerm);
-
-    // Filter activities based on search term
-    const filteredActivities = activitiesData.filter(activity =>
-      activity.activity_name.toLowerCase().includes(newSearchTerm)
-    );
-    setSearchResults(filteredActivities);
-  };
 
   const addToItinerary = (activity) => {
     const auth = getAuth();
@@ -65,6 +52,17 @@ const SearchActivity = () => {
     }).catch((error) => {
       console.error('Error adding activity to itinerary: ', error);
     });
+  };
+
+  const handleSearch = (event) => {
+    const newSearchTerm = event.target.value.toLowerCase();
+    setSearchTerm(newSearchTerm);
+
+    // Filter activities based on search term
+    const filteredActivities = activitiesData.filter(activity =>
+      activity.activity_name.toLowerCase().includes(newSearchTerm)
+    );
+    setSearchResults(filteredActivities);
   };
 
   return (

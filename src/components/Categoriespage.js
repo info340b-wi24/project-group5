@@ -1,15 +1,16 @@
 
 // Categories page 
 
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Navbar from './NavBar';
 import Footer from './Footer';
 import Categories from './Categories';
 import '../index.css';
 import CategoryFiltering from './CategoryFiltering';
 import Catbox from './Catbox';
-import { useParams } from 'react-router-dom';
+import { useParams, Link }  from 'react-router-dom';
 import BoxList from './BoxList';
+
 
 
 const ActivityFlexbox = ({ activity }) => {
@@ -25,7 +26,7 @@ const ActivityFlexbox = ({ activity }) => {
                             <div className="card-content">
                                 <h2>{activity.activity_name}</h2>
                                 <p>{activity.description}</p>
-                                <a href="#" className="card-button">Read More</a>
+                                <Link to={`/activities/${encodeURIComponent(activity.activity_name)}`} className="card-button"> Read More </Link> 
                             </div>
                         </div>
                     </div>
@@ -41,6 +42,10 @@ export default function CategoriesPage({ tags, activities }) {
     const decodedCategoryName = decodeURIComponent(categoryName);
     const [selectedTags, setSelectedTags] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState(null);
+
+    useEffect(() => {
+        setSelectedCategory(decodedCategoryName);
+    }, [decodedCategoryName]);
 
     const filteredActivities = activities.filter(activity => 
         activity.activity_type && activity.activity_type.includes(decodedCategoryName) &&
@@ -71,5 +76,6 @@ export default function CategoriesPage({ tags, activities }) {
         </div>
     );
 }
+
 
 

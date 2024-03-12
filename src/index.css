@@ -100,6 +100,12 @@ header {
     background-color: #333;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 /* -----Home Page----- */
 /* Main Section */
 .question {
@@ -139,6 +145,16 @@ header {
     color: green;
 }
 
+.categories a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.categories a.active {
+    color: green;
+}
+
+
 /* Trending Spots Section */
 .trend-container {
     margin-left: 0.625rem;
@@ -160,12 +176,14 @@ header {
 }
 
 .card {
+    height: 300px;
     width: 300px;
+
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
     overflow: hidden;
-    position: relative;
+    position: relative; 
 }
 
 .card img {
@@ -177,6 +195,7 @@ header {
 .card-content {
     margin-left: 10px;
     margin-right: 10px;
+    flex-grow: 1;
 }
 
 .card-content h2 {
@@ -264,6 +283,7 @@ footer {
     justify-content: space-around; /* Distribute space around elements */
     margin-left: 0.625rem;
     margin-top: 5rem;
+   
 }
 
 #outdoor-cat {
@@ -276,18 +296,25 @@ footer {
     flex-direction: column; 
     align-items: flex-start; 
     padding: 10px; 
+    margin-right: 100px;
 }
+
 
 .category-section form p {
     margin: 15px 0;
+
 }
 
 form {
-    margin-top: 0;
+    margin-top: 0; 
+    
 }
 
 .checkboxLabel {
     margin-left: 0.3rem;
+    font-size: 16px;
+    
+   
 }
 
 .cat-container {
@@ -311,7 +338,7 @@ form {
 
 #outdoor-act {
     margin-top: 8px;
-    margin-left: 120px;
+    margin-left: 10px;
     margin-bottom: 38px;
 
 }
@@ -319,8 +346,8 @@ form {
 .outdoors-section {
     display: flex;
     justify-content: center;
-   
 }
+
 
 /* .container {
     display: flex;
@@ -402,6 +429,7 @@ ion-icon {
 
 
 
+
 /* activities-review page css */
 .activity-detail {
     max-width: 1200px;
@@ -423,23 +451,24 @@ ion-icon {
 
 .pic-title {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 5px;
+    margin-top: -50px;
+    margin-left: 10px; 
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 50px;
+    /* border-radius: 5px; */
 }
 
 .activity-image {
-    max-width: 520px;
+    max-width: 550px;
     border-radius: 10px;
+    margin-left: 40px; 
+    margin-top: 60px;
 }
 
 .activity-info {
     max-width: 350px;
-    margin-left: 650px; 
-    margin-top: -260px;
+    margin-top: 95px;
+    margin-bottom: 50px;
     font-size: 20px;
 }
 
@@ -453,59 +482,9 @@ ion-icon {
     margin-bottom: 20px;
 }
 
-.reviews {
-    width: 80%;
-    margin-top: 200px;
-    margin-left: 50px;
-}
-
-.review-title {
-    margin-top: 100px;
-}
-
-.review-cards {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 100px;
-}
-
-.review-card {
-    width: 280px;
-    height: 350px;
-    background-color: #747070;
-    border-radius: 10px;
-    margin-right: 50px;
-}
-
-.write-review {
-    align-self: center;
-    margin: 0;
-    width: 50%;
-}
-
-.write-review textarea {
-    width: 190%;
-    height: 100px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.write-review button {
-    width: 25%;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin-left: 360px;
-}
-
-
+.description {
+    font-size: 19px; 
+  }  
 
 
 
