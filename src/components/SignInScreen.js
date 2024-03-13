@@ -55,6 +55,7 @@ export default function MySignInScreen() {
   
       <p>Please sign-in:</p>
       <StyledFirebaseAuth uiConfig={firebaseUIConfig} firebaseAuth={auth} />
+      
     </div>
   );
 }

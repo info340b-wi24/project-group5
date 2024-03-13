@@ -38,7 +38,6 @@ export default function FinalItinerary() {
         <div className="final-form-container">
           <div className="final-info">
             <h1>Your Itinerary</h1>
-            <h2>February 21, 2024</h2>
             <p>Here's a breakdown of your activities for the day:</p>
           </div>
 
@@ -57,9 +56,9 @@ export default function FinalItinerary() {
                             <div className="card-content">
                               <h2>{activity.activity_name}</h2>
                               <p>{activity.description}</p>
-                              <p>{}</p>
-                              <p>{activity.start} - {activity.end}</p>
-                              {/* Add other activity details here */}
+                              
+                              
+                              {/* <p>{activity.start} - {activity.end}</p> */}
                             </div>
                           </div>
                         </div>
