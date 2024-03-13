@@ -1,61 +1,40 @@
-//import auth functions and variables from Firebase
-import { getAuth, EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth'
+import React from 'react';
+import { getAuth, EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth'; 
-import { Link, Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'; // Import the StyledFirebaseAuth component
 
-
-//import the component -- pick one!
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'; //install option 1
-
-//an object of configuration values
+// Configuration for Firebase UI authentication
 const firebaseUIConfig = {
-  signInOptions: [ //array of sign in options supported
-    //array can include just "Provider IDs", or objects with the IDs and options
-   
+  signInOptions: [
     { provider: EmailAuthProvider.PROVIDER_ID, requiredDisplayName: true },
     GoogleAuthProvider.PROVIDER_ID,
   ],
-  signInFlow: 'popup', //don't redirect to authenticate
-  credentialHelper: 'none', //don't show the email account chooser
-  callbacks: { //"lifecycle" callbacks
-    signInSuccessWithAuthResult: () => {
-      return false; //don't redirect after authentication
-    }
-  }
-}
+  signInFlow: 'popup',
+  credentialHelper: 'none',
+  callbacks: {
+    signInSuccessWithAuthResult: () => false, // Prevent redirection after successful sign-in
+  },
+};
 
-
-//the React compnent to render
 export default function MySignInScreen() {
+  const auth = getAuth(); // Access the auth object
 
-  const auth = getAuth(); //access the "authenticator"
-  //const user = useAuthState(auth)
-  
-  const currentUser = auth.currentUser;
+  // Check if the user is already signed in
+  const [user] = useAuthState(auth);
 
-  
-  if (currentUser) { //if signed in
-    return <Navigate to="/start-building" />
+  // If user is signed in, redirect to the start building page
+  if (user) {
+    return <Navigate to="/start-building" />;
   }
-  // const [user, error] = useState(auth)
-    //let status; 
-    //if (error) {
-     // status = "Error:" + {error}
-   //}
-   //if (user) {
-      //status = "You're now signed in!" 
-   // } else {
-     // status = "Please sign in to your account."
-    //}
-    
-  // write a function /for the logic of logging -> wrong password = error msh should appear
 
+  // If user is not signed in, display the sign-in form
   return (
     <div>
-  
-      <p>Please sign-in:</p>
+      <p>Please sign in:</p>
+      {/* Render the Firebase UI authentication component */}
       <StyledFirebaseAuth uiConfig={firebaseUIConfig} firebaseAuth={auth} />
-      
     </div>
   );
 }
+

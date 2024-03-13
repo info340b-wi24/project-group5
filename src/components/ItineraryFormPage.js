@@ -23,7 +23,7 @@ const Flexbox = ({ activity, addToItinerary }) => {
                 <p>Cost: ${activity.cost}</p>
                 <p>{activity.description}</p>
                 <Link to="/add-activity">
-                <button onClick={() => addToItinerary(activity)}>Add to Itinerary</button>
+                <button onClick={() => addToItinerary(activity)} className="btn btn-success">Add to Itinerary</button>
                 </Link>
               </div>
             </div>
@@ -72,9 +72,8 @@ const SearchActivity = () => {
       <NavBar />
       <div className='form-container'>
         <section className="add-place-label">
-          {/* IT SHOULD DISPLAY THE ITINERARY NAME MADE IN CREATFORMTEST */}
-          <h1>Add Activities To:</h1>
-          <h1>Itinerary Name</h1>
+          <h1>Add Activities To Your Itinerary</h1>
+          
           <input
             type="text"
             placeholder="Search activities..."

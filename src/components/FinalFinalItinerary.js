@@ -1,9 +1,10 @@
-import { db } from '../index.js';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getAuth } from 'firebase/auth';
-import { ref, onValue } from 'firebase/database'; // Import ref and onValue from Firebase
+import { ref, onValue } from 'firebase/database';
+import { db } from '../index.js'
 import NavBar from './NavBar';
 import Footer from './Footer';
+
 export default function FinalItinerary() {
   const [activities, setActivities] = useState([]);
 
@@ -56,9 +57,11 @@ export default function FinalItinerary() {
                             <div className="card-content">
                               <h2>{activity.activity_name}</h2>
                               <p>{activity.description}</p>
-                              
-                              
-                              {/* <p>{activity.start} - {activity.end}</p> */}
+                              <ul>
+                                {activity.times && Array.isArray(activity.times) && activity.times.map((time, index) => (
+                                  <li key={index}>{time.start} - {time.end}</li>
+                                ))}
+                              </ul>
                             </div>
                           </div>
                         </div>

@@ -758,7 +758,10 @@ ion-icon {
     left: 135px;
 }
 
-
+.itin-name{
+    flex: wrap;
+    align-items: center;
+}
 
 
 /* ------old version ------ */
@@ -947,22 +950,7 @@ ion-icon {
   .button1-container{
     text-align: center;
     padding:2rem;
-    }
-
-  .button1-container button{
-    color: white;
-    background:green;
-    padding: 8px 15px;
-    border-radius: 30px;
-    display: inline-block;
-    border-color: none;
-    }
-
-  .button1-container button a{
-    text-decoration: none;
-    font-size: larger;
-    color:black;
-    margin: 1rem;
+    
     }
     .sample-saved-activities{
         align-content: center;

@@ -13,21 +13,17 @@ const SavedActivities = (props) => {
                     <h1>My Itinerary</h1>
                     <div className="button1-container">
                         <Link to="/itinerary-form">
-                        <button type="button">Build Itinerary</button>
+                        <button type="button" className="btn btn-success">Build Itinerary</button>
                         </Link>
                     </div>
                 </section>
 
                 <section className="sample-saved-activities">
-                    <h1>Saved Itineraries</h1>
-                    <div className="test-container">
-                        <div className="row">
-                                <div className="card">
-                                    <p className='itin-name'>Itinerary Name</p>
-                                    <p className='itin-date'>Itinerary Date</p>
-                                    <p className='itin-desc'>Itinerary Description</p>
-                                </div>
-                        </div>
+                    <h1>View Itinerary</h1>
+                    <div className="button1-container">
+                        <Link to="/final-itinerary">
+                        <button type="button" className="btn btn-success">View Final Itinerary</button>
+                        </Link>
                     </div>
                 </section>
             </div>

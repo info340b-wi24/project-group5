@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import Footer from './Footer';
-import NavBar from './NavBar';
-import { TimePick } from './TimePicker';
-import { db } from '../index.js';
+import { useState, useEffect } from 'react';
 import { getAuth } from 'firebase/auth';
+import { ref, push, get } from 'firebase/database';
 import { Link } from 'react-router-dom';
-import { ref, push, get } from 'firebase/database'; // Import ref, push, and get
+import NavBar from './NavBar.js';
+import Footer from './Footer.js';
+import { TimePick } from './TimePicker.js';
+import { db } from '../index.js';
 
 export function AddActivity() {
     const [startHour, setStartHour] = useState('01');
@@ -15,6 +15,7 @@ export function AddActivity() {
     const [endMin, setEndMin] = useState('00');
     const [endAMPM, setEndAMPM] = useState('AM');
     const [activity, setActivity] = useState(null);
+    const [times, setTimes] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -35,7 +36,17 @@ export function AddActivity() {
                 const activities = snapshot.val();
                 const keys = Object.keys(activities);
                 const lastActivityKey = keys[keys.length - 1];
-                setActivity(activities[lastActivityKey]);
+                setActivity({ id: lastActivityKey, ...activities[lastActivityKey] });
+
+                // Fetch time data for the selected activity
+                const timesRef = ref(db, `${userId}/itinerary/activities/${lastActivityKey}/times`);
+                const timesSnapshot = await get(timesRef); // Use get method to fetch data
+
+                if (timesSnapshot.exists()) {
+                    const timesData = timesSnapshot.val();
+                    const timesList = Object.values(timesData);
+                    setTimes(timesList);
+                }
             }
         };
 
@@ -51,14 +62,19 @@ export function AddActivity() {
         }
         
         const userId = user.uid;
-        push(ref(db, `${userId}/itinerary/activities`), {
+        if (!activity) {
+            console.error('No activity selected.');
+            return;
+        }
+
+        // Push time to the retrieved activity
+        push(ref(db, `${userId}/itinerary/activities/${activity.id}/times`), {
             start: startHour + ":" + startMin + " " + startAMPM, 
             end: endHour + ":" + endMin + " " + endAMPM,
-           
         }).then(() => {
-            console.log('Activity added successfully.');
+            console.log('Time added successfully.');
         }).catch((error) => {
-            console.error('Error adding activity: ', error);
+            console.error('Error adding time: ', error);
         });
     };
 
@@ -90,7 +106,9 @@ export function AddActivity() {
                         <TimePick setHour={setEndHour} setMin={setEndMin} setAMPM={setEndAMPM} />
                     </div>
                     <div className="add-activity-btn">
+                        <Link to ='/search-activity'>
                         <button onClick={addingAct} type="button" className="btn btn-success">Add Activity</button>
+                        </Link>
                         <Link to='/final-itinerary'>
                             <button type="button" className="btn btn-success">Done!</button>
                         </Link>
@@ -101,3 +119,4 @@ export function AddActivity() {
         </>
     );
 }
+
