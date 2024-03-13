@@ -62,7 +62,7 @@ export function AddActivity () {
                 <Link to='/search-activity'>
                 <button onClick={addingAct} type="button" className="btn btn-success">Add Activity</button>
                 </Link>
-                <Link to='/final-'>
+                <Link to='/final-itinerary'>
                 <button type="button" className="btn btn-success">Done!</button>
                 </Link>
             </div>
