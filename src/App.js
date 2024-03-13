@@ -17,13 +17,17 @@ import ItineraryFormPage from './components/ItineraryFormPage.js';
 import ActivityReview from './components/ActivityReview.js';
 import { AddActivity } from './components/AddActivity';
 
-import { FinalItinerary } from './components/FinalFinalItinerary';
+import FinalItinerary  from './components/FinalFinalItinerary';
 
 function App(props) {
 
   return (
 
+    
       <Routes>
+        <Route path="/activities/:activity_name" element={<ActivityReview activities={sample_activities} />} />
+      <Route path="/categories/:categoryName" element={<CategoriesPage activities={sample_activities} tags={subcat}/>} />
+      <Route path="/itinerary" element={<StartBuilding activity_name={'Museum of Pop Culture'} data={{activity_name: 'Museum of Pop Culture', img: "img/mpop.jpeg"}}></StartBuilding>} />
         <Route path="/" element={<Indexhome activities={sample_activities} />} />
         <Route path="/signin" element={<SignInScreen></SignInScreen>}></Route>
         <Route path="/add-activity" element={<AddActivity></AddActivity>}></Route>
@@ -31,11 +35,12 @@ function App(props) {
         <Route path ="/itinerary-form" element={<CreateFormTest></CreateFormTest>}></Route>
         <Route path="/start-building" element={<StartBuilding></StartBuilding>}></Route>
         <Route path="/search-activity" element={<ItineraryFormPage></ItineraryFormPage>}></Route>
+        <Route path="/final-itinerary" element={<FinalItinerary></FinalItinerary>}></Route>
      </Routes>
   
 
 
-  /*  
+   /*
   
   Hannah's testing stuff 
   <div>

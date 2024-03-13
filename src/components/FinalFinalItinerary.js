@@ -1,70 +1,78 @@
-import React from 'react'; 
-import Footer from './Footer';
-import NavBar from './NavBar';
-import { ItineraryCards } from './ItineraryCard';
-import { ref, onValue} from 'firebase/database';
 import { db } from '../index.js';
 import { useState, useEffect } from 'react';
-import { getAuth } from 'firebase/auth'
+import { getAuth } from 'firebase/auth';
+import { ref, onValue } from 'firebase/database'; // Import ref and onValue from Firebase
+import NavBar from './NavBar';
+import Footer from './Footer';
+export default function FinalItinerary() {
+  const [activities, setActivities] = useState([]);
 
-export function FinalItinerary () {
-    const [activities, setActivities] = useState([]);
+  useEffect(() => {
+    const auth = getAuth(); //access the "authenticator"
+    const user = auth.currentUser;
+    if (!user) {
+      console.error('User not authenticated.');
+      return;
+    }
+    const userId = user.uid;
 
-    useEffect(() => {
-        const activitiesRef = ref(db, 'activities');
-        onValue(activitiesRef, (snapshot) => {
-        const activitiesValue = snapshot.val();
-        console.log(activitiesValue);
+    const activitiesRef = ref(db, `/${userId}/itinerary/activities`); // Reference to the user's activities
+    onValue(activitiesRef, (snapshot) => {
+      const activitiesValue = snapshot.val();
+      if (!activitiesValue) {
+        console.log('No activities found.');
+        return;
+      }
 
-        const activityList = []
-
-        const auth = getAuth(); //access the "authenticator"
-        const user = auth.currentUser;
-        if (!user) {
-        console.error('User not authenticated.');
-        //return;
-        }
-    //const userId = user.uid;
-        for (const activity in activitiesValue) {
-            const activityData = activitiesValue[activity]
-            //if (userId == activity.userId) {
-                activityList.push(activityData)
-            //}
-        }
-        activityList.sort(function(a, b){return a.start - b.start});
-        console.log(activityList)
-
-        setActivities(activityList)
-
+      const activityList = Object.values(activitiesValue);
+      console.log(activityList);
+      setActivities(activityList);
     });
 
-}, [])
+  }, []);
 
-    
-   
-    return (
-        <>
-        <NavBar></NavBar>
-        <main className="final-form-body">
-            <div className="final-form-container">
-                <div className="final-info">
-                    <h1> Your Itinerary</h1>
-                    <h2> February 21, 2024 </h2>
-                    <p> Here's a breakdown of your activities for the day:</p>
-                </div>
+  return (
+    <>
+      <NavBar />
+      <main className="final-form-body">
+        <div className="final-form-container">
+          <div className="final-info">
+            <h1>Your Itinerary</h1>
+            <h2>February 21, 2024</h2>
+            <p>Here's a breakdown of your activities for the day:</p>
+          </div>
 
-                <div className="itin-card-container">
-                    <div className="itin-activity">
-                        <ul>
-                        {activities.map((activity) => {
-                            return <ItineraryCards imgName={activity.img} imgAlt={activity.alt} activityName={activity.name} activityDescription={activity.description} timeStart= {activity.start} timeEnd = {activity.end} ></ItineraryCards>
-                        })}
-                        </ul>
-                </div>
+          <div className="itin-card-container">
+            <div className="itin-activity">
+              <div className="row">
+                {activities.map((activity, index) => (
+                  <div key={index} className="col-md-6 col-xl-3 mb-4">
+                    <div className="card mb-8">
+                      <div className="card">
+                        <div className="row">
+                          <div className="col-sm-auto col-xl-12">
+                            <img src={activity.img} className="img-fluid" alt={activity.activity_name} />
+                          </div>
+                          <div className="col-sm">
+                            <div className="card-content">
+                              <h2>{activity.activity_name}</h2>
+                              <p>{activity.description}</p>
+                              <p>{}</p>
+                              <p>{activity.start} - {activity.end}</p>
+                              {/* Add other activity details here */}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-        </div>     
-        </main>
-        <Footer></Footer>
+          </div>
+        </div>
+      </main>
+      <Footer />
     </>
-    )
+  );
 }

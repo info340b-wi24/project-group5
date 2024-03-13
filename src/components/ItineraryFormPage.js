@@ -22,7 +22,9 @@ const Flexbox = ({ activity, addToItinerary }) => {
                 <p>Location: {activity.location}</p>
                 <p>Cost: ${activity.cost}</p>
                 <p>{activity.description}</p>
+                <Link to="/add-activity">
                 <button onClick={() => addToItinerary(activity)}>Add to Itinerary</button>
+                </Link>
               </div>
             </div>
           </div>

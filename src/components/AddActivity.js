@@ -6,6 +6,7 @@ import { TimePick } from './TimePicker';
 import { db } from '../index.js';
 import { getDatabase, ref, push } from 'firebase/database';
 import { getAuth } from 'firebase/auth'
+import { Link } from 'react-router-dom';
 
 
 export function AddActivity () { 
@@ -21,10 +22,12 @@ export function AddActivity () {
         const user = auth.currentUser;
         if (!user) {
         console.error('User not authenticated.');
-        
+
         }
+        //const user = useAuthState(auth)
+        
     const userId = user.uid;
-        push(ref(db, userId/'itinerary/activities/'), {
+        push(ref(db, userId + '/itinerary/activities'), {
         start: startHour + ":" + startMin + " " + startAMPM, 
         end: endHour + ":" + endMin + " " + endAMPM,
         })
@@ -56,8 +59,12 @@ export function AddActivity () {
                 <TimePick setHour={setEndHour} setMin={setEndMin} setAMPM={setEndAMPM}></TimePick>
             </div>
             <div className="add-activity-btn">
+                <Link to='/search-activity'>
                 <button onClick={addingAct} type="button" className="btn btn-success">Add Activity</button>
-                <a href="/itinerary-form" type="button" className="btn btn-success">Done!</a>
+                </Link>
+                <Link to='/final-'>
+                <button type="button" className="btn btn-success">Done!</button>
+                </Link>
             </div>
         </div>
     </section>
