@@ -29,6 +29,11 @@ header {
     color: green;
     font-size: 2.5rem;
 }
+
+a:link {
+    text-decoration: none; 
+}
+
 .topnav{
     display: flex;
     align-items:center;
@@ -38,11 +43,20 @@ header {
     padding: 0.5rem 1rem;
 
 }
+
 .topnav div{
     text-decoration: none;
     color:
 }
-.topnav home {
+
+.topnav .home {
+    text-decoration: none; 
+    color: #333;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.topnav .itinerary {
     text-decoration: none; 
     color: #333;
     font-size: 1.25rem;
@@ -55,7 +69,6 @@ header {
 }
 
 .topnav .home {
-    
     font-weight: bold;
 }
 
