@@ -5,6 +5,8 @@ import { getAuth } from 'firebase/auth'
 import { db } from '../index.js';
 import Footer from './Footer.js';
 import NavBar from './NavBar.js';
+import { Link } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 
 const FormComponent = () => {
@@ -20,14 +22,13 @@ const FormComponent = () => {
     const user = auth.currentUser;
     if (!user) {
       console.error('User not authenticated.');
-      return;
+      return <Navigate to="/sign-in" />
     }
     const userId = user.uid;
 
     // Push data to Firebase Realtime Database
-    const itineraryRef = ref(db, 'itineraries');
+    const itineraryRef = ref(db, userId + "/itinerary/");
     push(itineraryRef, {
-      userId,
       name,
       dates,
       description
@@ -61,8 +62,9 @@ const FormComponent = () => {
           <label htmlFor="description">Description</label>
           <textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
         </div>
-        {/* Need to route to the next page */}
+        <Link to="/search-activity">
         <button className="start-building" type="submit">Start building</button>
+        </Link>
       </form>
     </div>
     </div>

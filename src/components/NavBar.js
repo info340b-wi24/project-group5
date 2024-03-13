@@ -5,12 +5,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const Navbar = () => {
     return (
-        //<header> 
-            //<Link to="/">
-                //<div id="logo">
-                    //Sleepless in Seattle
-                //</div>
-            //</Link>
+        // <header> 
+        //     <Link to="/" className="nav-link">
+        //         <div id="logo">
+        //             Sleepless in Seattle
+        //         </div>
+        //     </Link>
             
             //<div className="topnav">
                 //<Link to="/">
@@ -22,7 +22,7 @@ const Navbar = () => {
             //</div>
         //</header>
         <header>
-          <Link to="/">
+          <Link to="/" className="nav-link">
             <div id="logo">
                 Sleepless in Seattle
             </div>

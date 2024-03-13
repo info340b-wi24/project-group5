@@ -21,17 +21,12 @@ export function AddActivity () {
         const user = auth.currentUser;
         if (!user) {
         console.error('User not authenticated.');
-        //return; 
+        
         }
-    //const userId = user.uid;
-        push(ref(db, 'activities'), {
-        name: 'Pike Place Market',
-        alt: 'pike place sign',
-        img: 'img/pike.jpeg',
-        description: "Start your day at one of the oldest continuously operated public farmers' markets in the United States.",
+    const userId = user.uid;
+        push(ref(db, userId/'itinerary/activities/'), {
         start: startHour + ":" + startMin + " " + startAMPM, 
         end: endHour + ":" + endMin + " " + endAMPM,
-        //userId
         })
 };
 
