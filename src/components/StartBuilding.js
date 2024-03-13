@@ -2,32 +2,38 @@ import React from 'react';
 import Footer from './Footer';
 import NavBar from './NavBar';
 import { Link } from 'react-router-dom';
-
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
 
 const SavedActivities = (props) => {
     return (
-        <main className="">
-            <NavBar></NavBar>
-            <div className="itinerary-container">
-                <section className="my-itinerary">
-                    <h1>My Itinerary</h1>
-                    <div className="button1-container">
-                        <Link to="/itinerary-form">
-                        <button type="button" className="btn btn-success">Build Itinerary</button>
-                        </Link>
-                    </div>
-                </section>
+        <main>
+            <NavBar />
+            <Container>
+                <Box my={4}>
+                    <Paper elevation={3} style={{ padding: '20px', marginBottom: '20px' }}>
+                        <Typography variant="h4" gutterBottom>
+                            My Itinerary
+                        </Typography>
+                        <Button variant="contained" color="primary" component={Link} to="/itinerary-form">
+                            Build Itinerary
+                        </Button>
+                    </Paper>
 
-                <section className="sample-saved-activities">
-                    <h1>View Itinerary</h1>
-                    <div className="button1-container">
-                        <Link to="/final-itinerary">
-                        <button type="button" className="btn btn-success">View Final Itinerary</button>
-                        </Link>
-                    </div>
-                </section>
-            </div>
-          <Footer></Footer>
+                    <Paper elevation={3} style={{ padding: '20px' }}>
+                        <Typography variant="h4" gutterBottom>
+                            View Itinerary
+                        </Typography>
+                        <Button variant="contained" color="primary" component={Link} to="/final-itinerary">
+                            View Final Itinerary
+                        </Button>
+                    </Paper>
+                </Box>
+            </Container>
+            <Footer />
         </main>
     );
 };
